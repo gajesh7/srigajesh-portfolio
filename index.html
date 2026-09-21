@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gajesh — UI/UX Designer & Product Strategist</title>
+  <meta name="description" content="Portfolio of Gajesh, a UI/UX Designer creating thoughtful digital experiences across mobile apps, websites, and SaaS products.">
+  
+  <!-- Font Preconnect & Embed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Dot & Ring -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- FIXED TOP HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo" aria-label="Gajesh Portfolio Home">
+        GAJESH
+      </a>
+      
+      <div class="header-right">
+        <button class="cta-talk-btn" id="open-contact-btn" aria-label="Open contact form">
+          <span>LET'S TALK</span>
+          <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- FIXED LEFT NAVIGATION RAIL (Desktop — 6 Large Rounded Squares 68px) -->
+  <aside class="nav-rail" id="nav-rail" aria-label="Primary vertical navigation rail">
+    <div class="rail-items">
+      
+      <!-- 01 WORK -->
+      <a href="#work" class="rail-btn active" data-tooltip="01 — WORK" aria-label="01 — WORK">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+        </svg>
+        <span class="rail-label">01 — WORK</span>
+      </a>
+
+      <!-- 02 ABOUT -->
+      <a href="#about" class="rail-btn" data-tooltip="02 — ABOUT" aria-label="02 — ABOUT">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+          <path d="M6 12h12"></path>
+          <path d="M6 7h12"></path>
+          <path d="M6 17h12"></path>
+        </svg>
+        <span class="rail-label">02 — ABOUT</span>
+      </a>
+
+      <!-- 03 EXPERIENCE -->
+      <a href="#experience" class="rail-btn" data-tooltip="03 — EXPERIENCE" aria-label="03 — EXPERIENCE">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+        <span class="rail-label">03 — EXPERIENCE</span>
+      </a>
+
+      <!-- 04 EXPERTISE -->
+      <a href="#expertise" class="rail-btn" data-tooltip="04 — EXPERTISE" aria-label="04 — EXPERTISE">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 8v8M8 12h8"></path>
+        </svg>
+        <span class="rail-label">04 — EXPERTISE</span>
+      </a>
+
+      <!-- 05 RESUME -->
+      <a href="#resume" class="rail-btn" data-tooltip="05 — RESUME" aria-label="05 — RESUME">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        <span class="rail-label">05 — RESUME</span>
+      </a>
+
+      <!-- 06 CONTACT -->
+      <a href="#contact" class="rail-btn" data-tooltip="06 — CONTACT" aria-label="06 — CONTACT">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span class="rail-label">06 — CONTACT</span>
+      </a>
+
+    </div>
+
+    <!-- Bottom Menu Trigger -->
+    <button class="rail-bottom-btn" id="rail-menu-trigger" aria-label="Toggle Menu Drawer">
+      <span class="rail-menu-text">MENU</span>
+      <div class="three-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
+  </aside>
+
+  <!-- SIDE DRAWER OVERLAY PANEL -->
+  <div class="side-drawer-panel" id="side-drawer-panel" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer-content">
+      <button class="drawer-close" id="drawer-close" aria-label="Close drawer">×</button>
+      
+      <div class="drawer-section-header">
+        <span class="d-tag">PORTFOLIO INDEX</span>
+        <h3>NAVIGATION MENU</h3>
+      </div>
+
+      <div class="drawer-menu-list">
+        <a href="#work" class="drawer-item"><span class="d-num">01</span> FEATURED WORK</a>
+        <a href="#see-more-work" class="drawer-item"><span class="d-num">02</span> SEE MORE WORK</a>
+        <a href="#case-studies" class="drawer-item"><span class="d-num">03</span> STACKED CASE STUDIES</a>
+        <a href="#about" class="drawer-item"><span class="d-num">04</span> ABOUT & PHILOSOPHY</a>
+        <a href="#testimonials" class="drawer-item"><span class="d-num">05</span> TESTIMONIALS</a>
+        <a href="#resume" class="drawer-item"><span class="d-num">06</span> RESUME & CAREER</a>
+        <a href="#contact" class="drawer-item"><span class="d-num">07</span> CONTACT & START A PROJECT</a>
+      </div>
+
+      <div class="drawer-testimonial-box">
+        <span class="d-sub">WHAT CLIENTS SAY</span>
+        <p>"Gajesh has a rare talent for taking chaotic SaaS requirements and distilling them into friction-free, beautiful interfaces."</p>
+        <span class="d-author">— VP of Product, Enterprise Tech</span>
+      </div>
+
+      <div class="drawer-footer-actions">
+        <button class="cta-talk-btn full-width" id="drawer-talk-btn">LET'S TALK →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE OVERLAY NAVIGATION -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <div class="mobile-nav-content">
+      <nav class="mobile-nav-links">
+        <a href="#work" class="mobile-link">01. FEATURED WORK</a>
+        <a href="#see-more-work" class="mobile-link">02. SEE MORE WORK</a>
+        <a href="#case-studies" class="mobile-link">03. CASE STUDIES</a>
+        <a href="#about" class="mobile-link">04. ABOUT</a>
+        <a href="#testimonials" class="mobile-link">05. TESTIMONIALS</a>
+        <a href="#resume" class="mobile-link">06. RESUME</a>
+        <a href="#contact" class="mobile-link">07. CONTACT</a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <p>BENGALURU, INDIA</p>
+        <button class="cta-talk-btn full-width" id="mobile-talk-btn">LET'S TALK →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS INDICATOR (Right Rail) -->
+  <div class="scroll-rail" aria-hidden="true">
+    <div class="scroll-line">
+      <div class="scroll-progress-dot" id="scroll-progress-dot"></div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="content-wrapper">
+
+    <!-- HERO SECTION (Cream #F7F4EC) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        
+        <h1 class="hero-headline">
+          <span class="headline-line">DESIGNING</span>
+          <span class="headline-line">
+            DIGITAL 
+            <span class="orange-accent-badge" title="Gajesh Design Signature">
+              <span class="badge-inner">©</span>
+            </span>
+          </span>
+          <span class="headline-line">EXPERIENCES</span>
+          <span class="headline-line muted-headline">THAT MAKE SENSE.</span>
+        </h1>
+
+        <div class="hero-intro-wrapper">
+          <p class="hero-intro-text">
+            UI/UX Designer with 4.5+ years of experience creating thoughtful digital experiences across mobile apps, websites and SaaS products.
+          </p>
+        </div>
+
+        <div class="hero-cta-wrapper">
+          <button class="primary-hero-cta" id="hero-book-call-btn" aria-label="Book an intro call">
+            <span class="cta-text">BOOK AN INTRO CALL</span>
+            <span class="avatar-phone-duo">
+              <span class="hero-avatar-circle" title="Gajesh">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF6B1A'/%3E%3Cstop offset='100%25' stop-color='%23151311'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='40' r='18' fill='%23F7F4EC'/%3E%3Cpath d='M22 82c0-15.5 12.5-28 28-28s28 12.5 28 28' fill='%23F7F4EC'/%3E%3C/svg%3E" alt="Gajesh Profile" class="hero-avatar-img">
+              </span>
+              <span class="phone-icon-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+
+        <div class="hero-footer-detail">
+          <div class="detail-item">
+            <span class="detail-badge-dot"></span>
+            <span class="detail-label">AVAILABLE FOR SELECTED PROJECTS</span>
+          </div>
+          <div class="detail-item text-right">
+            <span class="detail-label">BENGALURU, INDIA</span>
+            <span class="detail-time" id="live-time">07:35 AM IST</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 01 — FEATURED WORK (Cream Background #F7F4EC) -->
+    <section class="work-section" id="work">
+      <div class="section-container">
+        
+        <header class="featured-work-header">
+          <h2 class="featured-work-title">
+            <span class="title-main">Featured</span>
+            <span class="title-muted">Work</span>
+          </h2>
+
+          <div class="downward-arrow-box" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12l7 7-7 7"/>
+            </svg>
+          </div>
+
+          <p class="featured-work-intro">
+            "I create innovative and purposeful digital experiences that solve real problems and make complex products easier to use."
+          </p>
+        </header>
+
+        <div class="projects-list">
+
+          <!-- PROJECT 01: CORTADO CAFÉ -->
+          <article class="project-article featured-hero-card" data-parallax="0.05">
+            <div class="project-header">
+              <div class="project-meta-top">
+                <span class="project-num">01</span>
+                <span class="project-category">Mobile App · UI/UX · Product Design</span>
+              </div>
+              <h3 class="project-title">CORTADO CAFÉ</h3>
+              <p class="project-desc">
+                "A complete café ordering experience designed across delivery, dine-in, takeaway, branch selection, rewards and membership."
+              </p>
+            </div>
+
+            <div class="project-visual-wrapper mobile-app-wrapper">
+              <div class="card-corner-badge">
+                <strong>CORTADO CAFÉ</strong> <span>2024 · FINTECH & CAFÉ</span>
+              </div>
+              <div class="visual-bg-glow glow-cortado"></div>
+              
+              <div class="mobile-mockup-duo">
+                <div class="phone-frame screen-left">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content cortado-ui">
+                    <div class="app-topbar">
+                      <div class="branch-pill">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>Indiranagar Branch</span>
+                      </div>
+                      <span class="app-cart-icon">🛒 <small>2</small></span>
+                    </div>
+
+                    <div class="app-greeting">
+                      <h2>Good morning, Gajesh ☕</h2>
+                      <p>Your usual is ready to reorder</p>
+                    </div>
+
+                    <div class="coffee-card-featured">
+                      <div class="coffee-badge">BESTSELLER</div>
+                      <div class="coffee-img-placeholder">
+                        <span class="emoji-icon">☕</span>
+                        <div class="steam-animation"></div>
+                      </div>
+                      <div class="coffee-details">
+                        <h4>Double Shot Cortado</h4>
+                        <p>Rich espresso + steamed milk</p>
+                        <div class="price-row">
+                          <span class="price">₹240</span>
+                          <button class="add-btn">+</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="quick-modes">
+                      <span class="mode-chip active">Dine-In</span>
+                      <span class="mode-chip">Takeaway</span>
+                      <span class="mode-chip">Delivery</span>
+                    </div>
+
+                    <div class="reward-progress-mini">
+                      <div class="reward-header">
+                        <span>Cortado Club Gold</span>
+                        <span>420 / 500 pts</span>
+                      </div>
+                      <div class="progress-bar-fill"><div class="fill-80"></div></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="phone-frame screen-right">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content cortado-ui-alt">
+                    <div class="order-status-screen">
+                      <div class="status-ring-box">
+                        <div class="pulse-ring"></div>
+                        <span class="status-icon">☕</span>
+                      </div>
+                      <h3>Brewing your Coffee</h3>
+                      <p class="status-time">Estimated ready in <strong>4 mins</strong></p>
+                      
+                      <div class="qr-code-card">
+                        <div class="qr-placeholder">
+                          <div class="qr-pattern"></div>
+                        </div>
+                        <span class="qr-sub">Scan at Counter #04</span>
+                      </div>
+
+                      <div class="pickup-details">
+                        <div class="pickup-row">
+                          <span>Order ID</span>
+                          <strong>#CC-9842</strong>
+                        </div>
+                        <div class="pickup-row">
+                          <span>Pickup Type</span>
+                          <strong>Curbside Express</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="project-link" data-project="Cortado Cafe">
+                <span>VIEW CASE STUDY</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: ePRISE -->
+          <article class="project-article featured-grid-card" data-parallax="0.05">
+            <div class="project-header">
+              <div class="project-meta-top">
+                <span class="project-num">02</span>
+                <span class="project-category">SaaS · Product Design · UX/UI</span>
+              </div>
+              <h3 class="project-title">ePRISE</h3>
+              <p class="project-desc">
+                "A business platform bringing accounting, GST, invoicing, inventory and everyday business workflows into one experience."
+              </p>
+            </div>
+
+            <div class="project-visual-wrapper saas-dashboard-wrapper">
+              <div class="card-corner-badge">
+                <strong>ePRISE</strong> <span>2024 · SAAS PLATFORM</span>
+              </div>
+              <div class="visual-bg-glow glow-eprise"></div>
+              
+              <div class="desktop-mac-frame">
+                <div class="mac-header">
+                  <div class="mac-buttons">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mac-title-bar">eprise.app/dashboard/gst-reconciliation</div>
+                </div>
+
+                <div class="mac-body eprise-dashboard">
+                  <div class="dash-sidebar">
+                    <div class="dash-logo">ePRISE</div>
+                    <div class="dash-nav">
+                      <span class="d-link active">📊 Analytics</span>
+                      <span class="d-link">🧾 GST Return</span>
+                      <span class="d-link">📄 Invoices</span>
+                      <span class="d-link">📦 Inventory</span>
+                      <span class="d-link">⚙️ Settings</span>
+                    </div>
+                  </div>
+
+                  <div class="dash-main">
+                    <div class="dash-top">
+                      <div>
+                        <h3>Financial Operations Overview</h3>
+                        <p class="sub-small">Q3 Automated Reconciliation Status</p>
+                      </div>
+                      <button class="dash-primary-btn">+ Create Invoice</button>
+                    </div>
+
+                    <div class="dash-metrics-grid">
+                      <div class="metric-card">
+                        <span class="m-title">Total Revenue</span>
+                        <div class="m-value">₹42,85,000</div>
+                        <span class="m-badge positive">+18.4% vs last mo</span>
+                      </div>
+
+                      <div class="metric-card">
+                        <span class="m-title">Pending GST Credit</span>
+                        <div class="m-value">₹1,24,500</div>
+                        <span class="m-badge warning">3 Actions required</span>
+                      </div>
+
+                      <div class="metric-card">
+                        <span class="m-title">Auto-Reconciled</span>
+                        <div class="m-value">99.2%</div>
+                        <span class="m-badge positive">Instant match</span>
+                      </div>
+                    </div>
+
+                    <div class="dash-content-grid">
+                      <div class="chart-box">
+                        <div class="chart-header">Monthly Cash Flow</div>
+                        <div class="bar-chart-mock">
+                          <div class="bar-col" style="--h: 60%"><span>May</span></div>
+                          <div class="bar-col" style="--h: 75%"><span>Jun</span></div>
+                          <div class="bar-col" style="--h: 45%"><span>Jul</span></div>
+                          <div class="bar-col active" style="--h: 90%"><span>Aug</span></div>
+                          <div class="bar-col" style="--h: 65%"><span>Sep</span></div>
+                        </div>
+                      </div>
+
+                      <div class="table-box">
+                        <div class="chart-header">Recent Invoices</div>
+                        <div class="mini-table">
+                          <div class="table-row head">
+                            <span>Client</span><span>Amount</span><span>Status</span>
+                          </div>
+                          <div class="table-row">
+                            <span>Apex Tech Solutions</span><span>₹1,85,000</span><span class="badge-paid">Paid</span>
+                          </div>
+                          <div class="table-row">
+                            <span>Nova Commerce</span><span>₹94,200</span><span class="badge-pending">Pending</span>
+                          </div>
+                          <div class="table-row">
+                            <span>Starlight Media</span><span>₹3,10,000</span><span class="badge-paid">Paid</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="project-link" data-project="ePRISE SaaS">
+                <span>VIEW CASE STUDY</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: TRIBAL -->
+          <article class="project-article featured-grid-card" data-parallax="0.05">
+            <div class="project-header">
+              <div class="project-meta-top">
+                <span class="project-num">03</span>
+                <span class="project-category">B2B · Product Design · Dashboard</span>
+              </div>
+              <h3 class="project-title">TRIBAL</h3>
+              <p class="project-desc">
+                "A connected workflow experience for managing complex clothing production and operations."
+              </p>
+            </div>
+
+            <div class="project-visual-wrapper b2b-workflow-wrapper">
+              <div class="card-corner-badge">
+                <strong>TRIBAL</strong> <span>2023 · B2B WORKFLOW</span>
+              </div>
+              <div class="visual-bg-glow glow-tribal"></div>
+
+              <div class="workflow-board-frame">
+                <div class="board-topbar">
+                  <span class="board-title">⚡ TRIBAL / PRODUCTION BATCH #842</span>
+                  <div class="board-tags">
+                    <span class="b-chip">Organic Cotton Line</span>
+                    <span class="b-chip">12,000 Units</span>
+                  </div>
+                </div>
+
+                <div class="board-columns-grid">
+                  <div class="kanban-col">
+                    <div class="col-header">Fabric Sourcing <span class="count">4</span></div>
+                    <div class="kanban-card">
+                      <span class="k-tag high">Priority</span>
+                      <h4>300 GSM Heavy Terry</h4>
+                      <p>Mill: KnitFab Coimbatore</p>
+                      <div class="k-meta"><span>Dye Batch: #409</span><span>100% Passed</span></div>
+                    </div>
+                  </div>
+
+                  <div class="kanban-col">
+                    <div class="col-header">Cutting & Batching <span class="count">2</span></div>
+                    <div class="kanban-card active-card">
+                      <span class="k-tag progress">In Progress</span>
+                      <h4>Oversized Hoodies (L/XL)</h4>
+                      <p>Laser Cutter #02 Active</p>
+                      <div class="k-progress-ring">
+                        <div class="ring-bar" style="width: 72%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="kanban-col">
+                    <div class="col-header">Quality Audit <span class="count">3</span></div>
+                    <div class="kanban-card">
+                      <span class="k-tag success">QA Passed</span>
+                      <h4>Embroidery & Stitching</h4>
+                      <p>Defect Rate: 0.02%</p>
+                      <div class="k-meta"><span>Inspected by: Team A</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="project-link" data-project="Tribal Operations">
+                <span>VIEW CASE STUDY</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: BARAKHA -->
+          <article class="project-article featured-hero-card" data-parallax="0.05">
+            <div class="project-header">
+              <div class="project-meta-top">
+                <span class="project-num">04</span>
+                <span class="project-category">E-commerce · UX/UI</span>
+              </div>
+              <h3 class="project-title">BARAKHA</h3>
+              <p class="project-desc">
+                "Luxury fashion & artisanal craft e-commerce experience built with minimal editorial aesthetics and smooth checkout."
+              </p>
+            </div>
+
+            <div class="project-visual-wrapper ecommerce-wrapper">
+              <div class="card-corner-badge">
+                <strong>BARAKHA</strong> <span>2024 · LUXURY E-COMMERCE</span>
+              </div>
+              <div class="visual-bg-glow glow-barakha"></div>
+
+              <div class="editorial-store-mockup">
+                <div class="store-hero-preview">
+                  <div class="store-nav">
+                    <span class="store-brand">BARAKHA</span>
+                    <span class="store-links">COLLECTION 2026 · ARTISANAL CRAFT · JOURNAL</span>
+                    <span class="store-cart">BAG (0)</span>
+                  </div>
+
+                  <div class="store-banner-content">
+                    <span class="store-sub">SUMMER SILKS & WOVEN TEXTILES</span>
+                    <h2 class="store-headline">POETRY IN EVERY THREAD</h2>
+                    
+                    <div class="products-mini-carousel">
+                      <div class="product-item-card">
+                        <div class="product-img-box img-1">
+                          <span class="p-emoji">🧥</span>
+                        </div>
+                        <div class="p-info">
+                          <span>Raw Silk Trench</span>
+                          <strong>₹38,500</strong>
+                        </div>
+                      </div>
+
+                      <div class="product-item-card">
+                        <div class="product-img-box img-2">
+                          <span class="p-emoji">👗</span>
+                        </div>
+                        <div class="p-info">
+                          <span>Handwoven Drape</span>
+                          <strong>₹24,000</strong>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="project-footer">
+              <a href="#contact" class="project-link" data-project="Barakha Luxury Store">
+                <span>VIEW CASE STUDY</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- FLOATING DISCOVERY CALL CAPSULE BAR (Matching Reference Image) -->
+          <div class="discovery-call-floating-wrapper">
+            <div class="grid-discovery-bar">
+              <span class="discovery-text">Book a free discovery call</span>
+              <button class="cta-talk-btn discovery-call-btn" id="discovery-call-trigger" aria-label="Book a free discovery call">
+                <span>BOOK A CALL</span>
+                <span class="avatar-phone-duo">
+                  <span class="hero-avatar-circle" title="Gajesh">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF6B1A'/%3E%3Cstop offset='100%25' stop-color='%23151311'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='40' r='18' fill='%23F7F4EC'/%3E%3Cpath d='M22 82c0-15.5 12.5-28 28-28s28 12.5 28 28' fill='%23F7F4EC'/%3E%3C/svg%3E" alt="Gajesh Profile" class="hero-avatar-img">
+                  </span>
+                  <span class="phone-icon-circle">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SECTION 02 — SEE MORE WORK (Full Dark Cinematic Section #151311) -->
+  <section class="see-more-work-section" id="see-more-work">
+    <div class="see-more-container">
+      
+      <h2 class="see-more-title">
+        <span>See more</span>
+        <span class="title-accent-light">work</span>
+      </h2>
+
+      <div class="floating-cards-container" id="floating-cards-container">
+        <div class="floating-card card-1" data-speed="0.04">
+          <div class="fc-badge">MOBILE UI</div>
+          <div class="fc-content">
+            <span class="fc-icon">☕</span>
+            <div class="fc-text"><strong>Cortado App</strong><small>Checkout Flow</small></div>
+          </div>
+        </div>
+
+        <div class="floating-card card-2" data-speed="-0.05">
+          <div class="fc-badge">SAAS DASHBOARD</div>
+          <div class="fc-content">
+            <span class="fc-icon">📊</span>
+            <div class="fc-text"><strong>ePRISE Engine</strong><small>GST Reconciliation</small></div>
+          </div>
+        </div>
+
+        <div class="floating-card card-3" data-speed="0.06">
+          <div class="fc-badge">E-COMMERCE</div>
+          <div class="fc-content">
+            <span class="fc-icon">🧥</span>
+            <div class="fc-text"><strong>Barakha Silk</strong><small>Editorial Store</small></div>
+          </div>
+        </div>
+
+        <div class="floating-card card-4" data-speed="-0.04">
+          <div class="fc-badge">B2B OPERATIONS</div>
+          <div class="fc-content">
+            <span class="fc-icon">⚡</span>
+            <div class="fc-text"><strong>Tribal Batch</strong><small>Kanban Workflow</small></div>
+          </div>
+        </div>
+
+        <div class="floating-card card-5" data-speed="0.05">
+          <div class="fc-badge">DESIGN SYSTEM</div>
+          <div class="fc-content">
+            <span class="fc-icon">❖</span>
+            <div class="fc-text"><strong>Figma Tokens</strong><small>Component Specs</small></div>
+          </div>
+        </div>
+
+        <div class="floating-card card-6" data-speed="-0.03">
+          <div class="fc-badge">UX AUDIT</div>
+          <div class="fc-content">
+            <span class="fc-icon">🎯</span>
+            <div class="fc-text"><strong>User Journeys</strong><small>Friction Analysis</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="circular-badge-container">
+        <div class="rotating-badge-disk">
+          <svg class="badge-text-svg" viewBox="0 0 160 160" width="160" height="160">
+            <path id="badgeCirclePath" d="M 80, 80 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" fill="none"/>
+            <text fill="#F7F4EC" font-size="10.5" font-weight="800" letter-spacing="2.8">
+              <textPath href="#badgeCirclePath">
+                VIEW ALL WORK · VIEW ALL WORK · VIEW ALL WORK · 
+              </textPath>
+            </text>
+          </svg>
+          <div class="badge-center-arrow">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B1A" stroke-width="2.5">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="see-more-cta-box">
+        <a href="#contact" class="cta-talk-btn see-all-projects-btn" id="see-all-projects-trigger">
+          <span>SEE ALL PROJECTS</span>
+          <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CASE STUDIES SECTION (Stacked Sticky Cards — Placed AFTER See More Work and BEFORE Testimonials) -->
+  <section class="case-studies-section" id="case-studies">
+    <div class="cs-sticky-wrapper">
+      
+      <!-- Intro Header -->
+      <header class="cs-intro-header">
+        <h2 class="cs-intro-title">
+          <span class="title-main">CASE</span>
+          <span class="title-muted">STUDIES</span>
+        </h2>
+        <p class="cs-intro-sub">
+          "A closer look at the problems, decisions and experiences behind selected projects."
+        </p>
+        <div class="downward-arrow-box" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 5v14M5 12l7 7-7 7"/>
+          </svg>
+        </div>
+      </header>
+
+      <!-- Stacked Cards Track Container -->
+      <div class="cs-cards-stack" id="cs-cards-stack">
+        
+        <!-- CARD 01 — CORTADO CAFÉ (Vibrant Orange) -->
+        <article class="cs-panel card-orange" data-card="1">
+          <div class="cs-content-col">
+            <div class="cs-card-top">
+              <span class="cs-number">01</span>
+              <span class="cs-category">MOBILE APP · UI/UX · PRODUCT DESIGN</span>
+            </div>
+
+            <h3 class="cs-title">CORTADO<br>CAFÉ</h3>
+
+            <p class="cs-desc">
+              "A complete café ordering experience designed around delivery, dine-in, takeaway, branch selection, rewards and membership."
+            </p>
+
+            <div class="cs-card-bottom">
+              <a href="#contact" class="cs-cta-btn" data-project="Cortado Cafe">
+                <span>VIEW CASE STUDY</span>
+                <span class="cs-btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="cs-visual-col">
+            <div class="card-mockup-wrapper mockup-cortado">
+              <div class="mobile-mockup-duo">
+                <div class="phone-frame screen-left">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content cortado-ui">
+                    <div class="app-topbar">
+                      <div class="branch-pill"><span>Indiranagar Branch</span></div>
+                      <span class="app-cart-icon">🛒 <small>2</small></span>
+                    </div>
+                    <div class="app-greeting">
+                      <h2>Good morning, Gajesh ☕</h2>
+                      <p>Your usual is ready to reorder</p>
+                    </div>
+                    <div class="coffee-card-featured">
+                      <div class="coffee-badge">BESTSELLER</div>
+                      <div class="coffee-img-placeholder"><span class="emoji-icon">☕</span></div>
+                      <div class="coffee-details">
+                        <h4>Double Shot Cortado</h4>
+                        <p>Rich espresso + steamed milk</p>
+                        <div class="price-row"><span class="price">₹240</span><button class="add-btn">+</button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="phone-frame screen-right">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content cortado-ui-alt">
+                    <div class="order-status-screen">
+                      <div class="status-ring-box"><span class="status-icon">☕</span></div>
+                      <h3>Brewing your Coffee</h3>
+                      <p class="status-time">Estimated ready in <strong>4 mins</strong></p>
+                      <div class="qr-code-card">
+                        <div class="qr-placeholder"><div class="qr-pattern"></div></div>
+                        <span class="qr-sub">Scan at Counter #04</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 02 — ePRISE (Vibrant Purple) -->
+        <article class="cs-panel card-purple" data-card="2">
+          <div class="cs-content-col">
+            <div class="cs-card-top">
+              <span class="cs-number">02</span>
+              <span class="cs-category">SAAS · PRODUCT DESIGN · UX/UI</span>
+            </div>
+
+            <h3 class="cs-title">ePRISE</h3>
+
+            <p class="cs-desc">
+              "Making complex accounting and business workflows easier to understand and use."
+            </p>
+
+            <div class="cs-card-bottom">
+              <a href="#contact" class="cs-cta-btn" data-project="ePRISE SaaS">
+                <span>VIEW CASE STUDY</span>
+                <span class="cs-btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="cs-visual-col">
+            <div class="card-mockup-wrapper mockup-eprise">
+              <div class="desktop-mac-frame">
+                <div class="mac-header">
+                  <div class="mac-buttons"><span></span><span></span><span></span></div>
+                  <div class="mac-title-bar">eprise.app/dashboard/gst-reconciliation</div>
+                </div>
+                <div class="mac-body eprise-dashboard">
+                  <div class="dash-sidebar">
+                    <div class="dash-logo">ePRISE</div>
+                    <div class="dash-nav">
+                      <span class="d-link active">📊 Analytics</span>
+                      <span class="d-link">🧾 GST Return</span>
+                      <span class="d-link">📄 Invoices</span>
+                    </div>
+                  </div>
+                  <div class="dash-main">
+                    <div class="dash-top">
+                      <h3>Financial Operations Overview</h3>
+                      <button class="dash-primary-btn">+ Create Invoice</button>
+                    </div>
+                    <div class="dash-metrics-grid">
+                      <div class="metric-card"><span class="m-title">Total Revenue</span><div class="m-value">₹42,85,000</div></div>
+                      <div class="metric-card"><span class="m-title">Pending GST</span><div class="m-value">₹1,24,500</div></div>
+                      <div class="metric-card"><span class="m-title">Reconciled</span><div class="m-value">99.2%</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 03 — TRIBAL (Bright Lime) -->
+        <article class="cs-panel card-lime" data-card="3">
+          <div class="cs-content-col">
+            <div class="cs-card-top">
+              <span class="cs-number">03</span>
+              <span class="cs-category">B2B · PRODUCT DESIGN · DASHBOARDS</span>
+            </div>
+
+            <h3 class="cs-title">TRIBAL</h3>
+
+            <p class="cs-desc">
+              "A connected workflow experience for managing complex clothing production and operations."
+            </p>
+
+            <div class="cs-card-bottom">
+              <a href="#contact" class="cs-cta-btn" data-project="Tribal Operations">
+                <span>VIEW CASE STUDY</span>
+                <span class="cs-btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="cs-visual-col">
+            <div class="card-mockup-wrapper mockup-tribal">
+              <div class="workflow-board-frame">
+                <div class="board-topbar">
+                  <span class="board-title">⚡ TRIBAL / PRODUCTION BATCH #842</span>
+                </div>
+                <div class="board-columns-grid">
+                  <div class="kanban-col">
+                    <div class="col-header">Fabric Sourcing <span class="count">4</span></div>
+                    <div class="kanban-card"><h4>300 GSM Heavy Terry</h4></div>
+                  </div>
+                  <div class="kanban-col">
+                    <div class="col-header">Cutting & Batching <span class="count">2</span></div>
+                    <div class="kanban-card active-card"><h4>Oversized Hoodies</h4></div>
+                  </div>
+                  <div class="kanban-col">
+                    <div class="col-header">Quality Audit <span class="count">3</span></div>
+                    <div class="kanban-card"><h4>Embroidery & Stitching</h4></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 04 — BARAKHA (Coral Red) -->
+        <article class="cs-panel card-red" data-card="4">
+          <div class="cs-content-col">
+            <div class="cs-card-top">
+              <span class="cs-number">04</span>
+              <span class="cs-category">E-COMMERCE · UX/UI</span>
+            </div>
+
+            <h3 class="cs-title">BARAKHA</h3>
+
+            <p class="cs-desc">
+              "Luxury fashion & artisanal craft e-commerce experience built with minimal editorial aesthetics and smooth checkout."
+            </p>
+
+            <div class="cs-card-bottom">
+              <a href="#contact" class="cs-cta-btn" data-project="Barakha Luxury Store">
+                <span>VIEW CASE STUDY</span>
+                <span class="cs-btn-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="cs-visual-col">
+            <div class="card-mockup-wrapper mockup-barakha">
+              <div class="editorial-store-mockup">
+                <div class="store-hero-preview">
+                  <div class="store-nav">
+                    <span class="store-brand">BARAKHA</span>
+                    <span class="store-cart">BAG (0)</span>
+                  </div>
+                  <div class="store-banner-content">
+                    <span class="store-sub">SUMMER SILKS & WOVEN TEXTILES</span>
+                    <h2 class="store-headline">POETRY IN EVERY THREAD</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT CONTINUED -->
+  <main class="content-wrapper">
+
+    <!-- ABOUT INTRODUCTION SECTION -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        
+        <header class="section-editorial-header">
+          <span class="section-tag">PHILOSOPHY & PERSPECTIVE</span>
+        </header>
+
+        <div class="about-statement-wrapper">
+          <h2 class="about-giant-headline">
+            I TURN COMPLEX REQUIREMENTS INTO <span class="highlight-orange">SIMPLE</span> DIGITAL EXPERIENCES.
+          </h2>
+
+          <p class="about-body-lead">
+            I work across <span class="em-word">UX strategy</span>, <span class="em-word">user flows</span>, <span class="em-word">wireframes</span>, <span class="em-word">visual design</span>, <span class="em-word">responsive interfaces</span> and <span class="em-word">prototypes</span> — helping products become easier to understand and easier to use.
+          </p>
+
+          <div class="about-pillars-grid">
+            <div class="pillar-card">
+              <span class="pillar-num">01</span>
+              <h3>Clarity First</h3>
+              <p>Removing friction and unnecessary visual noise so users reach their goal intuitively.</p>
+            </div>
+
+            <div class="pillar-card">
+              <span class="pillar-num">02</span>
+              <h3>Systemic Design</h3>
+              <p>Building reusable component architecture that scales across web, mobile, and complex SaaS.</p>
+            </div>
+
+            <div class="pillar-card">
+              <span class="pillar-num">03</span>
+              <h3>Craft & Precision</h3>
+              <p>Combining editorial micro-interactions with tight typographic grid discipline.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 03 — TESTIMONIALS (Cream Background #F7F4EC) -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-container">
+        
+        <header class="section-editorial-header">
+          <span class="section-tag">SOCIAL PROOF & ENDORSEMENTS</span>
+          <h2 class="giant-section-title">
+            Trusted by<br>
+            <span class="title-muted-highlight">the people I’ve worked with.</span>
+          </h2>
+        </header>
+
+        <div class="testimonials-staggered-grid">
+          <div class="testimonial-card card-rotate-left">
+            <div class="star-rating">★★★★★</div>
+            <blockquote class="testimonial-quote">
+              "Working with Gajesh made the entire design process much easier. He understood the requirements quickly and turned complex ideas into a clean and intuitive experience."
+            </blockquote>
+            <div class="client-info-row">
+              <div class="client-avatar avatar-vm">VM</div>
+              <div class="client-meta">
+                <strong>VIKRAM MEHTA</strong>
+                <span>VP of Product · FinTech Labs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card card-rotate-right">
+            <div class="star-rating">★★★★★</div>
+            <blockquote class="testimonial-quote">
+              "Great attention to detail and very easy to work with. The final designs were clear, modern and exactly what we needed for our product launch."
+            </blockquote>
+            <div class="client-info-row">
+              <div class="client-avatar avatar-as">AS</div>
+              <div class="client-meta">
+                <strong>ANANYA SHARMA</strong>
+                <span>Founder · Cortado Retail</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card card-rotate-subtle">
+            <div class="star-rating">★★★★★</div>
+            <blockquote class="testimonial-quote">
+              "Gajesh was able to take our rough requirements and turn them into a polished product experience that our enterprise users loved immediately."
+            </blockquote>
+            <div class="client-info-row">
+              <div class="client-avatar avatar-rk">RK</div>
+              <div class="client-meta">
+                <strong>RITESH KULKARNI</strong>
+                <span>Design Lead · Enterprise B2B</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SNAPSHOT SECTION -->
+    <section class="experience-section" id="experience">
+      <div class="section-container">
+        
+        <header class="section-editorial-header">
+          <span class="section-tag">TRACK RECORD</span>
+          <h2 class="giant-section-title">EXPERIENCE<br>SNAPSHOT</h2>
+        </header>
+
+        <div class="experience-metrics-grid">
+          <div class="metric-block">
+            <div class="metric-number">4.5+</div>
+            <div class="metric-title">YEARS EXPERIENCE</div>
+            <p class="metric-desc">Designing digital products across mobile apps, responsive web, and enterprise SaaS.</p>
+          </div>
+          <div class="metric-block">
+            <div class="metric-number">30+</div>
+            <div class="metric-title">WEB PRODUCTS</div>
+            <p class="metric-desc">High-converting landing pages, editorial platforms, and responsive web applications.</p>
+          </div>
+          <div class="metric-block">
+            <div class="metric-number">15+</div>
+            <div class="metric-title">MOBILE APPS</div>
+            <p class="metric-desc">iOS & Android native design systems, checkout flows, and consumer applications.</p>
+          </div>
+          <div class="metric-block">
+            <div class="metric-number">10+</div>
+            <div class="metric-title">SAAS EXPERIENCES</div>
+            <p class="metric-desc">Complex B2B dashboards, financial workflows, and operational management systems.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERTISE SECTION -->
+    <section class="expertise-section" id="expertise">
+      <div class="section-container">
+        
+        <header class="section-editorial-header">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2 class="giant-section-title">CORE<br>EXPERTISE</h2>
+        </header>
+
+        <div class="expertise-list">
+          <div class="expertise-item">
+            <span class="exp-num">01</span>
+            <h3 class="exp-title">UI/UX DESIGN</h3>
+            <span class="exp-arrow">→</span>
+            <span class="exp-tag">Core Specialization</span>
+          </div>
+          <div class="expertise-item">
+            <span class="exp-num">02</span>
+            <h3 class="exp-title">PRODUCT DESIGN</h3>
+            <span class="exp-arrow">→</span>
+            <span class="exp-tag">End-to-End</span>
+          </div>
+          <div class="expertise-item">
+            <span class="exp-num">03</span>
+            <h3 class="exp-title">UX FLOWS</h3>
+            <span class="exp-arrow">→</span>
+            <span class="exp-tag">Architecture</span>
+          </div>
+          <div class="expertise-item">
+            <span class="exp-num">04</span>
+            <h3 class="exp-title">WIREFRAMING</h3>
+            <span class="exp-arrow">→</span>
+            <span class="exp-tag">Rapid Iteration</span>
+          </div>
+          <div class="expertise-item">
+            <span class="exp-num">05</span>
+            <h3 class="exp-title">DESIGN SYSTEMS</h3>
+            <span class="exp-arrow">→</span>
+            <span class="exp-tag">Figma Tokens</span>
+          </div>
+          <div class="expertise-item">
+            <span class="exp-num">06</span>
+            <h3 class="exp-title">RESPONSIVE WEB DESIGN</h3>
+            <span class="exp-arrow">→</span>
+            <span class="exp-tag">Multi-Device</span>
+          </div>
+          <div class="expertise-item">
+            <span class="exp-num">07</span>
+            <h3 class="exp-title">MOBILE APP DESIGN</h3>
+            <span class="exp-arrow">→</span>
+            <span class="exp-tag">iOS & Android</span>
+          </div>
+          <div class="expertise-item">
+            <span class="exp-num">08</span>
+            <h3 class="exp-title">PROTOTYPING</h3>
+            <span class="exp-arrow">→</span>
+            <span class="exp-tag">Interactive Micro-States</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section class="resume-section" id="resume">
+      <div class="section-container">
+        
+        <header class="section-editorial-header">
+          <span class="section-tag">CURRICULUM VITAE</span>
+          <h2 class="giant-section-title">RESUME &<br>CAREER</h2>
+        </header>
+
+        <div class="resume-content-grid">
+          <div class="resume-summary-card">
+            <div class="resume-header">
+              <span class="r-badge">AVAILABLE FOR CONTRACT / FULL-TIME</span>
+              <h3>GAJESH</h3>
+              <p class="r-title">Senior UI/UX Designer & Product Strategist</p>
+            </div>
+            <div class="resume-highlights">
+              <div class="rh-item"><strong>4.5+ Years</strong><span>Product Design Experience</span></div>
+              <div class="rh-item"><strong>Bengaluru, IN</strong><span>Open to Remote & Onsite</span></div>
+            </div>
+            <div class="resume-actions">
+              <button class="cta-talk-btn download-cv-btn" id="download-cv-btn">
+                <span>DOWNLOAD CV (PDF)</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="resume-timeline-wrapper">
+            <h3 class="timeline-title">WORK HISTORY</h3>
+            <div class="timeline-item">
+              <span class="t-date">2023 — PRESENT</span>
+              <div class="t-info">
+                <h4>Senior UI/UX Designer</h4>
+                <span class="t-company">Product Studio & SaaS Labs</span>
+                <p>Leading end-to-end design for complex B2B platforms, enterprise design systems, and mobile checkout experiences.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="t-date">2022 — 2023</span>
+              <div class="t-info">
+                <h4>Product Designer</h4>
+                <span class="t-company">Cortado Tech & Retail</span>
+                <p>Architected branch-based ordering flow, mobile loyalty club, and real-time pickup tracking dashboard.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="t-date">2021 — 2022</span>
+              <div class="t-info">
+                <h4>UI/UX Designer</h4>
+                <span class="t-company">Digital Experience Agency</span>
+                <p>Designed responsive e-commerce storefronts, SaaS landing pages, and interactive wireframes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FINAL BRAND APPART-INSPIRED EDITORIAL FOOTER -->
+  <footer class="brand-appart-footer" id="contact">
+    <div class="footer-inner-container">
+      
+      <!-- Decorative Floating Object (Upper Right) -->
+      <div class="footer-decorative-object" id="footer-decor" aria-hidden="true">
+        <svg class="decor-badge-svg" width="90" height="90" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="#8E8883" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <path d="M50 18 L50 82 M18 50 L82 50" stroke="#FF6B1A" stroke-width="2"/>
+          <circle cx="50" cy="50" r="16" fill="#F7F4EC"/>
+          <circle cx="50" cy="50" r="6" fill="#FF6B1A"/>
+        </svg>
+      </div>
+
+      <!-- Footer Hero CTA (Top Center) -->
+      <div class="footer-hero-cta">
+        <h2 class="footer-giant-headline">
+          <span class="f-headline-line">LET'S CREATE</span>
+          <span class="f-headline-line">SOMETHING</span>
+          <span class="f-headline-line">MEANINGFUL. <span class="orange-arrow-accent">→</span></span>
+        </h2>
+
+        <div class="book-a-call-wrapper">
+          <button class="cta-talk-btn book-call-btn" id="book-call-trigger" aria-label="Book a call or start a project">
+            <span>BOOK A CALL</span>
+            <span class="avatar-phone-duo">
+              <span class="hero-avatar-circle" title="Gajesh">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF6B1A'/%3E%3Cstop offset='100%25' stop-color='%23151311'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='40' r='18' fill='%23F7F4EC'/%3E%3Cpath d='M22 82c0-15.5 12.5-28 28-28s28 12.5 28 28' fill='%23F7F4EC'/%3E%3C/svg%3E" alt="Gajesh Profile" class="hero-avatar-img">
+              </span>
+              <span class="phone-icon-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Multi-Column Footer Navigation (5 Columns) -->
+      <div class="footer-nav-grid">
+        
+        <!-- COLUMN 01: Gajesh -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">GAJESH</h4>
+          <ul class="f-link-list">
+            <li><a href="#hero" class="f-link">HOME <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#work" class="f-link">WORK <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#about" class="f-link">ABOUT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#experience" class="f-link">EXPERIENCE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#contact" class="f-link">CONTACT <span class="f-hover-arrow">→</span></a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 02: Expertise -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">EXPERTISE</h4>
+          <ul class="f-link-list">
+            <li><a href="#expertise" class="f-link">UI/UX DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#expertise" class="f-link">PRODUCT DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#expertise" class="f-link">MOBILE APP DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#expertise" class="f-link">WEB DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#expertise" class="f-link">DESIGN SYSTEMS <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#expertise" class="f-link">PROTOTYPING <span class="f-hover-arrow">→</span></a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 03: Selected Work -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">SELECTED WORK</h4>
+          <ul class="f-link-list">
+            <li><a href="#work" class="f-link" data-project="Cortado Cafe">CORTADO CAFÉ <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#work" class="f-link" data-project="ePRISE SaaS">ePRISE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#work" class="f-link" data-project="Tribal Operations">TRIBAL <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#work" class="f-link" data-project="Barakha Luxury Store">BARAKHA <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#see-more-work" class="f-link">MORE WORK <span class="f-hover-arrow">→</span></a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 04: Connect -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">CONNECT</h4>
+          <ul class="f-link-list">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="f-link">LINKEDIN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="https://behance.net" target="_blank" rel="noopener" class="f-link">BEHANCE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener" class="f-link">DRIBBBLE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener" class="f-link">INSTAGRAM <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="mailto:gajesh.uiux@gmail.com" class="f-link">EMAIL <span class="f-hover-arrow">→</span></a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 05: Information -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">INFORMATION</h4>
+          <ul class="f-link-list">
+            <li><a href="#resume" class="f-link">RESUME <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#about" class="f-link">ABOUT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#contact" class="f-link">CONTACT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#" class="f-link">PRIVACY POLICY <span class="f-hover-arrow">→</span></a></li>
+            <li><span class="f-info-text">© 2026 GAJESH</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Outlined Square Social Icons & Copyright -->
+      <div class="footer-bottom-meta">
+        <div class="footer-social-row">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-sq-btn" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://behance.net" target="_blank" rel="noopener" class="social-sq-btn" aria-label="Behance">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h6a3 3 0 0 1 0 6H3V8zm0 6h7a3.5 3.5 0 0 1 0 7H3v-7zm13-5h5M16 16a3 3 0 1 1 5 0"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-sq-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-sq-btn" aria-label="Dribbble">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"/><path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"/><path d="M8.56 2.75c4.37 6 6 9.42 8 18.5"/></svg>
+          </a>
+          <a href="mailto:gajesh.uiux@gmail.com" class="social-sq-btn" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <div class="footer-copyright-block">
+          <p>© 2026 Gajesh · UI/UX Designer</p>
+          <span class="f-location-tag">BENGALURU, INDIA</span>
+        </div>
+      </div>
+
+      <!-- Oversized Background Wordmark (GAJESH) -->
+      <div class="footer-giant-wordmark-container" aria-hidden="true">
+        <h1 class="giant-wordmark-text" id="giant-wordmark">GAJESH</h1>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL DRAWER -->
+  <div class="contact-modal" id="contact-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+      
+      <div class="modal-header">
+        <span class="modal-tag">GET IN TOUCH</span>
+        <h2>LET'S TALK</h2>
+        <p>Tell me about your product, timeline, or design challenges.</p>
+      </div>
+
+      <form class="contact-form" id="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="user-name">YOUR NAME</label>
+          <input type="text" id="user-name" placeholder="e.g. Alex Morgan" required>
+        </div>
+
+        <div class="form-group">
+          <label for="user-email">EMAIL ADDRESS</label>
+          <input type="email" id="user-email" placeholder="alex@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">PROJECT TYPE</label>
+          <select id="project-type">
+            <option value="Mobile App UI/UX">Mobile App UI/UX</option>
+            <option value="SaaS Platform UX">SaaS Platform UX</option>
+            <option value="Website Redesign">Website Redesign</option>
+            <option value="Design System">Design System</option>
+            <option value="Product Strategy & UX Audit">Product Strategy & UX Audit</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="user-message">PROJECT DETAILS</label>
+          <textarea id="user-message" rows="4" placeholder="Briefly describe your goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="cta-talk-btn full-width submit-btn" id="submit-form-btn">
+          <span>SEND MESSAGE</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+
+      <div class="form-success-state" id="form-success-state">
+        <div class="success-icon">✓</div>
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. Gajesh will get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
