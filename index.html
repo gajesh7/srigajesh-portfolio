@@ -171,8 +171,9 @@
   </div>
 
   <!-- SCROLL PROGRESS INDICATOR (Right Rail) -->
-  <div class="scroll-rail" aria-hidden="true">
+  <div class="scroll-rail" id="scroll-rail" aria-label="Scroll progress bar">
     <div class="scroll-line">
+      <div class="scroll-progress-fill" id="scroll-progress-fill"></div>
       <div class="scroll-progress-dot" id="scroll-progress-dot"></div>
     </div>
   </div>
@@ -232,412 +233,499 @@
       </div>
     </section>
 
-    <!-- SECTION 01 — FEATURED WORK (Cream Background #F7F4EC) -->
+    <!-- SECTION 01 — EDITORIAL WORKS SECTION (Cream Background #F7F4EC) -->
     <section class="work-section" id="work">
-      <div class="section-container">
+      
+      <!-- Subtle Oversized Background Watermark Text -->
+      <div class="works-bg-watermark" aria-hidden="true">
+        <span>WORK</span>
+        <span>DIGITAL</span>
+        <span>PRODUCT</span>
+        <span>DESIGN</span>
+      </div>
+
+      <div class="works-container">
         
+        <!-- Header -->
         <header class="featured-work-header">
+          <div class="works-header-top">
+            <span class="section-tag">SELECTED WORKS (2024 — 2026)</span>
+          </div>
           <h2 class="featured-work-title">
             <span class="title-main">Featured</span>
-            <span class="title-muted">Work</span>
+            <span class="title-muted">Works</span>
           </h2>
 
           <div class="downward-arrow-box" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M12 5v14M5 12l7 7-7 7"/>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+              <polyline points="18 14 12 20 6 14"></polyline>
             </svg>
           </div>
 
           <p class="featured-work-intro">
-            "I create innovative and purposeful digital experiences that solve real problems and make complex products easier to use."
+            "An editorial collection of digital products, mobile applications, SaaS platforms, and brand experiences created across 2024–2026."
           </p>
         </header>
 
-        <div class="projects-list">
+        <!-- WORKS GRID VIEW CONTAINER -->
+        <div class="works-grid-view active" id="works-grid-view">
+          <div class="projects-list">
 
-          <!-- PROJECT 01: CORTADO CAFÉ -->
-          <article class="project-article featured-hero-card" data-parallax="0.05">
-            <div class="project-header">
-              <div class="project-meta-top">
-                <span class="project-num">01</span>
-                <span class="project-category">Mobile App · UI/UX · Product Design</span>
+            <!-- PROJECT 01: CORTADO -->
+            <article class="project-article featured-hero-card" data-parallax="0.04" data-project="Cortado">
+              <div class="project-header">
+                <div class="project-meta-top">
+                  <span class="project-num">01</span>
+                  <span class="project-category">Mobile App · UI/UX · 2026</span>
+                </div>
+                <h3 class="project-title">CORTADO</h3>
+                <p class="project-desc">
+                  "A complete café ordering experience designed across delivery, dine-in, takeaway, branch selection, rewards and membership."
+                </p>
               </div>
-              <h3 class="project-title">CORTADO CAFÉ</h3>
-              <p class="project-desc">
-                "A complete café ordering experience designed across delivery, dine-in, takeaway, branch selection, rewards and membership."
-              </p>
-            </div>
 
-            <div class="project-visual-wrapper mobile-app-wrapper">
-              <div class="card-corner-badge">
-                <strong>CORTADO CAFÉ</strong> <span>2024 · FINTECH & CAFÉ</span>
+              <div class="project-visual-wrapper mobile-app-wrapper">
+                <div class="card-corner-badge">
+                  <strong>CORTADO</strong> <span>2026 · MOBILE APP / UI UX</span>
+                </div>
+                <div class="visual-bg-glow glow-cortado"></div>
+                
+                <div class="mobile-mockup-duo">
+                  <div class="phone-frame screen-left">
+                    <div class="phone-notch"></div>
+                    <div class="phone-content phone-image-container">
+                      <img src="images/work-1.webp" alt="Cortado App UI Analytics" class="phone-screen-img">
+                    </div>
+                  </div>
+
+                  <div class="phone-frame screen-right">
+                    <div class="phone-notch"></div>
+                    <div class="phone-content phone-image-container">
+                      <img src="images/work-2.webp" alt="Cortado App UI Telemetry" class="phone-screen-img">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="visual-bg-glow glow-cortado"></div>
-              
-              <div class="mobile-mockup-duo">
-                <div class="phone-frame screen-left">
-                  <div class="phone-notch"></div>
-                  <div class="phone-content cortado-ui">
-                    <div class="app-topbar">
-                      <div class="branch-pill">
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                        <span>Indiranagar Branch</span>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-link" data-project="Cortado">
+                  <span>VIEW CASE STUDY</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 02: TECTORI -->
+            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="Tectori">
+              <div class="project-header">
+                <div class="project-meta-top">
+                  <span class="project-num">02</span>
+                  <span class="project-category">Fitness App · Product Design · 2026</span>
+                </div>
+                <h3 class="project-title">TECTORI</h3>
+                <p class="project-desc">
+                  "AI-powered biometric fitness & recovery tracking app with smart goal analytics and workout telemetry."
+                </p>
+              </div>
+
+              <div class="project-visual-wrapper fitness-app-wrapper">
+                <div class="card-corner-badge">
+                  <strong>TECTORI</strong> <span>2026 · FITNESS APP</span>
+                </div>
+                <div class="visual-bg-glow glow-tectori"></div>
+
+                <div class="tectori-mockup-frame">
+                  <div class="phone-frame dark-telemetry-screen">
+                    <div class="phone-notch"></div>
+                    <div class="phone-content phone-image-container">
+                      <img src="images/work-2.webp" alt="Tectori App Telemetry UI" class="phone-screen-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-link" data-project="Tectori">
+                  <span>VIEW CASE STUDY</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 03: ePRISE -->
+            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="ePrise">
+              <div class="project-header">
+                <div class="project-meta-top">
+                  <span class="project-num">03</span>
+                  <span class="project-category">SaaS · Product Design · 2025</span>
+                </div>
+                <h3 class="project-title">ePRISE</h3>
+                <p class="project-desc">
+                  "A business platform bringing accounting, GST, invoicing, inventory and everyday business workflows into one experience."
+                </p>
+              </div>
+
+              <div class="project-visual-wrapper saas-dashboard-wrapper">
+                <div class="card-corner-badge">
+                  <strong>ePRISE</strong> <span>2025 · SAAS PLATFORM</span>
+                </div>
+                <div class="visual-bg-glow glow-eprise"></div>
+                
+                <div class="desktop-mac-frame">
+                  <div class="mac-header">
+                    <div class="mac-buttons">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="mac-title-bar">eprise.app/dashboard/gst-reconciliation</div>
+                  </div>
+
+                  <div class="mac-body eprise-dashboard">
+                    <div class="dash-sidebar">
+                      <div class="dash-logo">ePRISE</div>
+                      <div class="dash-nav">
+                        <span class="d-link active">📊 Analytics</span>
+                        <span class="d-link">🧾 GST Return</span>
+                        <span class="d-link">📄 Invoices</span>
+                        <span class="d-link">📦 Inventory</span>
+                        <span class="d-link">⚙️ Settings</span>
                       </div>
-                      <span class="app-cart-icon">🛒 <small>2</small></span>
                     </div>
 
-                    <div class="app-greeting">
-                      <h2>Good morning, Gajesh ☕</h2>
-                      <p>Your usual is ready to reorder</p>
+                    <div class="dash-main">
+                      <div class="dash-top">
+                        <div>
+                          <h3>Financial Operations Overview</h3>
+                          <p class="sub-small">Q3 Automated Reconciliation Status</p>
+                        </div>
+                        <button class="dash-primary-btn">+ Create Invoice</button>
+                      </div>
+
+                      <div class="dash-metrics-grid">
+                        <div class="metric-card">
+                          <span class="m-title">Total Revenue</span>
+                          <div class="m-value">₹42,85,000</div>
+                          <span class="m-badge positive">+18.4% vs last mo</span>
+                        </div>
+
+                        <div class="metric-card">
+                          <span class="m-title">Pending GST Credit</span>
+                          <div class="m-value">₹1,24,500</div>
+                          <span class="m-badge warning">3 Actions required</span>
+                        </div>
+
+                        <div class="metric-card">
+                          <span class="m-title">Auto-Reconciled</span>
+                          <div class="m-value">99.2%</div>
+                          <span class="m-badge positive">Instant match</span>
+                        </div>
+                      </div>
+
+                      <div class="dash-content-grid">
+                        <div class="chart-box">
+                          <div class="chart-header">Monthly Cash Flow</div>
+                          <div class="bar-chart-mock">
+                            <div class="bar-col" style="--h: 60%"><span>May</span></div>
+                            <div class="bar-col" style="--h: 75%"><span>Jun</span></div>
+                            <div class="bar-col" style="--h: 45%"><span>Jul</span></div>
+                            <div class="bar-col active" style="--h: 90%"><span>Aug</span></div>
+                            <div class="bar-col" style="--h: 65%"><span>Sep</span></div>
+                          </div>
+                        </div>
+
+                        <div class="table-box">
+                          <div class="chart-header">Recent Invoices</div>
+                          <div class="mini-table">
+                            <div class="table-row head">
+                              <span>Client</span><span>Amount</span><span>Status</span>
+                            </div>
+                            <div class="table-row">
+                              <span>Apex Tech Solutions</span><span>₹1,85,000</span><span class="badge-paid">Paid</span>
+                            </div>
+                            <div class="table-row">
+                              <span>Nova Commerce</span><span>₹94,200</span><span class="badge-pending">Pending</span>
+                            </div>
+                            <div class="table-row">
+                              <span>Starlight Media</span><span>₹3,10,000</span><span class="badge-paid">Paid</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-link" data-project="ePrise">
+                  <span>VIEW CASE STUDY</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 04: NAD REWARDS -->
+            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="NAD Rewards">
+              <div class="project-header">
+                <div class="project-meta-top">
+                  <span class="project-num">04</span>
+                  <span class="project-category">Mobile App · UX · 2025</span>
+                </div>
+                <h3 class="project-title">NAD REWARDS</h3>
+                <p class="project-desc">
+                  "Exclusive luxury rewards and privilege club mobile app with instant perk redemptions and tiered status."
+                </p>
+              </div>
+
+              <div class="project-visual-wrapper nad-rewards-wrapper">
+                <div class="card-corner-badge">
+                  <strong>NAD REWARDS</strong> <span>2025 · MOBILE APP</span>
+                </div>
+                <div class="visual-bg-glow glow-nad"></div>
+
+                <div class="nad-card-frame">
+                  <div class="gold-vip-card">
+                    <div class="vip-top">
+                      <span class="vip-logo">NAD PRIVILEGE</span>
+                      <span class="vip-tier">BLACK EDITION</span>
+                    </div>
+                    <div class="vip-chip"></div>
+                    <div class="vip-number">•••• •••• •••• 9840</div>
+                    <div class="vip-bottom">
+                      <div><span>MEMBER SINCE</span><strong>2025</strong></div>
+                      <div><span>CARDHOLDER</span><strong>GAJESH S.</strong></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-link" data-project="NAD Rewards">
+                  <span>VIEW CASE STUDY</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 05: TRIBAL -->
+            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="TRIBAL">
+              <div class="project-header">
+                <div class="project-meta-top">
+                  <span class="project-num">05</span>
+                  <span class="project-category">B2B Platform · Product Design · 2025</span>
+                </div>
+                <h3 class="project-title">TRIBAL</h3>
+                <p class="project-desc">
+                  "A connected workflow experience for managing complex clothing production and operations."
+                </p>
+              </div>
+
+              <div class="project-visual-wrapper b2b-workflow-wrapper">
+                <div class="card-corner-badge">
+                  <strong>TRIBAL</strong> <span>2025 · B2B WORKFLOW</span>
+                </div>
+                <div class="visual-bg-glow glow-tribal"></div>
+
+                <div class="workflow-board-frame">
+                  <div class="board-topbar">
+                    <span class="board-title">⚡ TRIBAL / PRODUCTION BATCH #842</span>
+                    <div class="board-tags">
+                      <span class="b-chip">Organic Cotton Line</span>
+                      <span class="b-chip">12,000 Units</span>
+                    </div>
+                  </div>
+
+                  <div class="board-columns-grid">
+                    <div class="kanban-col">
+                      <div class="col-header">Fabric Sourcing <span class="count">4</span></div>
+                      <div class="kanban-card">
+                        <span class="k-tag high">Priority</span>
+                        <h4>300 GSM Heavy Terry</h4>
+                        <p>Mill: KnitFab Coimbatore</p>
+                        <div class="k-meta"><span>Dye Batch: #409</span><span>100% Passed</span></div>
+                      </div>
                     </div>
 
-                    <div class="coffee-card-featured">
-                      <div class="coffee-badge">BESTSELLER</div>
-                      <div class="coffee-img-placeholder">
-                        <span class="emoji-icon">☕</span>
-                        <div class="steam-animation"></div>
-                      </div>
-                      <div class="coffee-details">
-                        <h4>Double Shot Cortado</h4>
-                        <p>Rich espresso + steamed milk</p>
-                        <div class="price-row">
-                          <span class="price">₹240</span>
-                          <button class="add-btn">+</button>
+                    <div class="kanban-col">
+                      <div class="col-header">Cutting & Batching <span class="count">2</span></div>
+                      <div class="kanban-card active-card">
+                        <span class="k-tag progress">In Progress</span>
+                        <h4>Oversized Hoodies (L/XL)</h4>
+                        <p>Laser Cutter #02 Active</p>
+                        <div class="k-progress-ring">
+                          <div class="ring-bar" style="width: 72%;"></div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="quick-modes">
-                      <span class="mode-chip active">Dine-In</span>
-                      <span class="mode-chip">Takeaway</span>
-                      <span class="mode-chip">Delivery</span>
-                    </div>
-
-                    <div class="reward-progress-mini">
-                      <div class="reward-header">
-                        <span>Cortado Club Gold</span>
-                        <span>420 / 500 pts</span>
+                    <div class="kanban-col">
+                      <div class="col-header">Quality Audit <span class="count">3</span></div>
+                      <div class="kanban-card">
+                        <span class="k-tag success">QA Passed</span>
+                        <h4>Embroidery & Stitching</h4>
+                        <p>Defect Rate: 0.02%</p>
+                        <div class="k-meta"><span>Inspected by: Team A</span></div>
                       </div>
-                      <div class="progress-bar-fill"><div class="fill-80"></div></div>
                     </div>
                   </div>
                 </div>
 
-                <div class="phone-frame screen-right">
-                  <div class="phone-notch"></div>
-                  <div class="phone-content cortado-ui-alt">
-                    <div class="order-status-screen">
-                      <div class="status-ring-box">
-                        <div class="pulse-ring"></div>
-                        <span class="status-icon">☕</span>
-                      </div>
-                      <h3>Brewing your Coffee</h3>
-                      <p class="status-time">Estimated ready in <strong>4 mins</strong></p>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-link" data-project="TRIBAL">
+                  <span>VIEW CASE STUDY</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 06: LONGIVIA -->
+            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="Longivia">
+              <div class="project-header">
+                <div class="project-meta-top">
+                  <span class="project-num">06</span>
+                  <span class="project-category">Website · UI UX · 2025</span>
+                </div>
+                <h3 class="project-title">LONGIVIA</h3>
+                <p class="project-desc">
+                  "Editorial science & longevity platform site with minimal typography and interactive health markers."
+                </p>
+              </div>
+
+              <div class="project-visual-wrapper longivia-wrapper">
+                <div class="card-corner-badge">
+                  <strong>LONGIVIA</strong> <span>2025 · WEBSITE / UI UX</span>
+                </div>
+                <div class="visual-bg-glow glow-longivia"></div>
+
+                <div class="longivia-editorial-frame">
+                  <div class="editorial-paper">
+                    <span class="l-tag">LONGEVITY RESEARCH 2025</span>
+                    <h2>HUMAN VITALITY & CELLULAR AGEING</h2>
+                    <p>Science-backed biomarker optimization platform designed for modern preventive care.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-link" data-project="Longivia">
+                  <span>VIEW CASE STUDY</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 07: VCODE -->
+            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="Vcode">
+              <div class="project-header">
+                <div class="project-meta-top">
+                  <span class="project-num">07</span>
+                  <span class="project-category">Agency Website · Web Design · 2025</span>
+                </div>
+                <h3 class="project-title">VCODE</h3>
+                <p class="project-desc">
+                  "Digital engineering agency website featuring dark mode aesthetics, interactive shader canvas and code highlights."
+                </p>
+              </div>
+
+              <div class="project-visual-wrapper vcode-wrapper">
+                <div class="card-corner-badge">
+                  <strong>VCODE</strong> <span>2025 · AGENCY WEBSITE</span>
+                </div>
+                <div class="visual-bg-glow glow-vcode"></div>
+
+                <div class="vcode-terminal-frame">
+                  <div class="terminal-top">
+                    <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+                    <span class="t-title">vcode.studio — zsh</span>
+                  </div>
+                  <div class="terminal-body">
+                    <p class="t-code"><span class="t-kw">const</span> agency = <span class="t-str">"VCODE DIGITAL"</span>;</p>
+                    <p class="t-code"><span class="t-kw">await</span> buildNextGenWeb({ stack: [<span class="t-str">"WebGL"</span>, <span class="t-str">"GSAP"</span>] });</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <a href="#contact" class="project-link" data-project="Vcode">
+                  <span>VIEW CASE STUDY</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 08: BARAKHA -->
+            <article class="project-article featured-hero-card" data-parallax="0.04" data-project="Barakha">
+              <div class="project-header">
+                <div class="project-meta-top">
+                  <span class="project-num">08</span>
+                  <span class="project-category">E-commerce · Product Design · 2024</span>
+                </div>
+                <h3 class="project-title">BARAKHA</h3>
+                <p class="project-desc">
+                  "Luxury fashion & artisanal craft e-commerce experience built with minimal editorial aesthetics and smooth checkout."
+                </p>
+              </div>
+
+              <div class="project-visual-wrapper ecommerce-wrapper">
+                <div class="card-corner-badge">
+                  <strong>BARAKHA</strong> <span>2024 · LUXURY E-COMMERCE</span>
+                </div>
+                <div class="visual-bg-glow glow-barakha"></div>
+
+                <div class="editorial-store-mockup">
+                  <div class="store-hero-preview">
+                    <div class="store-nav">
+                      <span class="store-brand">BARAKHA</span>
+                      <span class="store-links">COLLECTION 2026 · ARTISANAL CRAFT · JOURNAL</span>
+                      <span class="store-cart">BAG (0)</span>
+                    </div>
+
+                    <div class="store-banner-content">
+                      <span class="store-sub">SUMMER SILKS & WOVEN TEXTILES</span>
+                      <h2 class="store-headline">POETRY IN EVERY THREAD</h2>
                       
-                      <div class="qr-code-card">
-                        <div class="qr-placeholder">
-                          <div class="qr-pattern"></div>
-                        </div>
-                        <span class="qr-sub">Scan at Counter #04</span>
-                      </div>
-
-                      <div class="pickup-details">
-                        <div class="pickup-row">
-                          <span>Order ID</span>
-                          <strong>#CC-9842</strong>
-                        </div>
-                        <div class="pickup-row">
-                          <span>Pickup Type</span>
-                          <strong>Curbside Express</strong>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-footer">
-              <a href="#contact" class="project-link" data-project="Cortado Cafe">
-                <span>VIEW CASE STUDY</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- PROJECT 02: ePRISE -->
-          <article class="project-article featured-grid-card" data-parallax="0.05">
-            <div class="project-header">
-              <div class="project-meta-top">
-                <span class="project-num">02</span>
-                <span class="project-category">SaaS · Product Design · UX/UI</span>
-              </div>
-              <h3 class="project-title">ePRISE</h3>
-              <p class="project-desc">
-                "A business platform bringing accounting, GST, invoicing, inventory and everyday business workflows into one experience."
-              </p>
-            </div>
-
-            <div class="project-visual-wrapper saas-dashboard-wrapper">
-              <div class="card-corner-badge">
-                <strong>ePRISE</strong> <span>2024 · SAAS PLATFORM</span>
-              </div>
-              <div class="visual-bg-glow glow-eprise"></div>
-              
-              <div class="desktop-mac-frame">
-                <div class="mac-header">
-                  <div class="mac-buttons">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="mac-title-bar">eprise.app/dashboard/gst-reconciliation</div>
-                </div>
-
-                <div class="mac-body eprise-dashboard">
-                  <div class="dash-sidebar">
-                    <div class="dash-logo">ePRISE</div>
-                    <div class="dash-nav">
-                      <span class="d-link active">📊 Analytics</span>
-                      <span class="d-link">🧾 GST Return</span>
-                      <span class="d-link">📄 Invoices</span>
-                      <span class="d-link">📦 Inventory</span>
-                      <span class="d-link">⚙️ Settings</span>
-                    </div>
-                  </div>
-
-                  <div class="dash-main">
-                    <div class="dash-top">
-                      <div>
-                        <h3>Financial Operations Overview</h3>
-                        <p class="sub-small">Q3 Automated Reconciliation Status</p>
-                      </div>
-                      <button class="dash-primary-btn">+ Create Invoice</button>
-                    </div>
-
-                    <div class="dash-metrics-grid">
-                      <div class="metric-card">
-                        <span class="m-title">Total Revenue</span>
-                        <div class="m-value">₹42,85,000</div>
-                        <span class="m-badge positive">+18.4% vs last mo</span>
-                      </div>
-
-                      <div class="metric-card">
-                        <span class="m-title">Pending GST Credit</span>
-                        <div class="m-value">₹1,24,500</div>
-                        <span class="m-badge warning">3 Actions required</span>
-                      </div>
-
-                      <div class="metric-card">
-                        <span class="m-title">Auto-Reconciled</span>
-                        <div class="m-value">99.2%</div>
-                        <span class="m-badge positive">Instant match</span>
-                      </div>
-                    </div>
-
-                    <div class="dash-content-grid">
-                      <div class="chart-box">
-                        <div class="chart-header">Monthly Cash Flow</div>
-                        <div class="bar-chart-mock">
-                          <div class="bar-col" style="--h: 60%"><span>May</span></div>
-                          <div class="bar-col" style="--h: 75%"><span>Jun</span></div>
-                          <div class="bar-col" style="--h: 45%"><span>Jul</span></div>
-                          <div class="bar-col active" style="--h: 90%"><span>Aug</span></div>
-                          <div class="bar-col" style="--h: 65%"><span>Sep</span></div>
-                        </div>
-                      </div>
-
-                      <div class="table-box">
-                        <div class="chart-header">Recent Invoices</div>
-                        <div class="mini-table">
-                          <div class="table-row head">
-                            <span>Client</span><span>Amount</span><span>Status</span>
+                      <div class="products-mini-carousel">
+                        <div class="product-item-card">
+                          <div class="product-img-box img-1">
+                            <span class="p-emoji">🧥</span>
                           </div>
-                          <div class="table-row">
-                            <span>Apex Tech Solutions</span><span>₹1,85,000</span><span class="badge-paid">Paid</span>
+                          <div class="p-info">
+                            <span>Raw Silk Trench</span>
+                            <strong>₹38,500</strong>
                           </div>
-                          <div class="table-row">
-                            <span>Nova Commerce</span><span>₹94,200</span><span class="badge-pending">Pending</span>
+                        </div>
+
+                        <div class="product-item-card">
+                          <div class="product-img-box img-2">
+                            <span class="p-emoji">👗</span>
                           </div>
-                          <div class="table-row">
-                            <span>Starlight Media</span><span>₹3,10,000</span><span class="badge-paid">Paid</span>
+                          <div class="p-info">
+                            <span>Handwoven Drape</span>
+                            <strong>₹24,000</strong>
                           </div>
                         </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
 
               </div>
-            </div>
 
-            <div class="project-footer">
-              <a href="#contact" class="project-link" data-project="ePRISE SaaS">
-                <span>VIEW CASE STUDY</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- PROJECT 03: TRIBAL -->
-          <article class="project-article featured-grid-card" data-parallax="0.05">
-            <div class="project-header">
-              <div class="project-meta-top">
-                <span class="project-num">03</span>
-                <span class="project-category">B2B · Product Design · Dashboard</span>
+              <div class="project-footer">
+                <a href="#contact" class="project-link" data-project="Barakha">
+                  <span>VIEW CASE STUDY</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
               </div>
-              <h3 class="project-title">TRIBAL</h3>
-              <p class="project-desc">
-                "A connected workflow experience for managing complex clothing production and operations."
-              </p>
-            </div>
+            </article>
 
-            <div class="project-visual-wrapper b2b-workflow-wrapper">
-              <div class="card-corner-badge">
-                <strong>TRIBAL</strong> <span>2023 · B2B WORKFLOW</span>
-              </div>
-              <div class="visual-bg-glow glow-tribal"></div>
-
-              <div class="workflow-board-frame">
-                <div class="board-topbar">
-                  <span class="board-title">⚡ TRIBAL / PRODUCTION BATCH #842</span>
-                  <div class="board-tags">
-                    <span class="b-chip">Organic Cotton Line</span>
-                    <span class="b-chip">12,000 Units</span>
-                  </div>
-                </div>
-
-                <div class="board-columns-grid">
-                  <div class="kanban-col">
-                    <div class="col-header">Fabric Sourcing <span class="count">4</span></div>
-                    <div class="kanban-card">
-                      <span class="k-tag high">Priority</span>
-                      <h4>300 GSM Heavy Terry</h4>
-                      <p>Mill: KnitFab Coimbatore</p>
-                      <div class="k-meta"><span>Dye Batch: #409</span><span>100% Passed</span></div>
-                    </div>
-                  </div>
-
-                  <div class="kanban-col">
-                    <div class="col-header">Cutting & Batching <span class="count">2</span></div>
-                    <div class="kanban-card active-card">
-                      <span class="k-tag progress">In Progress</span>
-                      <h4>Oversized Hoodies (L/XL)</h4>
-                      <p>Laser Cutter #02 Active</p>
-                      <div class="k-progress-ring">
-                        <div class="ring-bar" style="width: 72%;"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="kanban-col">
-                    <div class="col-header">Quality Audit <span class="count">3</span></div>
-                    <div class="kanban-card">
-                      <span class="k-tag success">QA Passed</span>
-                      <h4>Embroidery & Stitching</h4>
-                      <p>Defect Rate: 0.02%</p>
-                      <div class="k-meta"><span>Inspected by: Team A</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="project-footer">
-              <a href="#contact" class="project-link" data-project="Tribal Operations">
-                <span>VIEW CASE STUDY</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- PROJECT 04: BARAKHA -->
-          <article class="project-article featured-hero-card" data-parallax="0.05">
-            <div class="project-header">
-              <div class="project-meta-top">
-                <span class="project-num">04</span>
-                <span class="project-category">E-commerce · UX/UI</span>
-              </div>
-              <h3 class="project-title">BARAKHA</h3>
-              <p class="project-desc">
-                "Luxury fashion & artisanal craft e-commerce experience built with minimal editorial aesthetics and smooth checkout."
-              </p>
-            </div>
-
-            <div class="project-visual-wrapper ecommerce-wrapper">
-              <div class="card-corner-badge">
-                <strong>BARAKHA</strong> <span>2024 · LUXURY E-COMMERCE</span>
-              </div>
-              <div class="visual-bg-glow glow-barakha"></div>
-
-              <div class="editorial-store-mockup">
-                <div class="store-hero-preview">
-                  <div class="store-nav">
-                    <span class="store-brand">BARAKHA</span>
-                    <span class="store-links">COLLECTION 2026 · ARTISANAL CRAFT · JOURNAL</span>
-                    <span class="store-cart">BAG (0)</span>
-                  </div>
-
-                  <div class="store-banner-content">
-                    <span class="store-sub">SUMMER SILKS & WOVEN TEXTILES</span>
-                    <h2 class="store-headline">POETRY IN EVERY THREAD</h2>
-                    
-                    <div class="products-mini-carousel">
-                      <div class="product-item-card">
-                        <div class="product-img-box img-1">
-                          <span class="p-emoji">🧥</span>
-                        </div>
-                        <div class="p-info">
-                          <span>Raw Silk Trench</span>
-                          <strong>₹38,500</strong>
-                        </div>
-                      </div>
-
-                      <div class="product-item-card">
-                        <div class="product-img-box img-2">
-                          <span class="p-emoji">👗</span>
-                        </div>
-                        <div class="p-info">
-                          <span>Handwoven Drape</span>
-                          <strong>₹24,000</strong>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="project-footer">
-              <a href="#contact" class="project-link" data-project="Barakha Luxury Store">
-                <span>VIEW CASE STUDY</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
-
-          <!-- FLOATING DISCOVERY CALL CAPSULE BAR (Matching Reference Image) -->
-          <div class="discovery-call-floating-wrapper">
-            <div class="grid-discovery-bar">
-              <span class="discovery-text">Book a free discovery call</span>
-              <button class="cta-talk-btn discovery-call-btn" id="discovery-call-trigger" aria-label="Book a free discovery call">
-                <span>BOOK A CALL</span>
-                <span class="avatar-phone-duo">
-                  <span class="hero-avatar-circle" title="Gajesh">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF6B1A'/%3E%3Cstop offset='100%25' stop-color='%23151311'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='40' r='18' fill='%23F7F4EC'/%3E%3Cpath d='M22 82c0-15.5 12.5-28 28-28s28 12.5 28 28' fill='%23F7F4EC'/%3E%3C/svg%3E" alt="Gajesh Profile" class="hero-avatar-img">
-                  </span>
-                  <span class="phone-icon-circle">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                    </svg>
-                  </span>
-                </span>
-              </button>
-            </div>
           </div>
-
         </div>
+
       </div>
     </section>
 
@@ -744,8 +832,9 @@
           "A closer look at the problems, decisions and experiences behind selected projects."
         </p>
         <div class="downward-arrow-box" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M12 5v14M5 12l7 7-7 7"/>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="4" x2="12" y2="20"></line>
+            <polyline points="18 14 12 20 6 14"></polyline>
           </svg>
         </div>
       </header>
@@ -780,39 +869,15 @@
               <div class="mobile-mockup-duo">
                 <div class="phone-frame screen-left">
                   <div class="phone-notch"></div>
-                  <div class="phone-content cortado-ui">
-                    <div class="app-topbar">
-                      <div class="branch-pill"><span>Indiranagar Branch</span></div>
-                      <span class="app-cart-icon">🛒 <small>2</small></span>
-                    </div>
-                    <div class="app-greeting">
-                      <h2>Good morning, Gajesh ☕</h2>
-                      <p>Your usual is ready to reorder</p>
-                    </div>
-                    <div class="coffee-card-featured">
-                      <div class="coffee-badge">BESTSELLER</div>
-                      <div class="coffee-img-placeholder"><span class="emoji-icon">☕</span></div>
-                      <div class="coffee-details">
-                        <h4>Double Shot Cortado</h4>
-                        <p>Rich espresso + steamed milk</p>
-                        <div class="price-row"><span class="price">₹240</span><button class="add-btn">+</button></div>
-                      </div>
-                    </div>
+                  <div class="phone-content phone-image-container">
+                    <img src="images/work-1.webp" alt="Cortado App Analytics UI" class="phone-screen-img">
                   </div>
                 </div>
 
                 <div class="phone-frame screen-right">
                   <div class="phone-notch"></div>
-                  <div class="phone-content cortado-ui-alt">
-                    <div class="order-status-screen">
-                      <div class="status-ring-box"><span class="status-icon">☕</span></div>
-                      <h3>Brewing your Coffee</h3>
-                      <p class="status-time">Estimated ready in <strong>4 mins</strong></p>
-                      <div class="qr-code-card">
-                        <div class="qr-placeholder"><div class="qr-pattern"></div></div>
-                        <span class="qr-sub">Scan at Counter #04</span>
-                      </div>
-                    </div>
+                  <div class="phone-content phone-image-container">
+                    <img src="images/work-2.webp" alt="Cortado App Telemetry UI" class="phone-screen-img">
                   </div>
                 </div>
               </div>

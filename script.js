@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // DOM Elements for Motion Loop
   const header = document.getElementById('site-header');
   const progressDot = document.getElementById('scroll-progress-dot');
+  const progressFill = document.getElementById('scroll-progress-fill');
+  const scrollRail = document.getElementById('scroll-rail');
   const headlineLines = document.querySelectorAll('.hero-headline .headline-line');
   const orangeBadge = document.querySelector('.orange-accent-badge');
   const projectArticles = document.querySelectorAll('.project-article');
@@ -78,12 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
       else header.classList.remove('scrolled');
     }
 
-    // Scroll Progress Rail Dot
-    if (progressDot) {
+    // Scroll Progress Rail Fill & Dot Tracking
+    if (progressDot || progressFill) {
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       if (docHeight > 0) {
-        const scrollPercent = (currentScrollY / docHeight) * 94;
-        progressDot.style.top = `${Math.min(94, Math.max(0, scrollPercent))}%`;
+        const scrollRatio = Math.min(1, Math.max(0, currentScrollY / docHeight));
+        const percentStr = `${(scrollRatio * 100).toFixed(2)}%`;
+        if (progressDot) progressDot.style.top = percentStr;
+        if (progressFill) progressFill.style.height = percentStr;
       }
     }
 
@@ -583,6 +587,17 @@ document.addEventListener('DOMContentLoaded', () => {
     hoverTargets.forEach(el => {
       el.addEventListener('mouseenter', () => document.body.classList.add('hovering-link'));
       el.addEventListener('mouseleave', () => document.body.classList.remove('hovering-link'));
+    });
+  }
+
+  // Scroll Rail Track Click-to-Scroll Interactivity
+  if (scrollRail) {
+    scrollRail.addEventListener('click', (e) => {
+      const rect = scrollRail.getBoundingClientRect();
+      const clickY = e.clientY - rect.top;
+      const fraction = Math.min(1, Math.max(0, clickY / rect.height));
+      const targetY = fraction * (document.documentElement.scrollHeight - window.innerHeight);
+      window.scrollTo({ top: targetY, behavior: 'smooth' });
     });
   }
 
