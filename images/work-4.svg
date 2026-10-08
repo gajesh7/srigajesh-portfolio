@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022C22"/>
+      <stop offset="50%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#011711"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bg4)"/>
+  
+  <!-- Subtle Geometry & Metallic Grids -->
+  <g stroke="rgba(52,211,153,0.08)" stroke-width="1.5" fill="none">
+    <circle cx="600" cy="400" r="380"/>
+    <circle cx="600" cy="400" r="280"/>
+    <circle cx="600" cy="400" r="180"/>
+    <polygon points="600,60 900,400 600,740 300,400"/>
+  </g>
+
+  <circle cx="600" cy="400" r="320" fill="#10B981" opacity="0.12" filter="blur(90px)"/>
+
+  <!-- Luxury Card Representation -->
+  <g transform="translate(300, 220)">
+    <rect width="600" height="360" rx="28" fill="#03241B" stroke="rgba(52,211,153,0.3)" stroke-width="2"/>
+    <!-- Gold Metallic Chip -->
+    <rect x="50" y="50" width="70" height="50" rx="10" fill="url(#goldGradient)"/>
+    
+    <text x="550" y="65" fill="#34D399" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="end" letter-spacing="2">NAD PRIVILEGE</text>
+    <text x="550" y="85" fill="#A7F3D0" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="end" letter-spacing="1">BLACK EDITION</text>
+
+    <!-- Card Number -->
+    <text x="50" y="200" fill="#ECFDF5" font-family="monospace" font-size="28" font-weight="700" letter-spacing="6">4920 •••• •••• 9840</text>
+    
+    <!-- Member Details -->
+    <text x="50" y="290" fill="#6EE7B7" font-family="sans-serif" font-size="10" font-weight="700" letter-spacing="1">MEMBER SINCE</text>
+    <text x="50" y="310" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="800">2025</text>
+
+    <text x="250" y="290" fill="#6EE7B7" font-family="sans-serif" font-size="10" font-weight="700" letter-spacing="1">CARDHOLDER</text>
+    <text x="250" y="310" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="800">GAJESH S.</text>
+  </g>
+</svg>

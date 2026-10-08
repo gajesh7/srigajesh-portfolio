@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090B"/>
+      <stop offset="50%" stop-color="#18181B"/>
+      <stop offset="100%" stop-color="#040405"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bg7)"/>
+  
+  <circle cx="600" cy="400" r="350" fill="#6366F1" opacity="0.14" filter="blur(110px)"/>
+
+  <!-- Code Terminal Visual -->
+  <g transform="translate(150, 140)">
+    <rect width="900" height="520" rx="18" fill="#09090B" stroke="#27272A" stroke-width="1.5"/>
+    
+    <!-- Top -->
+    <rect width="900" height="46" rx="18" fill="#18181B"/>
+    <circle cx="25" cy="23" r="6" fill="#FF5F56"/>
+    <circle cx="45" cy="23" r="6" fill="#FFBD2E"/>
+    <circle cx="65" cy="23" r="6" fill="#27C93F"/>
+    <text x="450" y="28" fill="#A1A1AA" font-family="monospace" font-size="12" text-anchor="middle">vcode.studio — zsh (shader-engine)</text>
+
+    <!-- Terminal Code Lines -->
+    <g transform="translate(40, 90)" font-family="monospace" font-size="16" line-height="1.8">
+      <text x="0" y="30" fill="#6366F1" font-weight="700">import <tspan fill="#FAFAFA">{ WebGLEngine, GSAPCanvas }</tspan> from <tspan fill="#10B981">'@vcode/core'</tspan>;</text>
+      
+      <text x="0" y="80" fill="#E4E4E7"><tspan fill="#6366F1">const</tspan> studio = <tspan fill="#6366F1">new</tspan> WebGLEngine({</text>
+      <text x="30" y="120" fill="#A1A1AA">antiAlias: <tspan fill="#F59E0B">true</tspan>,</text>
+      <text x="30" y="160" fill="#A1A1AA">preset: <tspan fill="#10B981">'cinematic-shader-mesh'</tspan>,</text>
+      <text x="30" y="200" fill="#A1A1AA">targetFPS: <tspan fill="#F59E0B">120</tspan></text>
+      <text x="0" y="240" fill="#E4E4E7">});</text>
+
+      <text x="0" y="300" fill="#6366F1"><tspan fill="#E4E4E7">await</tspan> studio.renderInteractiveScene();</text>
+      <text x="0" y="350" fill="#10B981">// ✓ Build completed in 42ms. 100% Shader performance.</text>
+    </g>
+  </g>
+</svg>
