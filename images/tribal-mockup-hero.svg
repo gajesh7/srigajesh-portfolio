@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="tribalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080E1A"/>
+      <stop offset="50%" stop-color="#0E1726"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <radialGradient id="tribalBlueGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.0"/>
+    </radialGradient>
+    <filter id="tribalShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="30" stdDeviation="40" flood-color="#000000" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#2563EB" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Space Grotesk', 'Segoe UI', Roboto, sans-serif; font-weight: 700; }
+    .font-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Studio Stage Background -->
+  <rect width="1600" height="1000" fill="url(#tribalBg)"/>
+  <rect width="1600" height="1000" fill="url(#tribalBlueGlow)"/>
+
+  <!-- Enterprise Hardware Frame (1440 x 880) -->
+  <g transform="translate(80, 60)" filter="url(#tribalShadow)">
+    <rect width="1440" height="880" rx="20" fill="#F8FAFC" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+    
+    <!-- Chrome Bar -->
+    <path d="M 0 20 Q 0 0 20 0 L 1420 0 Q 1440 0 1440 20 L 1440 44 L 0 44 Z" fill="#FFFFFF"/>
+    <line x1="0" y1="44" x2="1440" y2="44" stroke="#E2E8F0" stroke-width="1"/>
+    <circle cx="28" cy="22" r="5.5" fill="#FF5F56"/>
+    <circle cx="46" cy="22" r="5.5" fill="#FFBD2E"/>
+    <circle cx="64" cy="22" r="5.5" fill="#27C93F"/>
+    
+    <!-- URL Bar -->
+    <rect x="440" y="9" width="560" height="26" rx="13" fill="#F1F5F9"/>
+    <text x="720" y="26" class="font-body" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">app.tribalplatform.io/orders-que — Production &amp; Order Pipeline</text>
+
+    <!-- App Body Area (1440 x 836) -->
+    <g transform="translate(0, 44)">
+      
+      <!-- LEFT SIDEBAR (Width 200, Height 836) -->
+      <rect width="200" height="836" fill="#FFFFFF"/>
+      <line x1="200" y1="0" x2="200" y2="836" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <!-- Brand Logo -->
+      <g transform="translate(24, 28)">
+        <text x="0" y="16" class="font-title" font-size="20" font-weight="900" fill="#0F172A" letter-spacing="0.05em">Tribal</text>
+        <text x="0" y="32" class="font-body" font-size="9" font-weight="700" fill="#64748B" letter-spacing="0.14em">APPAREL OPS</text>
+      </g>
+
+      <!-- Sidebar Nav Items -->
+      <g transform="translate(16, 95)" class="font-body" font-size="13" font-weight="600" fill="#64748B">
+        <!-- Dashboard -->
+        <g transform="translate(0, 0)">
+          <text x="32" y="22">Dashboard</text>
+        </g>
+        <!-- Orders -->
+        <g transform="translate(0, 44)">
+          <text x="32" y="22">Orders</text>
+        </g>
+        <!-- Orders Que (Active) -->
+        <g transform="translate(0, 88)">
+          <rect width="168" height="38" rx="10" fill="#2563EB"/>
+          <text x="32" y="24" fill="#FFFFFF" font-weight="700">Orders Que</text>
+        </g>
+        <!-- Missing Orders -->
+        <g transform="translate(0, 138)">
+          <text x="32" y="22">Missing Orders</text>
+        </g>
+        <!-- Dispatch Dates -->
+        <g transform="translate(0, 182)">
+          <text x="32" y="22">Dispatch Dates</text>
+        </g>
+        <!-- Reports -->
+        <g transform="translate(0, 240)">
+          <text x="32" y="22">Reports</text>
+        </g>
+        <!-- Attributes -->
+        <g transform="translate(0, 284)">
+          <text x="32" y="22">Attributes</text>
+        </g>
+        <!-- Settings -->
+        <g transform="translate(0, 460)">
+          <text x="32" y="22">Settings</text>
+        </g>
+        <!-- Logout -->
+        <g transform="translate(0, 504)">
+          <text x="32" y="22" fill="#EF4444">Logout</text>
+        </g>
+      </g>
+
+      <!-- MAIN DASHBOARD CONTENT (Offset x=200) -->
+      <g transform="translate(200, 0)">
+        
+        <!-- Top App Bar (Height 70) -->
+        <rect width="1240" height="70" fill="#FFFFFF"/>
+        <line x1="0" y1="70" x2="1240" y2="70" stroke="#E2E8F0" stroke-width="1"/>
+        
+        <!-- Welcome User Heading -->
+        <text x="36" y="42" class="font-title" font-size="22" font-weight="800" fill="#0F172A">Hi, Deekshith</text>
+        
+        <!-- Date Filters & Actions (Right) -->
+        <g transform="translate(680, 18)">
+          <rect width="140" height="34" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <text x="16" y="22" class="font-body" font-size="12" fill="#64748B">From Date 📅</text>
+
+          <rect x="150" width="140" height="34" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+          <text x="166" y="22" class="font-body" font-size="12" fill="#64748B">To Date 📅</text>
+
+          <rect x="300" width="80" height="34" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1"/>
+          <text x="340" y="22" class="font-body" font-size="12" font-weight="700" fill="#2563EB" text-anchor="middle">Apply</text>
+
+          <rect x="390" width="140" height="34" rx="8" fill="#2563EB"/>
+          <text x="460" y="22" class="font-body" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">+ Add New Order</text>
+        </g>
+
+        <!-- DASHBOARD BODY CONTAINER (Offset y=70) -->
+        <g transform="translate(36, 90)">
+          
+          <!-- Last Orders Quick-Status Panel -->
+          <rect width="1168" height="105" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="24" y="32" class="font-title" font-size="16" font-weight="700" fill="#0F172A">Last Orders</text>
+          
+          <!-- Summary Row with 11 Checkmarks -->
+          <g transform="translate(24, 52)" class="font-body" font-size="11" fill="#334155">
+            <text x="0" y="16" font-weight="700">ID-17589 82813</text>
+            <text x="110" y="16" font-weight="700">SAGAR SPORTS</text>
+            <text x="220" y="16">Count: 2</text>
+            <text x="290" y="16">Placed: Rakshith</text>
+            <text x="400" y="16">30-09-2025 10:00AM</text>
+            <text x="540" y="16">Bejai, Kapikad</text>
+
+            <!-- 11 Green Stage Checkmarks -->
+            <g transform="translate(670, 2)">
+              <!-- Checkmark pills -->
+              <rect x="0" width="28" height="20" rx="6" fill="#22C55E"/><text x="14" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="34" width="28" height="20" rx="6" fill="#22C55E"/><text x="48" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="68" width="28" height="20" rx="6" fill="#22C55E"/><text x="82" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="102" width="28" height="20" rx="6" fill="#22C55E"/><text x="116" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="136" width="28" height="20" rx="6" fill="#22C55E"/><text x="150" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="170" width="28" height="20" rx="6" fill="#22C55E"/><text x="184" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="204" width="28" height="20" rx="6" fill="#22C55E"/><text x="218" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="238" width="28" height="20" rx="6" fill="#22C55E"/><text x="252" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="272" width="28" height="20" rx="6" fill="#22C55E"/><text x="286" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="306" width="28" height="20" rx="6" fill="#22C55E"/><text x="320" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+              <rect x="340" width="28" height="20" rx="6" fill="#22C55E"/><text x="354" y="14" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+            </g>
+          </g>
+
+          <!-- Order Details Stage Matrix Table (Offset y=125) -->
+          <g transform="translate(0, 125)">
+            <rect width="1168" height="470" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+            
+            <!-- Table Header Bar -->
+            <g transform="translate(24, 20)">
+              <text x="0" y="20" class="font-title" font-size="18" font-weight="800" fill="#0F172A">Order Details</text>
+              
+              <!-- Filter Tabs -->
+              <rect x="130" y="2" width="80" height="28" rx="14" fill="#2563EB"/>
+              <text x="170" y="20" class="font-body" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Designer</text>
+
+              <rect x="218" y="2" width="75" height="28" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+              <text x="255" y="20" class="font-body" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Settings</text>
+
+              <!-- Search Bar -->
+              <rect x="360" y="2" width="280" height="28" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+              <text x="380" y="20" class="font-body" font-size="11" fill="#94A3B8">🔍 Search orders, customer, ID...</text>
+
+              <!-- Export Button -->
+              <rect x="1030" y="2" width="90" height="28" rx="6" fill="#2563EB"/>
+              <text x="1075" y="20" class="font-body" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Export ▾</text>
+            </g>
+
+            <!-- Table Column Headers (Y=68) -->
+            <rect x="16" y="65" width="1136" height="34" rx="6" fill="#F1F5F9"/>
+            <g transform="translate(26, 86)" class="font-body" font-size="10" font-weight="700" fill="#475569">
+              <text x="0" y="0">ID</text>
+              <text x="55" y="0">Customer</text>
+              <text x="140" y="0">Items</text>
+              <text x="190" y="0">Placed By</text>
+              <text x="260" y="0">Dispatch</text>
+              <text x="350" y="0">Location</text>
+              <!-- 11 Stages -->
+              <text x="445" y="0">Design</text>
+              <text x="495" y="0">Setting</text>
+              <text x="550" y="0">Raw Mat</text>
+              <text x="610" y="0">Screen</text>
+              <text x="665" y="0">Cutting</text>
+              <text x="720" y="0">Print</text>
+              <text x="770" y="0">Fusing</text>
+              <text x="825" y="0">Stitch</text>
+              <text x="880" y="0">Trim</text>
+              <text x="930" y="0">Pay</text>
+              <text x="975" y="0">Dispatch</text>
+            </g>
+
+            <!-- Table Rows (Y=115 to 440) -->
+            <!-- ROW 1 -->
+            <g transform="translate(26, 125)" class="font-body" font-size="10" fill="#1E293B">
+              <text x="0" y="12" font-weight="700">OR-82813</text>
+              <text x="55" y="12" font-weight="700">SAGAR SPORTS</text>
+              <text x="140" y="12">2 pcs</text>
+              <text x="190" y="12">Rakshith</text>
+              <text x="260" y="12">30-09-2025</text>
+              <text x="350" y="12">Bejai</text>
+
+              <!-- Stage Indicators -->
+              <g transform="translate(440, 0)">
+                <rect x="0" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="14" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="50" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="64" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="105" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="119" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="165" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="179" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="220" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="234" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="275" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="289" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="325" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="339" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="380" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="394" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="435" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="449" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="485" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="499" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="530" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="544" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+              </g>
+            </g>
+            <line x1="16" y1="155" x2="1152" y2="155" stroke="#F1F5F9" stroke-width="1"/>
+
+            <!-- ROW 2 (Partially Completed) -->
+            <g transform="translate(26, 175)" class="font-body" font-size="10" fill="#1E293B">
+              <text x="0" y="12" font-weight="700">OR-82814</text>
+              <text x="55" y="12" font-weight="700">SAGAR SPORTS</text>
+              <text x="140" y="12">2 pcs</text>
+              <text x="190" y="12">Rakshith</text>
+              <text x="260" y="12">30-09-2025</text>
+              <text x="350" y="12">Bejai</text>
+
+              <g transform="translate(440, 0)">
+                <rect x="0" width="28" height="18" rx="4" fill="#22C55E"/><text x="14" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="50" width="28" height="18" rx="4" fill="#22C55E"/><text x="64" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="105" width="28" height="18" rx="4" fill="#22C55E"/><text x="119" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="165" width="28" height="18" rx="4" fill="#22C55E"/><text x="179" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="220" width="28" height="18" rx="4" fill="#22C55E"/><text x="234" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="275" width="28" height="18" rx="4" fill="#22C55E"/><text x="289" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="325" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="339" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="380" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="394" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="435" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="449" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="485" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="499" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="530" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="544" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+              </g>
+            </g>
+            <line x1="16" y1="205" x2="1152" y2="205" stroke="#F1F5F9" stroke-width="1"/>
+
+            <!-- ROW 3 (Exception Warning Status Alert) -->
+            <g transform="translate(26, 225)" class="font-body" font-size="10" fill="#1E293B">
+              <text x="0" y="12" font-weight="700">OR-82815</text>
+              <text x="55" y="12" font-weight="700">SAGAR SPORTS</text>
+              <text x="140" y="12">2 pcs</text>
+              <text x="190" y="12">Rakshith</text>
+              <text x="260" y="12">30-09-2025</text>
+              <text x="350" y="12">Bejai</text>
+
+              <g transform="translate(440, 0)">
+                <rect x="0" width="28" height="18" rx="4" fill="#22C55E"/><text x="14" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="50" width="28" height="18" rx="4" fill="#22C55E"/><text x="64" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="105" width="28" height="18" rx="4" fill="#22C55E"/><text x="119" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="165" width="28" height="18" rx="4" fill="#22C55E"/><text x="179" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="220" width="28" height="18" rx="4" fill="#22C55E"/><text x="234" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="275" width="28" height="18" rx="4" fill="#22C55E"/><text x="289" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <!-- Warning Stage -->
+                <rect x="325" width="28" height="18" rx="4" fill="#F59E0B"/><text x="339" y="13" fill="#FFFFFF" font-size="11" font-weight="900" text-anchor="middle">!</text>
+                <rect x="380" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="394" y="13" font-size="9" fill="#94A3B8" text-anchor="middle">NA</text>
+                <rect x="435" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="449" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="485" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="499" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="530" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="544" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+              </g>
+            </g>
+            <line x1="16" y1="255" x2="1152" y2="255" stroke="#F1F5F9" stroke-width="1"/>
+
+            <!-- ROW 4 (Critical Alert Stage) -->
+            <g transform="translate(26, 275)" class="font-body" font-size="10" fill="#1E293B">
+              <text x="0" y="12" font-weight="700">OR-82816</text>
+              <text x="55" y="12" font-weight="700">SAGAR SPORTS</text>
+              <text x="140" y="12">2 pcs</text>
+              <text x="190" y="12">Rakshith</text>
+              <text x="260" y="12">30-09-2025</text>
+              <text x="350" y="12">Bejai</text>
+
+              <g transform="translate(440, 0)">
+                <rect x="0" width="28" height="18" rx="4" fill="#22C55E"/><text x="14" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="50" width="28" height="18" rx="4" fill="#22C55E"/><text x="64" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="105" width="28" height="18" rx="4" fill="#22C55E"/><text x="119" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="165" width="28" height="18" rx="4" fill="#22C55E"/><text x="179" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="220" width="28" height="18" rx="4" fill="#22C55E"/><text x="234" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="275" width="28" height="18" rx="4" fill="#22C55E"/><text x="289" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <rect x="325" width="28" height="18" rx="4" fill="#22C55E"/><text x="339" y="13" fill="#FFFFFF" font-size="10" font-weight="900" text-anchor="middle">✓</text>
+                <!-- Red Alert Stage -->
+                <rect x="380" width="28" height="18" rx="4" fill="#EF4444"/><text x="394" y="13" fill="#FFFFFF" font-size="11" font-weight="900" text-anchor="middle">!</text>
+                <rect x="435" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="449" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="485" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="499" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+                <rect x="530" width="28" height="18" rx="4" fill="#F1F5F9"/><text x="544" y="13" font-size="9" fill="#64748B" text-anchor="middle">New</text>
+              </g>
+            </g>
+
+          </g>
+
+        </g>
+
+      </g>
+
+    </g>
+
+  </g>
+</svg>

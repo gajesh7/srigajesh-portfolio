@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8F5"/>
+      <stop offset="50%" stop-color="#EBF3EE"/>
+      <stop offset="100%" stop-color="#DFECE4"/>
+    </linearGradient>
+    <radialGradient id="softGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#15803D" stop-opacity="0.0"/>
+    </radialGradient>
+    
+    <!-- Window Drop Shadow -->
+    <filter id="deviceShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="30" stdDeviation="40" flood-color="#081E17" flood-opacity="0.14"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#081E17" flood-opacity="0.08"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#081E17" flood-opacity="0.09"/>
+    </filter>
+    
+    <!-- Hero Subtle Mesh -->
+    <linearGradient id="heroInnerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7FAF8"/>
+      <stop offset="100%" stop-color="#EDF5F0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Syne', 'Space Grotesk', 'Segoe UI', Roboto, sans-serif; font-weight: 800; }
+    .font-body { font-family: -apple-system, BlinkMacSystemFont, 'Space Grotesk', 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Studio Stage Background -->
+  <rect width="1600" height="1000" fill="url(#studioBg)"/>
+  <rect width="1600" height="1000" fill="url(#softGlow)"/>
+
+  <!-- Main Hardware Device Frame (1440 x 880) -->
+  <g transform="translate(80, 60)" filter="url(#deviceShadow)">
+    
+    <!-- Device Outer Bezel -->
+    <rect width="1440" height="880" rx="22" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1.5"/>
+    
+    <!-- Browser Window Header / Chrome (Height 48) -->
+    <path d="M 0 22 Q 0 0 22 0 L 1418 0 Q 1440 0 1440 22 L 1440 50 L 0 50 Z" fill="#FAFCFA"/>
+    <line x1="0" y1="50" x2="1440" y2="50" stroke="rgba(21, 128, 61, 0.12)" stroke-width="1"/>
+    
+    <!-- Window Traffic Dots -->
+    <circle cx="32" cy="25" r="6" fill="#FF5F56"/>
+    <circle cx="52" cy="25" r="6" fill="#FFBD2E"/>
+    <circle cx="72" cy="25" r="6" fill="#27C93F"/>
+    
+    <!-- URL Address Bar -->
+    <rect x="440" y="11" width="560" height="28" rx="14" fill="#EEF4F0" stroke="rgba(21, 128, 61, 0.15)" stroke-width="1"/>
+    <!-- Lock Icon -->
+    <path d="M 650 20 L 650 18 A 3 3 0 0 1 656 18 L 656 20 M 648 20 L 658 20 L 658 27 L 648 27 Z" fill="none" stroke="#15803D" stroke-width="1.5"/>
+    <text x="666" y="29" class="font-body" font-size="12" font-weight="600" fill="#233D34" letter-spacing="0.02em">longeviahealth.com</text>
+
+    <!-- Content Area (1440 x 830) Clip Path -->
+    <g transform="translate(0, 50)">
+      
+      <!-- Top Website Navigation (Height 70) -->
+      <rect width="1440" height="70" fill="#FFFFFF"/>
+      <line x1="0" y1="70" x2="1440" y2="70" stroke="rgba(21, 128, 61, 0.08)" stroke-width="1"/>
+      
+      <!-- Logo: Curved Leaf + Typography -->
+      <g transform="translate(50, 22)">
+        <!-- Leaf / Pulse emblem -->
+        <path d="M 0 16 C 6 2 18 0 24 10 C 26 18 16 26 6 26 C 2 26 0 22 0 16 Z" fill="#15803D"/>
+        <path d="M 6 26 C 14 18 20 12 26 2" stroke="#34D399" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <text x="34" y="20" class="font-title" font-size="20" font-weight="800" fill="#081E17" letter-spacing="0.08em">LONGEVIA</text>
+        <text x="148" y="12" class="font-body" font-size="8" font-weight="700" fill="#15803D" letter-spacing="0.1em">CLINIC</text>
+      </g>
+      
+      <!-- Nav Links -->
+      <g transform="translate(460, 40)" class="font-body" font-size="14" font-weight="600" fill="#475569">
+        <!-- Home (Active) -->
+        <text x="0" y="0" fill="#15803D" font-weight="700">Home</text>
+        <circle cx="18" cy="8" r="2.5" fill="#15803D"/>
+        <text x="70" y="0">About</text>
+        <text x="145" y="0">Specialities ▾</text>
+        <text x="265" y="0">Doctors</text>
+        <text x="350" y="0">Blogs</text>
+        <text x="420" y="0">Contact Us</text>
+      </g>
+
+      <!-- Nav Action Button -->
+      <g transform="translate(1260, 16)">
+        <rect width="130" height="38" rx="19" fill="#081E17"/>
+        <text x="65" y="24" class="font-body" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Get Care</text>
+      </g>
+
+      <!-- HERO SECTION (Height 500) -->
+      <g transform="translate(0, 70)">
+        <rect width="1440" height="500" fill="url(#heroInnerBg)"/>
+        
+        <!-- Subtle Background Organic Curves -->
+        <path d="M 0 350 Q 400 280 800 420 T 1440 380 L 1440 500 L 0 500 Z" fill="rgba(21, 128, 61, 0.04)"/>
+        
+        <!-- Left Hero Copy Column -->
+        <g transform="translate(80, 60)">
+          
+          <!-- Eyebrow Tag -->
+          <rect width="240" height="28" rx="14" fill="#E5F2E9" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1"/>
+          <circle cx="14" cy="14" r="4" fill="#15803D"/>
+          <text x="26" y="18" class="font-body" font-size="11" font-weight="700" fill="#15803D" letter-spacing="0.06em">NEIGHBOURHOOD CLINIC</text>
+
+          <!-- Main Hero Headline -->
+          <text x="0" y="80" class="font-title" font-size="46" font-weight="800" fill="#081E17" letter-spacing="-0.02em">
+            Healthcare that <tspan fill="#15803D">listens,</tspan>
+          </text>
+          <text x="0" y="134" class="font-title" font-size="46" font-weight="800" fill="#081E17" letter-spacing="-0.02em">
+            care that stays.
+          </text>
+
+          <!-- Subhead Paragraph -->
+          <text x="0" y="180" class="font-body" font-size="16" font-weight="500" fill="#3D5A50" width="540">
+            Every consultation is with a specialist, and you keep the same one.
+          </text>
+          <text x="0" y="206" class="font-body" font-size="16" font-weight="500" fill="#3D5A50">
+            Unhurried appointments designed for families across pregnancies,
+          </text>
+          <text x="0" y="232" class="font-body" font-size="16" font-weight="500" fill="#3D5A50">
+            childhood health, and lifelong preventive medicine.
+          </text>
+
+          <!-- Key Pillars Badges -->
+          <g transform="translate(0, 275)">
+            <g transform="translate(0, 0)">
+              <rect width="170" height="36" rx="18" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.16)" stroke-width="1"/>
+              <text x="16" y="22" class="font-body" font-size="12" font-weight="700" fill="#15803D">✓ 45-min Consults</text>
+            </g>
+            <g transform="translate(182, 0)">
+              <rect width="170" height="36" rx="18" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.16)" stroke-width="1"/>
+              <text x="16" y="22" class="font-body" font-size="12" font-weight="700" fill="#15803D">✓ Dedicated Doctors</text>
+            </g>
+            <g transform="translate(364, 0)">
+              <rect width="170" height="36" rx="18" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.16)" stroke-width="1"/>
+              <text x="16" y="22" class="font-body" font-size="12" font-weight="700" fill="#15803D">✓ Same-Day Slots</text>
+            </g>
+          </g>
+
+          <!-- Primary Hero Actions -->
+          <g transform="translate(0, 345)">
+            <rect width="200" height="48" rx="24" fill="#15803D"/>
+            <text x="100" y="29" class="font-body" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Book Appointment →</text>
+
+            <rect x="216" y="0" width="160" height="48" rx="24" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.25)" stroke-width="1"/>
+            <text x="296" y="29" class="font-body" font-size="14" font-weight="700" fill="#081E17" text-anchor="middle">Meet the Doctors</text>
+          </g>
+
+        </g>
+
+        <!-- Right Column: Interactive Appointment Booking Card (Elevated Floating Card) -->
+        <g transform="translate(920, 45)" filter="url(#cardShadow)">
+          <rect width="440" height="400" rx="20" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.15)" stroke-width="1.5"/>
+          
+          <!-- Card Header -->
+          <g transform="translate(32, 38)">
+            <text x="0" y="0" class="font-title" font-size="20" font-weight="800" fill="#081E17">Your family's health</text>
+            <text x="0" y="26" class="font-title" font-size="20" font-weight="800" fill="#15803D">starts here.</text>
+            <text x="0" y="48" class="font-body" font-size="12" font-weight="500" fill="#64748B">Choose your specialty &amp; preferred time slot.</text>
+          </g>
+
+          <!-- Form Fields -->
+          <g transform="translate(32, 115)">
+            
+            <!-- Field 1: Name -->
+            <rect width="376" height="42" rx="10" fill="#F8FAF8" stroke="#E2E8F0" stroke-width="1"/>
+            <text x="16" y="26" class="font-body" font-size="13" fill="#94A3B8">Patient Full Name</text>
+
+            <!-- Field 2: Mobile -->
+            <g transform="translate(0, 52)">
+              <rect width="376" height="42" rx="10" fill="#F8FAF8" stroke="#E2E8F0" stroke-width="1"/>
+              <text x="16" y="26" class="font-body" font-size="13" fill="#94A3B8">Mobile Number (+91)</text>
+            </g>
+
+            <!-- Field 3: Department Select -->
+            <g transform="translate(0, 104)">
+              <rect width="376" height="42" rx="10" fill="#F8FAF8" stroke="rgba(21, 128, 61, 0.35)" stroke-width="1.5"/>
+              <text x="16" y="26" class="font-body" font-size="13" font-weight="600" fill="#081E17">Women's Health &amp; Maternity</text>
+              <text x="350" y="26" class="font-body" font-size="12" fill="#15803D">▾</text>
+            </g>
+
+            <!-- Field 4: Preferred Doctor -->
+            <g transform="translate(0, 156)">
+              <rect width="376" height="42" rx="10" fill="#F8FAF8" stroke="#E2E8F0" stroke-width="1"/>
+              <text x="16" y="26" class="font-body" font-size="13" fill="#64748B">Dr. Sathya Verma (Obstetrics &amp; Gynae)</text>
+              <text x="350" y="26" class="font-body" font-size="12" fill="#64748B">▾</text>
+            </g>
+
+            <!-- Submit Button -->
+            <g transform="translate(0, 212)">
+              <rect width="376" height="46" rx="12" fill="#081E17"/>
+              <text x="188" y="28" class="font-body" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Confirm Consultation</text>
+            </g>
+
+          </g>
+
+        </g>
+
+      </g>
+
+      <!-- Bottom Trust Metrics Bar (Height 190) -->
+      <g transform="translate(0, 570)">
+        <rect width="1440" height="190" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.08)" stroke-width="1"/>
+        
+        <!-- 4 Metric Columns -->
+        <!-- Col 1 -->
+        <g transform="translate(120, 55)">
+          <text x="0" y="32" class="font-title" font-size="36" font-weight="800" fill="#15803D">15+</text>
+          <text x="0" y="58" class="font-body" font-size="13" font-weight="700" fill="#081E17">Dedicated Specialists</text>
+          <text x="0" y="78" class="font-body" font-size="12" fill="#64748B">Hospital background &amp; tenure</text>
+        </g>
+        
+        <line x1="410" y1="45" x2="410" y2="145" stroke="rgba(21, 128, 61, 0.12)" stroke-width="1"/>
+
+        <!-- Col 2 -->
+        <g transform="translate(460, 55)">
+          <text x="0" y="32" class="font-title" font-size="36" font-weight="800" fill="#15803D">12,000+</text>
+          <text x="0" y="58" class="font-body" font-size="13" font-weight="700" fill="#081E17">Families Under Care</text>
+          <text x="0" y="78" class="font-body" font-size="12" fill="#64748B">Continuity year after year</text>
+        </g>
+
+        <line x1="760" y1="45" x2="760" y2="145" stroke="rgba(21, 128, 61, 0.12)" stroke-width="1"/>
+
+        <!-- Col 3 -->
+        <g transform="translate(810, 55)">
+          <text x="0" y="32" class="font-title" font-size="36" font-weight="800" fill="#15803D">45 min</text>
+          <text x="0" y="58" class="font-body" font-size="13" font-weight="700" fill="#081E17">Average Consultation</text>
+          <text x="0" y="78" class="font-body" font-size="12" fill="#64748B">No rushed 7-minute visits</text>
+        </g>
+
+        <line x1="1110" y1="45" x2="1110" y2="145" stroke="rgba(21, 128, 61, 0.12)" stroke-width="1"/>
+
+        <!-- Col 4 -->
+        <g transform="translate(1160, 55)">
+          <text x="0" y="32" class="font-title" font-size="36" font-weight="800" fill="#15803D">4.9 / 5</text>
+          <text x="0" y="58" class="font-body" font-size="13" font-weight="700" fill="#081E17">Patient Satisfaction</text>
+          <text x="0" y="78" class="font-body" font-size="12" fill="#64748B">Verified patient reviews</text>
+        </g>
+
+      </g>
+
+    </g>
+
+  </g>
+</svg>

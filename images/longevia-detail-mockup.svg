@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="studioBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8F5"/>
+      <stop offset="50%" stop-color="#EBF3EE"/>
+      <stop offset="100%" stop-color="#DFECE4"/>
+    </linearGradient>
+    <filter id="deviceShadow3" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="30" stdDeviation="40" flood-color="#081E17" flood-opacity="0.14"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#081E17" flood-opacity="0.08"/>
+    </filter>
+    <filter id="cardShadow3" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#081E17" flood-opacity="0.06"/>
+    </filter>
+    <linearGradient id="doctorPortraitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2EFE7"/>
+      <stop offset="100%" stop-color="#C7DFD0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Syne', 'Space Grotesk', 'Segoe UI', Roboto, sans-serif; font-weight: 800; }
+    .font-body { font-family: -apple-system, BlinkMacSystemFont, 'Space Grotesk', 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1600" height="1000" fill="url(#studioBg3)"/>
+
+  <!-- Device Window Frame -->
+  <g transform="translate(80, 60)" filter="url(#deviceShadow3)">
+    <rect width="1440" height="880" rx="22" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1.5"/>
+    
+    <!-- Browser Chrome (Height 50) -->
+    <path d="M 0 22 Q 0 0 22 0 L 1418 0 Q 1440 0 1440 22 L 1440 50 L 0 50 Z" fill="#FAFCFA"/>
+    <line x1="0" y1="50" x2="1440" y2="50" stroke="rgba(21, 128, 61, 0.12)" stroke-width="1"/>
+    <circle cx="32" cy="25" r="6" fill="#FF5F56"/>
+    <circle cx="52" cy="25" r="6" fill="#FFBD2E"/>
+    <circle cx="72" cy="25" r="6" fill="#27C93F"/>
+    
+    <!-- URL Bar -->
+    <rect x="440" y="11" width="560" height="28" rx="14" fill="#EEF4F0" stroke="rgba(21, 128, 61, 0.15)" stroke-width="1"/>
+    <text x="720" y="29" class="font-body" font-size="12" font-weight="600" fill="#233D34" text-anchor="middle">longeviahealth.com/doctors/dr-arjun-nair — Profile &amp; Consultation</text>
+
+    <!-- Page Body (1440 x 830) -->
+    <g transform="translate(0, 50)">
+      
+      <!-- Top Website Navigation (Height 70) -->
+      <rect width="1440" height="70" fill="#FFFFFF"/>
+      <line x1="0" y1="70" x2="1440" y2="70" stroke="rgba(21, 128, 61, 0.08)" stroke-width="1"/>
+      
+      <g transform="translate(50, 22)">
+        <path d="M 0 16 C 6 2 18 0 24 10 C 26 18 16 26 6 26 C 2 26 0 22 0 16 Z" fill="#15803D"/>
+        <text x="34" y="20" class="font-title" font-size="20" font-weight="800" fill="#081E17" letter-spacing="0.08em">LONGEVIA</text>
+      </g>
+      
+      <!-- Breadcrumb Link -->
+      <g transform="translate(80, 105)">
+        <text x="0" y="0" class="font-body" font-size="14" font-weight="700" fill="#15803D">← All Doctors</text>
+      </g>
+
+      <!-- Main Profile Layout (Left: Portrait card, Right: Profile info) -->
+      <g transform="translate(80, 140)">
+        
+        <!-- Left: Portrait Card (480 x 580) -->
+        <g filter="url(#cardShadow3)">
+          <rect width="480" height="580" rx="24" fill="url(#doctorPortraitBg)" stroke="rgba(21, 128, 61, 0.16)" stroke-width="1.5"/>
+          
+          <!-- Stylized Medical Portrait Illustration -->
+          <circle cx="240" cy="220" r="90" fill="#FFFFFF" opacity="0.6"/>
+          <circle cx="240" cy="200" r="70" fill="#103328"/>
+          <!-- Doctor Glasses & Smile -->
+          <circle cx="220" cy="195" r="16" fill="none" stroke="#F4F8F5" stroke-width="3"/>
+          <circle cx="260" cy="195" r="16" fill="none" stroke="#F4F8F5" stroke-width="3"/>
+          <line x1="236" y1="195" x2="244" y2="195" stroke="#F4F8F5" stroke-width="3"/>
+          <!-- Doctor Coat -->
+          <path d="M 120 420 C 120 300 360 300 360 420 Z" fill="#FFFFFF"/>
+          <path d="M 190 300 L 240 370 L 290 300" fill="#E2E8F0" stroke="#15803D" stroke-width="2"/>
+          <!-- Stethoscope -->
+          <path d="M 200 310 C 200 380 280 380 280 310" fill="none" stroke="#081E17" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="240" cy="400" r="12" fill="#94A3B8" stroke="#081E17" stroke-width="3"/>
+
+          <!-- Floating Badge -->
+          <g transform="translate(30, 500)">
+            <rect width="420" height="52" rx="16" fill="rgba(255, 255, 255, 0.95)" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1"/>
+            <text x="20" y="32" class="font-body" font-size="13" font-weight="700" fill="#081E17">Consultant in Family Medicine</text>
+            <text x="330" y="32" class="font-body" font-size="12" font-weight="700" fill="#15803D">⭐ 4.9 (320+)</text>
+          </g>
+        </g>
+
+        <!-- Right: Profile Info Content (Width 740, Offset x=530) -->
+        <g transform="translate(530, 10)">
+          
+          <!-- Department Tag -->
+          <rect width="150" height="28" rx="14" fill="#E5F2E9" stroke="rgba(21, 128, 61, 0.25)" stroke-width="1"/>
+          <circle cx="14" cy="14" r="4" fill="#15803D"/>
+          <text x="26" y="18" class="font-body" font-size="11" font-weight="700" fill="#15803D" letter-spacing="0.06em">FAMILY MEDICINE</text>
+
+          <!-- WhatsApp Badge -->
+          <g transform="translate(600, 0)">
+            <rect width="120" height="32" rx="16" fill="#22C55E"/>
+            <text x="60" y="21" class="font-body" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">💬 Need help?</text>
+          </g>
+
+          <!-- Doctor Name & Bio -->
+          <text x="0" y="72" class="font-title" font-size="38" font-weight="800" fill="#081E17">Dr. Arjun Nair</text>
+          <text x="0" y="106" class="font-body" font-size="16" font-weight="500" fill="#3D5A50">
+            Everyday illness, preventive checks, and long-term care for the whole family.
+          </text>
+
+          <!-- 4 Information Boxes (2x2 Grid) -->
+          <g transform="translate(0, 140)">
+            
+            <!-- Box 1: Qualifications -->
+            <g transform="translate(0, 0)" filter="url(#cardShadow3)">
+              <rect width="345" height="80" rx="16" fill="#F8FAF8" stroke="rgba(21, 128, 61, 0.16)" stroke-width="1"/>
+              <text x="20" y="32" class="font-body" font-size="11" font-weight="700" fill="#64748B" letter-spacing="0.06em">QUALIFICATIONS</text>
+              <text x="20" y="58" class="font-title" font-size="16" font-weight="700" fill="#081E17">MBBS, MD (Family Medicine)</text>
+            </g>
+
+            <!-- Box 2: Experience -->
+            <g transform="translate(365, 0)" filter="url(#cardShadow3)">
+              <rect width="345" height="80" rx="16" fill="#F8FAF8" stroke="rgba(21, 128, 61, 0.16)" stroke-width="1"/>
+              <text x="20" y="32" class="font-body" font-size="11" font-weight="700" fill="#64748B" letter-spacing="0.06em">CLINICAL EXPERIENCE</text>
+              <text x="20" y="58" class="font-title" font-size="16" font-weight="700" fill="#15803D">9 Years of Practice</text>
+            </g>
+
+            <!-- Box 3: Languages -->
+            <g transform="translate(0, 96)" filter="url(#cardShadow3)">
+              <rect width="345" height="80" rx="16" fill="#F8FAF8" stroke="rgba(21, 128, 61, 0.16)" stroke-width="1"/>
+              <text x="20" y="32" class="font-body" font-size="11" font-weight="700" fill="#64748B" letter-spacing="0.06em">LANGUAGES SPOKEN</text>
+              <text x="20" y="58" class="font-title" font-size="16" font-weight="700" fill="#081E17">English, Hindi, Malayalam</text>
+            </g>
+
+            <!-- Box 4: Consultation Timings -->
+            <g transform="translate(365, 96)" filter="url(#cardShadow3)">
+              <rect width="345" height="80" rx="16" fill="#F8FAF8" stroke="rgba(21, 128, 61, 0.16)" stroke-width="1"/>
+              <text x="20" y="32" class="font-body" font-size="11" font-weight="700" fill="#64748B" letter-spacing="0.06em">CONSULTATION SCHEDULE</text>
+              <text x="20" y="58" class="font-title" font-size="15" font-weight="700" fill="#081E17">Mon–Sat, 9:00 am – 6:00 pm</text>
+            </g>
+
+          </g>
+
+          <!-- Areas of Expertise (Pills) -->
+          <g transform="translate(0, 340)">
+            <text x="0" y="0" class="font-body" font-size="12" font-weight="700" fill="#64748B" letter-spacing="0.08em">AREAS OF EXPERTISE</text>
+            
+            <g transform="translate(0, 16)">
+              <rect width="170" height="32" rx="16" fill="#EEF4F0"/>
+              <text x="85" y="20" class="font-body" font-size="11" font-weight="700" fill="#15803D" text-anchor="middle">Preventive health checks</text>
+
+              <rect x="180" width="185" height="32" rx="16" fill="#EEF4F0"/>
+              <text x="272" y="20" class="font-body" font-size="11" font-weight="700" fill="#15803D" text-anchor="middle">Diabetes &amp; blood pressure</text>
+
+              <rect x="375" width="145" height="32" rx="16" fill="#EEF4F0"/>
+              <text x="447" y="20" class="font-body" font-size="11" font-weight="700" fill="#15803D" text-anchor="middle">Adult vaccinations</text>
+
+              <rect x="530" width="135" height="32" rx="16" fill="#EEF4F0"/>
+              <text x="597" y="20" class="font-body" font-size="11" font-weight="700" fill="#15803D" text-anchor="middle">Minor procedures</text>
+            </g>
+          </g>
+
+          <!-- Book Appointment CTA -->
+          <g transform="translate(0, 430)">
+            <rect width="240" height="52" rx="26" fill="#081E17"/>
+            <text x="120" y="32" class="font-body" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">📅 Book Appointment</text>
+            
+            <text x="265" y="32" class="font-body" font-size="13" font-weight="600" fill="#15803D">✓ Same-day slots available</text>
+          </g>
+
+        </g>
+
+      </g>
+
+    </g>
+
+  </g>
+</svg>

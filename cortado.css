@@ -809,6 +809,10 @@ button {
   max-height: 820px;
   object-fit: cover;
   object-position: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  transform: translateZ(0);
+  backface-visibility: hidden;
   transition: transform var(--transition-slow);
 }
 
@@ -2203,6 +2207,10 @@ button.faq-trigger:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  transform: translateZ(0);
+  backface-visibility: hidden;
   transition: transform var(--transition-slow);
 }
 
@@ -3181,6 +3189,9 @@ button.faq-trigger:focus-visible {
   width: 100%;
   height: auto;
   display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  transform: translateZ(0);
 }
 
 .apparel-summary-strip {

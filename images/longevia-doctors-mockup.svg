@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="studioBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8F5"/>
+      <stop offset="50%" stop-color="#EBF3EE"/>
+      <stop offset="100%" stop-color="#DFECE4"/>
+    </linearGradient>
+    <filter id="deviceShadow2" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="30" stdDeviation="40" flood-color="#081E17" flood-opacity="0.14"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#081E17" flood-opacity="0.08"/>
+    </filter>
+    <filter id="cardShadow2" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#081E17" flood-opacity="0.06"/>
+    </filter>
+    
+    <!-- Doctor Portrait Gradients -->
+    <linearGradient id="doc1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#234B3C"/><stop offset="100%" stop-color="#0B2119"/></linearGradient>
+    <linearGradient id="doc2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2B4357"/><stop offset="100%" stop-color="#111E29"/></linearGradient>
+    <linearGradient id="doc3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#533B50"/><stop offset="100%" stop-color="#231221"/></linearGradient>
+    <linearGradient id="doc4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4D4434"/><stop offset="100%" stop-color="#211B11"/></linearGradient>
+  </defs>
+
+  <style>
+    .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Syne', 'Space Grotesk', 'Segoe UI', Roboto, sans-serif; font-weight: 800; }
+    .font-body { font-family: -apple-system, BlinkMacSystemFont, 'Space Grotesk', 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Studio Stage Background -->
+  <rect width="1600" height="1000" fill="url(#studioBg2)"/>
+
+  <!-- Device Window Frame -->
+  <g transform="translate(80, 60)" filter="url(#deviceShadow2)">
+    <rect width="1440" height="880" rx="22" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1.5"/>
+    
+    <!-- Browser Chrome (Height 50) -->
+    <path d="M 0 22 Q 0 0 22 0 L 1418 0 Q 1440 0 1440 22 L 1440 50 L 0 50 Z" fill="#FAFCFA"/>
+    <line x1="0" y1="50" x2="1440" y2="50" stroke="rgba(21, 128, 61, 0.12)" stroke-width="1"/>
+    <circle cx="32" cy="25" r="6" fill="#FF5F56"/>
+    <circle cx="52" cy="25" r="6" fill="#FFBD2E"/>
+    <circle cx="72" cy="25" r="6" fill="#27C93F"/>
+    
+    <!-- URL Bar -->
+    <rect x="440" y="11" width="560" height="28" rx="14" fill="#EEF4F0" stroke="rgba(21, 128, 61, 0.15)" stroke-width="1"/>
+    <text x="720" y="29" class="font-body" font-size="12" font-weight="600" fill="#233D34" text-anchor="middle">longeviahealth.com/doctors — Dedicated Specialists Directory</text>
+
+    <!-- Page Body (1440 x 830) -->
+    <g transform="translate(0, 50)">
+      
+      <!-- Top Website Navigation (Height 70) -->
+      <rect width="1440" height="70" fill="#FFFFFF"/>
+      <line x1="0" y1="70" x2="1440" y2="70" stroke="rgba(21, 128, 61, 0.08)" stroke-width="1"/>
+      
+      <!-- Logo -->
+      <g transform="translate(50, 22)">
+        <path d="M 0 16 C 6 2 18 0 24 10 C 26 18 16 26 6 26 C 2 26 0 22 0 16 Z" fill="#15803D"/>
+        <text x="34" y="20" class="font-title" font-size="20" font-weight="800" fill="#081E17" letter-spacing="0.08em">LONGEVIA</text>
+      </g>
+      
+      <!-- Nav Links -->
+      <g transform="translate(520, 40)" class="font-body" font-size="14" font-weight="600" fill="#475569">
+        <text x="0" y="0">Home</text>
+        <text x="70" y="0">About</text>
+        <text x="145" y="0">Specialities ▾</text>
+        <text x="265" y="0" fill="#15803D" font-weight="700">Doctors</text>
+        <circle cx="290" cy="8" r="2.5" fill="#15803D"/>
+        <text x="350" y="0">Blogs</text>
+        <text x="420" y="0">Contact Us</text>
+      </g>
+
+      <!-- Section Header Container (Height 170) -->
+      <g transform="translate(80, 100)">
+        
+        <!-- Left: Section Title -->
+        <text x="0" y="0" class="font-body" font-size="12" font-weight="700" fill="#15803D" letter-spacing="0.1em">• OUR DOCTORS</text>
+        <text x="0" y="42" class="font-title" font-size="38" font-weight="800" fill="#081E17">
+          Familiar faces, <tspan fill="#15803D" font-style="italic">year after year</tspan>
+        </text>
+
+        <!-- Right: Continuity Statement & WhatsApp -->
+        <g transform="translate(740, 0)">
+          <text x="0" y="16" class="font-body" font-size="14" font-weight="500" fill="#3D5A50">
+            Every consultation at Longevia is with a specialist, and you keep the same one.
+          </text>
+          <text x="0" y="38" class="font-body" font-size="14" font-weight="500" fill="#3D5A50">
+            That continuity is the quiet reason families stay with us through pregnancies,
+          </text>
+          <text x="0" y="60" class="font-body" font-size="14" font-weight="500" fill="#3D5A50">
+            first teeth, and yearly checks.
+          </text>
+
+          <g transform="translate(390, 12)">
+            <rect width="120" height="36" rx="18" fill="#22C55E"/>
+            <text x="60" y="22" class="font-body" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">💬 Need help?</text>
+          </g>
+        </g>
+
+      </g>
+
+      <!-- Category Filter Pills + Search Bar Row (Height 50) -->
+      <g transform="translate(80, 240)">
+        <!-- Pill 1: All (Active) -->
+        <rect width="60" height="36" rx="18" fill="#15803D"/>
+        <text x="30" y="22" class="font-body" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">All</text>
+
+        <!-- Pill 2: Women's Health -->
+        <rect x="72" width="136" height="36" rx="18" fill="#F4F8F5" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1"/>
+        <text x="140" y="22" class="font-body" font-size="13" font-weight="600" fill="#233D34" text-anchor="middle">Women's Health</text>
+
+        <!-- Pill 3: Paediatrics -->
+        <rect x="220" width="110" height="36" rx="18" fill="#F4F8F5" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1"/>
+        <text x="275" y="22" class="font-body" font-size="13" font-weight="600" fill="#233D34" text-anchor="middle">Paediatrics</text>
+
+        <!-- Pill 4: Dermatology -->
+        <rect x="342" width="116" height="36" rx="18" fill="#F4F8F5" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1"/>
+        <text x="400" y="22" class="font-body" font-size="13" font-weight="600" fill="#233D34" text-anchor="middle">Dermatology</text>
+
+        <!-- Pill 5: Family Health -->
+        <rect x="470" width="118" height="36" rx="18" fill="#F4F8F5" stroke="rgba(21, 128, 61, 0.2)" stroke-width="1"/>
+        <text x="529" y="22" class="font-body" font-size="13" font-weight="600" fill="#233D34" text-anchor="middle">Family Health</text>
+
+        <!-- Search Bar (Right) -->
+        <g transform="translate(890, 0)">
+          <rect width="390" height="36" rx="18" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.25)" stroke-width="1"/>
+          <text x="20" y="22" class="font-body" font-size="13" fill="#94A3B8">🔍 Search by Name or Speciality</text>
+        </g>
+      </g>
+
+      <!-- 4 DOCTOR CARDS (Grid: width 300 each, gap 26) -->
+      <g transform="translate(80, 310)">
+        
+        <!-- CARD 01: Dr. Sathya Verma -->
+        <g transform="translate(0, 0)" filter="url(#cardShadow2)">
+          <rect width="300" height="440" rx="20" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.14)" stroke-width="1"/>
+          <!-- Doctor Photo Container -->
+          <rect x="16" y="16" width="268" height="240" rx="16" fill="url(#doc1)"/>
+          <!-- Experience Pill -->
+          <rect x="28" y="28" width="58" height="24" rx="12" fill="rgba(8, 30, 23, 0.6)"/>
+          <text x="57" y="44" class="font-body" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">15 yrs</text>
+          
+          <!-- Subtle Avatar Illustration -->
+          <circle cx="150" cy="110" r="42" fill="rgba(255, 255, 255, 0.25)"/>
+          <path d="M 108 190 C 108 150 192 150 192 190 Z" fill="rgba(255, 255, 255, 0.25)"/>
+
+          <!-- View Profile Pill Overlay -->
+          <rect x="90" y="200" width="120" height="34" rx="17" fill="#15803D"/>
+          <text x="150" y="222" class="font-body" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">View Profile</text>
+
+          <!-- Card Details -->
+          <text x="150" y="295" class="font-body" font-size="10" font-weight="800" fill="#15803D" text-anchor="middle" letter-spacing="0.08em">OBSTETRICS &amp; GYNAECOLOGY</text>
+          <text x="150" y="328" class="font-title" font-size="18" font-weight="800" fill="#081E17" text-anchor="middle">Dr. Sathya Verma</text>
+          <text x="150" y="352" class="font-body" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">MBBS, MS (Obstetrics &amp; Gynae)</text>
+          <text x="150" y="374" class="font-body" font-size="11" font-weight="600" fill="#22C55E" text-anchor="middle">● Available Today (Slots Open)</text>
+        </g>
+
+        <!-- CARD 02: Dr. Rohan Mehta -->
+        <g transform="translate(326, 0)" filter="url(#cardShadow2)">
+          <rect width="300" height="440" rx="20" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.14)" stroke-width="1"/>
+          <rect x="16" y="16" width="268" height="240" rx="16" fill="url(#doc2)"/>
+          <rect x="28" y="28" width="58" height="24" rx="12" fill="rgba(8, 30, 23, 0.6)"/>
+          <text x="57" y="44" class="font-body" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">11 yrs</text>
+
+          <circle cx="150" cy="110" r="42" fill="rgba(255, 255, 255, 0.25)"/>
+          <path d="M 108 190 C 108 150 192 150 192 190 Z" fill="rgba(255, 255, 255, 0.25)"/>
+
+          <rect x="90" y="200" width="120" height="34" rx="17" fill="#15803D"/>
+          <text x="150" y="222" class="font-body" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">View Profile</text>
+
+          <text x="150" y="295" class="font-body" font-size="10" font-weight="800" fill="#15803D" text-anchor="middle" letter-spacing="0.08em">PAEDIATRICS &amp; NEONATOLOGY</text>
+          <text x="150" y="328" class="font-title" font-size="18" font-weight="800" fill="#081E17" text-anchor="middle">Dr. Rohan Mehta</text>
+          <text x="150" y="352" class="font-body" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">MBBS, MD (Paediatrics)</text>
+          <text x="150" y="374" class="font-body" font-size="11" font-weight="600" fill="#22C55E" text-anchor="middle">● Available Today (Evening Slots)</text>
+        </g>
+
+        <!-- CARD 03: Dr. Leela Iyer -->
+        <g transform="translate(652, 0)" filter="url(#cardShadow2)">
+          <rect width="300" height="440" rx="20" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.14)" stroke-width="1"/>
+          <rect x="16" y="16" width="268" height="240" rx="16" fill="url(#doc3)"/>
+          <rect x="28" y="28" width="58" height="24" rx="12" fill="rgba(8, 30, 23, 0.6)"/>
+          <text x="57" y="44" class="font-body" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">10 yrs</text>
+
+          <circle cx="150" cy="110" r="42" fill="rgba(255, 255, 255, 0.25)"/>
+          <path d="M 108 190 C 108 150 192 150 192 190 Z" fill="rgba(255, 255, 255, 0.25)"/>
+
+          <rect x="90" y="200" width="120" height="34" rx="17" fill="#15803D"/>
+          <text x="150" y="222" class="font-body" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">View Profile</text>
+
+          <text x="150" y="295" class="font-body" font-size="10" font-weight="800" fill="#15803D" text-anchor="middle" letter-spacing="0.08em">DERMATOLOGY &amp; SKIN CARE</text>
+          <text x="150" y="328" class="font-title" font-size="18" font-weight="800" fill="#081E17" text-anchor="middle">Dr. Leela Iyer</text>
+          <text x="150" y="352" class="font-body" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">MBBS, DVD, DNB (Dermatology)</text>
+          <text x="150" y="374" class="font-body" font-size="11" font-weight="600" fill="#22C55E" text-anchor="middle">● Available Tomorrow (Morning)</text>
+        </g>
+
+        <!-- CARD 04: Dr. Karthika Sharma -->
+        <g transform="translate(978, 0)" filter="url(#cardShadow2)">
+          <rect width="300" height="440" rx="20" fill="#FFFFFF" stroke="rgba(21, 128, 61, 0.14)" stroke-width="1"/>
+          <rect x="16" y="16" width="268" height="240" rx="16" fill="url(#doc4)"/>
+          <rect x="28" y="28" width="58" height="24" rx="12" fill="rgba(8, 30, 23, 0.6)"/>
+          <text x="57" y="44" class="font-body" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">8 yrs</text>
+
+          <circle cx="150" cy="110" r="42" fill="rgba(255, 255, 255, 0.25)"/>
+          <path d="M 108 190 C 108 150 192 150 192 190 Z" fill="rgba(255, 255, 255, 0.25)"/>
+
+          <rect x="90" y="200" width="120" height="34" rx="17" fill="#15803D"/>
+          <text x="150" y="222" class="font-body" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">View Profile</text>
+
+          <text x="150" y="295" class="font-body" font-size="10" font-weight="800" fill="#15803D" text-anchor="middle" letter-spacing="0.08em">SKIN CARE &amp; AESTHETICS</text>
+          <text x="150" y="328" class="font-title" font-size="18" font-weight="800" fill="#081E17" text-anchor="middle">Dr. Karthika Sharma</text>
+          <text x="150" y="352" class="font-body" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">MBBS, MD (Dermatology)</text>
+          <text x="150" y="374" class="font-body" font-size="11" font-weight="600" fill="#22C55E" text-anchor="middle">● Available Today (Slots Open)</text>
+        </g>
+
+      </g>
+
+    </g>
+
+  </g>
+</svg>
