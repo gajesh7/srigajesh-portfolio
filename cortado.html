@@ -11,45 +11,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
+  <!-- Homepage Master Stylesheet + Cortado Case Study Extension -->
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="cortado.css">
 </head>
 <body>
 
-  <!-- ==========================================================================
-       EDITORIAL STICKY HEADER
-       ========================================================================== -->
-  <header class="project-header" id="project-header">
-    <div class="header-inner">
-      <div class="brand-group">
-        <a href="index.html" class="brand-logo" aria-label="Gajesh Portfolio">
-          <span>GAJESH</span>
-          <span class="brand-dot"></span>
-        </a>
-        <span class="brand-role-tag">UI/UX Designer</span>
-      </div>
+  <!-- Custom Cursor Dot & Ring (Matching Homepage) -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
 
-      <div class="header-center">
+  <!-- FIXED TOP HEADER (Matching Homepage Header) -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Gajesh Portfolio Home">
+        GAJESH
+      </a>
+      
+      <div class="header-right">
         <a href="index.html#work" class="back-to-works-btn" aria-label="Back to all projects">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
-          <span>All Works</span>
+          <span>ALL WORKS</span>
         </a>
-      </div>
 
-      <div class="header-right">
-        <a href="index.html#contact" class="btn-lets-talk">
-          <span>Let's Talk</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <button class="cta-talk-btn" id="open-contact-btn" aria-label="Open contact form">
+          <span>LET'S TALK</span>
+          <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <path d="M7 17L17 7M17 7H7M17 7V17"/>
           </svg>
-        </a>
+        </button>
       </div>
     </div>
   </header>
 
-  <main class="main-project-wrap">
+  <main class="cortado-page-wrap">
 
     <!-- ==========================================================================
          SECTION 1: HERO SECTION
@@ -57,23 +55,25 @@
     <section class="hero-editorial">
       <div class="container-content">
         
-        <!-- Top Meta Info -->
+        <!-- Top Eyebrow Tag -->
         <div class="hero-meta-top">
           <div class="hero-tag">
-            <span class="brand-dot"></span>
-            <span>Mobile App · UI/UX Design</span>
+            <span class="orange-accent-badge"><span class="badge-inner">★</span></span>
+            <span>01 / SELECTED WORK · 2026 · MOBILE APP &amp; UI/UX</span>
           </div>
           <div class="hero-year-badge">
-            <span>2026 · Case Study</span>
+            <span>2026 CASE STUDY</span>
           </div>
         </div>
 
-        <!-- Big Title -->
+        <!-- Huge Display Title -->
         <div class="hero-title-wrap">
-          <h1 class="hero-title-main">Cortado</h1>
+          <h1 class="hero-title-main">
+            CORTADO<span class="hero-title-dot"></span>
+          </h1>
         </div>
 
-        <!-- Statement Row -->
+        <!-- Subtitle & Statement Row -->
         <div class="hero-statement-row">
           <h2 class="hero-subtitle-primary">
             Café Ordering &amp; Loyalty App
@@ -83,7 +83,7 @@
           </p>
         </div>
 
-        <!-- Large Hero Mockup Visual -->
+        <!-- Full-Scale Hero Visual Mockup -->
         <div class="hero-visual-frame">
           <img 
             src="images/cortado-hero.jpg" 
@@ -93,16 +93,16 @@
           >
         </div>
 
-        <!-- Minimal Scroll Indicator -->
+        <!-- Scroll Indicator (Matching Homepage Downward Arrow Box) -->
         <div class="hero-scroll-indicator">
           <div class="scroll-text">
-            <span>Scroll to Explore</span>
+            <span>SCROLL TO EXPLORE</span>
             <div class="scroll-line"></div>
           </div>
-          <div class="scroll-arrow-down">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <polyline points="19 12 12 19 5 12"></polyline>
+          <div class="downward-arrow-box" style="margin-bottom: 0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+              <polyline points="18 14 12 20 6 14"></polyline>
             </svg>
           </div>
         </div>
@@ -117,27 +117,27 @@
       <div class="container-content">
         <div class="info-grid-5">
           <div class="info-item">
-            <span class="info-label">Role</span>
+            <span class="info-label">ROLE</span>
             <span class="info-value">UI/UX Designer</span>
-            <span class="info-sub">Product Strategy &amp; Design System</span>
+            <span class="info-sub">Product Strategy &amp; Systems</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Duration</span>
+            <span class="info-label">DURATION</span>
             <span class="info-value">2 Months</span>
             <span class="info-sub">Discovery to Final Handover</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Platform</span>
+            <span class="info-label">PLATFORM</span>
             <span class="info-value">Mobile App</span>
             <span class="info-sub">iOS &amp; Android Ecosystem</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Team</span>
-            <span class="info-value">4 Core Members</span>
+            <span class="info-label">TEAM</span>
+            <span class="info-value">4 Members</span>
             <span class="info-sub">PM, Developer, QA, Founder</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Tools</span>
+            <span class="info-label">TOOLS</span>
             <span class="info-value">Figma · Photoshop</span>
             <span class="info-sub">Miro for Architecture &amp; User Flows</span>
           </div>
@@ -154,10 +154,10 @@
           <div class="overview-heading-col">
             <div class="story-chapter-label">
               <span class="chapter-number">01</span>
-              <span class="chapter-title">The Vision</span>
+              <span class="chapter-title">THE VISION</span>
             </div>
             <h2 class="overview-heading-lead">
-              Transforming the morning coffee routine into a <span>flawless digital ritual</span>.
+              TRANSFORMING THE MORNING COFFEE ROUTINE INTO A <span>FLAWLESS DIGITAL RITUAL</span>.
             </h2>
           </div>
 
@@ -193,7 +193,7 @@
       <div class="container-content">
         <div class="story-chapter-label">
           <span class="chapter-number">02</span>
-          <span class="chapter-title">Visual Storytelling &amp; Experience Rhythm</span>
+          <span class="chapter-title">VISUAL STORYTELLING &amp; SCREEN RHYTHM</span>
         </div>
       </div>
 
@@ -209,7 +209,7 @@
           </div>
           <div class="composition-caption-col">
             <span class="chapter-number">STEP 01</span>
-            <h3 class="comp-title">Contextual Branch Discovery &amp; Fulfillment Routing</h3>
+            <h3 class="comp-title">CONTEXTUAL BRANCH DISCOVERY &amp; FULFILLMENT ROUTING</h3>
             <p class="comp-desc">
               Customers choose between Cortado's flagship branches in <strong>Askar, Seef, and Riffa</strong>. Each branch showcases real-time operational status, direct contact lines, operating hours (e.g., Open 24 Hours or 05:00 AM – 01:00 AM), and dynamic fulfillment tags.
             </p>
@@ -226,7 +226,7 @@
         </div>
       </div>
 
-      <!-- Composition B: Large Centered Visual (Tactile Menu Experience) -->
+      <!-- Composition B: Large Centered Visual (Sensory Menu Experience) -->
       <div class="container-wide">
         <div class="composition-centered-wide">
           <div class="centered-wide-card">
@@ -238,7 +238,7 @@
           </div>
           <div class="centered-caption-strip">
             <div>
-              <span class="caption-label">The Sensory Menu Navigation</span>
+              <span class="caption-label">THE SENSORY MENU NAVIGATION</span>
               <p class="caption-sub">Optimized for single-thumb browsing with high-resolution drink photography</p>
             </div>
             <span class="chapter-number">STEP 02</span>
@@ -251,7 +251,7 @@
         <div class="composition-asymmetric">
           <div class="composition-caption-col">
             <span class="chapter-number">STEP 03</span>
-            <h3 class="comp-title">Frictionless Curbside Arrival: The "I'm Outside" Innovation</h3>
+            <h3 class="comp-title">FRICTIONLESS CURBSIDE ARRIVAL: THE "I'M OUTSIDE" INNOVATION</h3>
             <p class="comp-desc">
               Morning drive-thru queues are often congested and chaotic. We engineered an intuitive 4-stage tracking status: <strong>Preparing → Ready → Completed → I'm Outside</strong>.
             </p>
@@ -282,7 +282,7 @@
               <span class="trio-step-num">01 / HOME</span>
               <span class="chapter-number">CORE</span>
             </div>
-            <h4 class="trio-screen-title">Personalized Morning Dashboard</h4>
+            <h4 class="trio-screen-title">PERSONALIZED MORNING DASHBOARD</h4>
             <div class="trio-visual-container">
               <img src="images/cortado-hero.jpg" alt="Home Dashboard" style="height: 260px; object-fit: cover;">
             </div>
@@ -296,7 +296,7 @@
               <span class="trio-step-num">02 / WALLET</span>
               <span class="chapter-number">SPEED</span>
             </div>
-            <h4 class="trio-screen-title">Integrated Digital BHD Wallet</h4>
+            <h4 class="trio-screen-title">INTEGRATED DIGITAL BHD WALLET</h4>
             <div class="trio-visual-container">
               <img src="images/cortado-status.jpg" alt="Wallet and Deals" style="height: 260px; object-fit: cover;">
             </div>
@@ -310,7 +310,7 @@
               <span class="trio-step-num">03 / TRACKER</span>
               <span class="chapter-number">PRECISION</span>
             </div>
-            <h4 class="trio-screen-title">Curbside Vehicle Dispatch</h4>
+            <h4 class="trio-screen-title">CURBSIDE VEHICLE DISPATCH</h4>
             <div class="trio-visual-container">
               <img src="images/cortado-branches.jpg" alt="Curbside Pickup" style="height: 260px; object-fit: cover;">
             </div>
@@ -325,13 +325,13 @@
     </section>
 
     <!-- ==========================================================================
-         SECTION 5: THE CHALLENGE
+         SECTION 5: THE CHALLENGE (Signature Dark Studio Container)
          ========================================================================== -->
     <section class="section-dark-editorial">
       <div class="challenge-header-block">
-        <span class="challenge-label-accent">03 / The Challenge</span>
+        <span class="challenge-label-accent">03 / THE CHALLENGE</span>
         <h2 class="challenge-display-title">
-          Balancing complex café logistics with an effortless guest experience.
+          BALANCING COMPLEX CAFÉ LOGISTICS WITH AN EFFORTLESS GUEST EXPERIENCE.
         </h2>
       </div>
 
@@ -340,7 +340,7 @@
         <div class="challenge-card">
           <span class="challenge-num">01</span>
           <div class="challenge-card-body">
-            <h3 class="challenge-item-title">Four Fulfillment Channels Without Clutter</h3>
+            <h3 class="challenge-item-title">FOUR FULFILLMENT CHANNELS WITHOUT CLUTTER</h3>
             <p class="challenge-item-desc">
               Café patrons have drastically differing needs: some want express car pickup while commuting, others want table-side dine-in QR ordering or home delivery. The interface had to unify all four without confusing branch inventories or operating hours.
             </p>
@@ -350,7 +350,7 @@
         <div class="challenge-card">
           <span class="challenge-num">02</span>
           <div class="challenge-card-body">
-            <h3 class="challenge-item-title">Ending Parking Lot Queue Friction</h3>
+            <h3 class="challenge-item-title">ENDING PARKING LOT QUEUE FRICTION</h3>
             <p class="challenge-item-desc">
               Traditional café drive-thrus suffer from congestion and delays. We needed a frictionless protocol for drivers to announce their arrival without having to place phone calls or honk outside the café.
             </p>
@@ -360,7 +360,7 @@
         <div class="challenge-card">
           <span class="challenge-num">03</span>
           <div class="challenge-card-body">
-            <h3 class="challenge-item-title">Frictionless Loyalty &amp; Instant Wallet Payments</h3>
+            <h3 class="challenge-item-title">FRICTIONLESS LOYALTY &amp; INSTANT WALLET PAYMENTS</h3>
             <p class="challenge-item-desc">
               Physical punch cards get lost, and standard mobile checkout with credit card verification takes too long during morning rush hours. Cortado needed a frictionless digital wallet with automatic reward points accumulation.
             </p>
@@ -377,22 +377,22 @@
       <div class="container-content">
         <div class="story-chapter-label">
           <span class="chapter-number">04</span>
-          <span class="chapter-title">UX &amp; Design Architecture</span>
+          <span class="chapter-title">UX &amp; DESIGN ARCHITECTURE</span>
         </div>
 
         <div class="approach-lead-block">
           <h2 class="approach-title">
-            Engineering a seamless journey from discovery to the first sip.
+            ENGINEERING A SEAMLESS JOURNEY FROM DISCOVERY TO THE FIRST SIP.
           </h2>
           <p class="approach-desc">
             We mapped out every micro-touchpoint in the customer journey across Miro and Figma. From fast branch selection to custom drink modifications (oat milk, sweetness levels, single-origin roasts), every interaction was stripped of superfluous steps.
           </p>
         </div>
 
-        <!-- Interactive Journey Architecture Diagram -->
+        <!-- Journey Architecture Diagram -->
         <div class="journey-diagram-wrapper">
           <div class="diagram-header">
-            <h3 class="diagram-title">The Cortado End-to-End User Journey</h3>
+            <h3 class="diagram-title">THE CORTADO END-TO-END USER JOURNEY</h3>
             <div class="diagram-legend">
               <div class="legend-item">
                 <span class="legend-dot-orange"></span>
@@ -456,15 +456,15 @@
     <!-- ==========================================================================
          SECTION 7: UI DESIGN SHOWCASE
          ========================================================================== -->
-    <section class="editorial-section-space-sm" style="background-color: rgba(255, 255, 255, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <section class="editorial-section-space-sm" style="background-color: rgba(255, 255, 255, 0.5); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
       <div class="container-content">
         
         <div class="ui-showcase-header">
           <div class="story-chapter-label" style="justify-content: center;">
             <span class="chapter-number">05</span>
-            <span class="chapter-title">UI Design Showcase</span>
+            <span class="chapter-title">UI DESIGN SHOWCASE</span>
           </div>
-          <h2 class="ui-showcase-title">A Crafted Visual System Tailored for Specialty Coffee</h2>
+          <h2 class="ui-showcase-title">A CRAFTED VISUAL SYSTEM TAILORED FOR SPECIALTY COFFEE</h2>
           <p class="ui-showcase-subtitle">
             Warm espresso tones, clean cream surfaces, crisp typography, and high-impact drink photography harmonize to create an editorial digital atmosphere.
           </p>
@@ -474,7 +474,7 @@
         <div class="feature-breakdown-row">
           <div class="breakdown-text-panel">
             <span class="breakdown-tag">01 / FULFILLMENT</span>
-            <h3 class="breakdown-title">Multi-Branch Fulfillment Control</h3>
+            <h3 class="breakdown-title">MULTI-BRANCH FULFILLMENT CONTROL</h3>
             <p class="breakdown-body">
               Branch cards are engineered with high information density made effortlessly digestible. Users immediately view contact numbers, direct phone triggers, operational opening hours, and clear indicators for Car-pickup, Take-away, Dine-in, and Delivery.
             </p>
@@ -502,7 +502,7 @@
         <div class="feature-breakdown-row reverse">
           <div class="breakdown-text-panel">
             <span class="breakdown-tag">02 / CATALOG</span>
-            <h3 class="breakdown-title">Artisanal Menu &amp; Drink Customizer</h3>
+            <h3 class="breakdown-title">ARTISANAL MENU &amp; DRINK CUSTOMIZER</h3>
             <p class="breakdown-body">
               Every coffee enthusiast takes their drink differently. The Cortado menu celebrates craftsmanship with clean categorization (Hot Drinks, Cold Drinks, Bakery, Ice Cream) and clear pricing in Bahraini Dinars (BHD).
             </p>
@@ -530,7 +530,7 @@
         <div class="feature-breakdown-row">
           <div class="breakdown-text-panel">
             <span class="breakdown-tag">03 / TRACKING &amp; LOYALTY</span>
-            <h3 class="breakdown-title">Curbside Handover &amp; Tiered Rewards</h3>
+            <h3 class="breakdown-title">CURBSIDE HANDOVER &amp; TIERED REWARDS</h3>
             <p class="breakdown-body">
               The live order tracker keeps customers in the loop with zero guesswork. Integrated points badges (e.g. 30,123 Points) and transparent Bronze / Silver / Gold tier thresholds make loyalty progression rewarding and addictive.
             </p>
@@ -558,16 +558,16 @@
     </section>
 
     <!-- ==========================================================================
-         SECTION 8: RESULTS & IMPACT
+         SECTION 8: RESULTS & IMPACT (Matching Homepage Metrics Style)
          ========================================================================== -->
     <section class="editorial-section-space">
       <div class="container-content">
         
         <div class="results-editorial-panel">
           <div class="results-header-block">
-            <span class="results-eyebrow">06 / Measurable Impact</span>
+            <span class="results-eyebrow">06 / MEASURABLE IMPACT</span>
             <h2 class="results-title">
-              Empowering café baristas while delighting thousands of coffee lovers daily.
+              EMPOWERING CAFÉ BARISTAS WHILE DELIGHTING THOUSANDS OF COFFEE LOVERS DAILY.
             </h2>
           </div>
 
@@ -598,7 +598,7 @@
             </div>
           </div>
 
-          <!-- Editorial Testimonial Quote -->
+          <!-- Testimonial Quote -->
           <div class="results-impact-quote">
             <p class="quote-statement">
               "Gajesh transformed our café ordering concept into a luxury product experience. The curbside 'I'm Outside' feature alone completely eliminated our morning parking congestion."
@@ -621,9 +621,9 @@
           <div class="faq-header">
             <div class="story-chapter-label" style="justify-content: center;">
               <span class="chapter-number">07</span>
-              <span class="chapter-title">Common Questions</span>
+              <span class="chapter-title">COMMON QUESTIONS</span>
             </div>
-            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
             <p class="faq-subtitle">Key insights into the Cortado design process and execution.</p>
           </div>
 
@@ -632,7 +632,7 @@
             <!-- FAQ 1 -->
             <div class="faq-item active">
               <button class="faq-trigger" aria-expanded="true">
-                <span class="faq-question">What is Cortado?</span>
+                <span class="faq-question">WHAT IS CORTADO?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer-panel">
@@ -645,7 +645,7 @@
             <!-- FAQ 2 -->
             <div class="faq-item">
               <button class="faq-trigger" aria-expanded="false">
-                <span class="faq-question">What was my role on the project?</span>
+                <span class="faq-question">WHAT WAS MY ROLE ON THE PROJECT?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer-panel">
@@ -658,7 +658,7 @@
             <!-- FAQ 3 -->
             <div class="faq-item">
               <button class="faq-trigger" aria-expanded="false">
-                <span class="faq-question">What core problem did I solve?</span>
+                <span class="faq-question">WHAT CORE PROBLEM DID I SOLVE?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer-panel">
@@ -671,7 +671,7 @@
             <!-- FAQ 4 -->
             <div class="faq-item">
               <button class="faq-trigger" aria-expanded="false">
-                <span class="faq-question">How long did the project take?</span>
+                <span class="faq-question">HOW LONG DID THE PROJECT TAKE?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer-panel">
@@ -684,7 +684,7 @@
             <!-- FAQ 5 -->
             <div class="faq-item">
               <button class="faq-trigger" aria-expanded="false">
-                <span class="faq-question">What did I design?</span>
+                <span class="faq-question">WHAT DID I DESIGN?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer-panel">
@@ -707,25 +707,25 @@
       <div class="container-content">
         <div class="credits-flex-row">
           <div class="credits-title-group">
-            <h3>Project Credits</h3>
+            <h3>PROJECT CREDITS</h3>
             <p>Cortado Café Mobile Experience · Bahrain · 2026</p>
           </div>
 
           <div class="credits-list-items">
             <div class="credit-col">
-              <span class="credit-role">Design &amp; Strategy</span>
+              <span class="credit-role">DESIGN &amp; STRATEGY</span>
               <span class="credit-name">Gajesh (UI/UX Designer)</span>
             </div>
             <div class="credit-col">
-              <span class="credit-role">Timeline</span>
+              <span class="credit-role">TIMELINE</span>
               <span class="credit-name">2 Months Duration</span>
             </div>
             <div class="credit-col">
-              <span class="credit-role">Platform</span>
+              <span class="credit-role">PLATFORM</span>
               <span class="credit-name">iOS &amp; Android App</span>
             </div>
             <div class="credit-col">
-              <span class="credit-role">Tools &amp; Stack</span>
+              <span class="credit-role">TOOLS &amp; STACK</span>
               <span class="credit-name">Figma · Photoshop · Miro</span>
             </div>
           </div>
@@ -741,13 +741,13 @@
         <a href="index.html#work" class="next-project-link">
           
           <div class="next-eyebrow">
-            <span>Next Project</span>
+            <span>NEXT PROJECT</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </div>
 
           <div class="next-title-row">
             <h2 class="next-project-title">02 — TECTORI</h2>
-            <span class="next-category-tag">Fitness App · Product Design · 2026</span>
+            <span class="next-category-tag">FITNESS APP · PRODUCT DESIGN · 2026</span>
           </div>
 
           <div class="next-card-visual-frame">
@@ -770,72 +770,202 @@
   </main>
 
   <!-- ==========================================================================
-       MINIMAL GLOBAL FOOTER
+       SIGNATURE HOMEPAGE FOOTER (Matching Homepage Design Exactly)
        ========================================================================== -->
-  <footer class="project-detail-footer">
-    <div class="container-content">
-      <div class="detail-footer-inner">
-        <div>
-          <span>© 2026 Gajesh. All rights reserved.</span>
-        </div>
-        <div class="footer-nav-links">
-          <a href="index.html" class="footer-nav-link">Home</a>
-          <a href="index.html#work" class="footer-nav-link">Works</a>
-          <a href="index.html#about" class="footer-nav-link">About</a>
-          <a href="index.html#contact" class="footer-nav-link">Contact</a>
+  <footer class="brand-appart-footer" id="contact">
+    <div class="footer-inner-container">
+      
+      <!-- Decorative Floating Object (Upper Right) -->
+      <div class="footer-decorative-object" id="footer-decor" aria-hidden="true">
+        <svg class="decor-badge-svg" width="90" height="90" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="#8E8883" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <path d="M50 18 L50 82 M18 50 L82 50" stroke="#FF6B1A" stroke-width="2"/>
+          <circle cx="50" cy="50" r="16" fill="#F7F4EC"/>
+          <circle cx="50" cy="6" fill="#FF6B1A"/>
+        </svg>
+      </div>
+
+      <!-- Footer Hero CTA (Top Center) -->
+      <div class="footer-hero-cta">
+        <h2 class="footer-giant-headline">
+          <span class="f-headline-line">LET'S CREATE</span>
+          <span class="f-headline-line">SOMETHING</span>
+          <span class="f-headline-line">MEANINGFUL. <span class="orange-arrow-accent">→</span></span>
+        </h2>
+
+        <div class="book-a-call-wrapper">
+          <button class="cta-talk-btn book-call-btn" id="book-call-trigger" aria-label="Book a call or start a project">
+            <span>BOOK A CALL</span>
+            <span class="avatar-phone-duo">
+              <span class="hero-avatar-circle" title="Gajesh">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF6B1A'/%3E%3Cstop offset='100%25' stop-color='%23151311'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='40' r='18' fill='%23F7F4EC'/%3E%3Cpath d='M22 82c0-15.5 12.5-28 28-28s28 12.5 28 28' fill='%23F7F4EC'/%3E%3C/svg%3E" alt="Gajesh Profile" class="hero-avatar-img">
+              </span>
+              <span class="phone-icon-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+            </span>
+          </button>
         </div>
       </div>
+
+      <!-- Multi-Column Footer Navigation (5 Columns Matching Homepage) -->
+      <div class="footer-nav-grid">
+        
+        <!-- COLUMN 01: Gajesh -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">GAJESH</h4>
+          <ul class="f-link-list">
+            <li><a href="index.html#hero" class="f-link">HOME <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">WORK <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#about" class="f-link">ABOUT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#experience" class="f-link">EXPERIENCE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#contact" class="f-link">CONTACT <span class="f-hover-arrow">→</span></a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 02: Expertise -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">EXPERTISE</h4>
+          <ul class="f-link-list">
+            <li><a href="index.html#expertise" class="f-link">UI/UX DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">PRODUCT DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">MOBILE APP DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">WEB DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">DESIGN SYSTEMS <span class="f-hover-arrow">→</span></a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 03: Selected Work -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">SELECTED WORK</h4>
+          <ul class="f-link-list">
+            <li><a href="cortado.html" class="f-link" style="color: var(--accent-orange);">CORTADO CAFÉ <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">TECTORI <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">ePRISE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">TRIBAL <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">MORE WORK <span class="f-hover-arrow">→</span></a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 04: Connect -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">CONNECT</h4>
+          <ul class="f-link-list">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="f-link">LINKEDIN <span class="f-hover-arrow">↗</span></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener" class="f-link">X (TWITTER) <span class="f-hover-arrow">↗</span></a></li>
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener" class="f-link">DRIBBBLE <span class="f-hover-arrow">↗</span></a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener" class="f-link">GITHUB <span class="f-hover-arrow">↗</span></a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 05: Location & Availability -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">LOCATION</h4>
+          <p class="f-text-block">BASED IN BANGALORE, INDIA</p>
+          <p class="f-text-block">WORKING GLOBALLY (REMOTE)</p>
+          <div class="f-status-pill">
+            <span class="status-indicator-dot"></span>
+            <span>AVAILABLE FOR Q1/Q2 2026</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Sub-Footer Bar -->
+      <div class="sub-footer-bar">
+        <div class="sub-footer-left">
+          <span>© 2026 GAJESH. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="sub-footer-right">
+          <span>PORTFOLIO EDITORIAL EDITION</span>
+          <span class="sub-footer-dot">·</span>
+          <span>DESIGNED WITH PRECISION</span>
+        </div>
+      </div>
+
     </div>
   </footer>
 
-  <!-- Floating Back to Top Button -->
-  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <line x1="12" y1="19" x2="12" y2="5"></line>
-      <polyline points="5 12 12 5 19 12"></polyline>
-    </svg>
-  </button>
-
   <!-- ==========================================================================
-       INTERACTIVE SCRIPTS (Accordion & Scroll Transitions)
+       CONTACT MODAL (Identical to Homepage)
        ========================================================================== -->
+  <div class="contact-modal" id="contact-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+      
+      <div class="modal-header">
+        <span class="modal-tag">GET IN TOUCH</span>
+        <h2>LET'S TALK</h2>
+        <p>Tell me about your product, timeline, or design challenges.</p>
+      </div>
+
+      <form class="contact-form" id="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="user-name">YOUR NAME</label>
+          <input type="text" id="user-name" placeholder="e.g. Alex Morgan" required>
+        </div>
+
+        <div class="form-group">
+          <label for="user-email">EMAIL ADDRESS</label>
+          <input type="email" id="user-email" placeholder="alex@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">PROJECT TYPE</label>
+          <select id="project-type">
+            <option value="Cortado Project Inquiry" selected>Cortado Project Inquiry</option>
+            <option value="Mobile App UI/UX">Mobile App UI/UX</option>
+            <option value="SaaS Platform UX">SaaS Platform UX</option>
+            <option value="Website Redesign">Website Redesign</option>
+            <option value="Design System">Design System</option>
+            <option value="Product Strategy & UX Audit">Product Strategy & UX Audit</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="user-message">PROJECT DETAILS</label>
+          <textarea id="user-message" rows="4" placeholder="Briefly describe your goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="cta-talk-btn full-width submit-btn" id="submit-form-btn">
+          <span>SEND MESSAGE</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+
+      <div class="form-success-state" id="form-success-state">
+        <div class="success-icon">✓</div>
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. Gajesh will get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Homepage Script (Cursor, Modal, Magnetic Buttons) -->
+  <script src="script.js?v=2.2"></script>
+
+  <!-- FAQ Accordion & Page Scripts -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // FAQ Accordion Interaction
+      // FAQ Accordion Toggle
       const faqItems = document.querySelectorAll('.faq-item');
       faqItems.forEach(item => {
         const trigger = item.querySelector('.faq-trigger');
         trigger.addEventListener('click', () => {
           const isActive = item.classList.contains('active');
           
-          // Close other items
           faqItems.forEach(other => {
             other.classList.remove('active');
             other.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
           });
 
-          // Toggle current
           if (!isActive) {
             item.classList.add('active');
             trigger.setAttribute('aria-expanded', 'true');
           }
-        });
-      });
-
-      // Back to top button visibility
-      const backToTopBtn = document.getElementById('back-to-top');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-          backToTopBtn.classList.add('visible');
-        } else {
-          backToTopBtn.classList.remove('visible');
-        }
-      });
-
-      backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
         });
       });
     });

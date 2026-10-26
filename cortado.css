@@ -1,43 +1,17 @@
 /* ==========================================================================
-   CORTADO PROJECT INNER PAGE STYLESHEET
-   Inspired by BrandAppArt Promethee Project Page (https://www.brandappart.com/work/promethee)
-   Design Philosophy:
-     - Editorial layout with bold display typography
-     - Large-scale imagery and generous breathing room (whitespace)
-     - Organic image rhythm: Full-bleed, 50/50, asymmetric, and grouped compositions
-     - Minimalist luxury agency aesthetic (warm off-white #F7F4EC & charcoal #151311)
-     - Accent: Terracotta Warm Orange (#FF6B1A)
+   CORTADO PROJECT DETAIL PAGE STYLESHEET
+   Unified with Gajesh Portfolio Homepage Design System
+   Color Palette:
+     - Cream Background: #F7F4EC
+     - Dark Section Background: #151311
+     - Primary Text: #151311
+     - Muted Gray: #8E8883
+     - Accent Orange: #FF6B1A
+   Typography:
+     - Primary Font: 'Youth', 'PP Neue Montreal', 'Neue Montreal', sans-serif
    ========================================================================== */
 
-@font-face {
-  font-family: 'Youth';
-  src: local('Youth'), local('Youth-Bold'), local('Youth Bold'), local('Youth-Regular'), local('Youth Regular');
-  font-weight: 400 800;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
-  --bg-cream: #F7F4EC;
-  --bg-card: #FFFFFF;
-  --bg-card-warm: #FAF8F2;
-  --bg-dark: #151311;
-  --bg-dark-surface: #1E1B18;
-  --text-black: #151311;
-  --text-body: #3A3632;
-  --text-muted: #7E7872;
-  --text-light: #B8B3AA;
-  --text-white: #FFFFFF;
-  --accent-orange: #FF6B1A;
-  --accent-orange-glow: rgba(255, 107, 26, 0.22);
-  --accent-terracotta: #D45A1A;
-  --border-subtle: rgba(21, 19, 17, 0.08);
-  --border-strong: rgba(21, 19, 17, 0.18);
-  --border-dark: rgba(255, 255, 255, 0.1);
-
-  --font-sans: 'Youth', 'PP Neue Montreal', 'Neue Montreal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Youth', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-
   --max-w-content: 1320px;
   --max-w-wide: 1540px;
   --max-w-narrative: 920px;
@@ -46,182 +20,13 @@
   --transition-fast: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Reset & Base */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-  background-color: var(--bg-cream);
-  color: var(--text-black);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--bg-cream);
-  color: var(--text-body);
-  line-height: 1.6;
-  overflow-x: hidden;
-  position: relative;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-button {
-  border: none;
-  background: none;
-  font-family: inherit;
-  cursor: pointer;
-}
-
-/* ==========================================================================
-   HEADER / NAVIGATION (Editorial Agency Minimal)
-   ========================================================================== */
-.project-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 84px;
-  z-index: 1000;
-  background: rgba(247, 244, 236, 0.88);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border-subtle);
-  transition: transform var(--transition-fast), background var(--transition-fast);
-}
-
-.header-inner {
-  max-width: var(--max-w-wide);
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand-group {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.brand-logo {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  color: var(--text-black);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: opacity var(--transition-fast);
-}
-
-.brand-dot {
-  width: 7px;
-  height: 7px;
-  background-color: var(--accent-orange);
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.brand-role-tag {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  padding-left: 14px;
-  border-left: 1px solid var(--border-subtle);
-}
-
-.header-center {
-  display: flex;
-  align-items: center;
-}
-
-.back-to-works-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 18px;
-  background: transparent;
-  border: 1px solid var(--border-subtle);
-  border-radius: 100px;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-black);
-  transition: all var(--transition-fast);
-}
-
-.back-to-works-btn:hover {
-  background: var(--text-black);
-  color: var(--bg-cream);
-  border-color: var(--text-black);
-  transform: translateX(-3px);
-}
-
-.back-to-works-btn svg {
-  transition: transform var(--transition-fast);
-}
-
-.back-to-works-btn:hover svg {
-  transform: translateX(-4px);
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.btn-lets-talk {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--text-black);
-  color: #FFFFFF;
-  padding: 10px 22px;
-  border-radius: 100px;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: all var(--transition-fast);
-}
-
-.btn-lets-talk:hover {
-  background: var(--accent-orange);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px var(--accent-orange-glow);
-}
-
-/* ==========================================================================
-   MAIN WRAPPER & CONTAINER UTILITIES
-   ========================================================================== */
-.main-project-wrap {
+/* Page Spacing & Main Container */
+.cortado-page-wrap {
   position: relative;
   width: 100%;
-  padding-top: 84px;
+  padding-top: 120px;
+  background-color: var(--bg-cream);
+  color: var(--text-black);
 }
 
 .container-narrative {
@@ -242,17 +47,47 @@ button {
   padding: 0 40px;
 }
 
-.container-bleed {
-  width: 100%;
-  padding: 0 24px;
-}
-
 .editorial-section-space {
-  padding: 160px 0;
+  padding: 140px 0;
 }
 
 .editorial-section-space-sm {
-  padding: 100px 0;
+  padding: 90px 0;
+}
+
+/* ==========================================================================
+   HEADER COMPATIBILITY (Extends .site-header from styles.css)
+   ========================================================================== */
+.back-to-works-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--border-dark);
+  border-radius: 100px;
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-black);
+  transition: all var(--transition-fast);
+}
+
+.back-to-works-btn:hover {
+  background: var(--text-black);
+  color: #FFFFFF;
+  border-color: var(--text-black);
+  transform: translateX(-3px);
+}
+
+.back-to-works-btn svg {
+  transition: transform var(--transition-fast);
+}
+
+.back-to-works-btn:hover svg {
+  transform: translateX(-4px);
 }
 
 /* ==========================================================================
@@ -260,7 +95,7 @@ button {
    ========================================================================== */
 .hero-editorial {
   position: relative;
-  padding: 80px 0 100px;
+  padding: 40px 0 100px;
 }
 
 .hero-meta-top {
@@ -269,64 +104,80 @@ button {
   justify-content: space-between;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .hero-tag {
+  font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-orange);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .hero-year-badge {
+  font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
 .hero-title-wrap {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .hero-title-main {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: clamp(4.5rem, 12vw, 11rem);
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 0.88;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--text-black);
   margin-left: -4px;
+  display: flex;
+  align-items: baseline;
+}
+
+.hero-title-dot {
+  display: inline-block;
+  width: 0.18em;
+  height: 0.18em;
+  background-color: var(--accent-orange);
+  border-radius: 50%;
+  margin-left: 0.08em;
 }
 
 .hero-statement-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: 60px;
   align-items: end;
-  margin-bottom: 72px;
+  margin-bottom: 60px;
 }
 
 .hero-subtitle-primary {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  font-family: var(--font-primary);
+  font-size: clamp(1.6rem, 3vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
 .hero-statement-lead {
-  font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
+  font-family: var(--font-primary);
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
   line-height: 1.6;
   color: var(--text-body);
+  font-weight: 500;
 }
 
 /* Hero Visual Showcase */
@@ -336,7 +187,7 @@ button {
   border-radius: 28px;
   overflow: hidden;
   background-color: #EFECE3;
-  box-shadow: 0 40px 100px -20px rgba(21, 19, 17, 0.12);
+  box-shadow: 0 40px 100px -20px rgba(21, 19, 17, 0.14);
 }
 
 .hero-visual-img {
@@ -356,13 +207,14 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
+  padding-top: 28px;
 }
 
 .scroll-text {
+  font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-muted);
   display: flex;
@@ -373,24 +225,7 @@ button {
 .scroll-line {
   width: 48px;
   height: 1px;
-  background-color: var(--border-strong);
-}
-
-.scroll-arrow-down {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid var(--border-subtle);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-black);
-  animation: bounceDown 2s infinite var(--ease-promethee);
-}
-
-@keyframes bounceDown {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
+  background-color: var(--border-dark);
 }
 
 /* ==========================================================================
@@ -399,8 +234,8 @@ button {
 .section-project-info {
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 60px 0;
-  background-color: rgba(255, 255, 255, 0.4);
+  padding: 56px 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .info-grid-5 {
@@ -412,28 +247,30 @@ button {
 .info-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .info-label {
+  font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
 .info-value {
-  font-family: var(--font-display);
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-family: var(--font-primary);
+  font-size: 1.15rem;
+  font-weight: 800;
   color: var(--text-black);
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .info-sub {
   font-size: 0.8125rem;
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 /* ==========================================================================
@@ -442,16 +279,41 @@ button {
 .overview-editorial-block {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 100px;
+  gap: 90px;
   align-items: start;
 }
 
-.overview-heading-lead {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3.4vw, 3.25rem);
+.story-chapter-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.chapter-number {
+  font-family: var(--font-primary);
+  font-size: 0.8125rem;
   font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.1em;
+  color: var(--accent-orange);
+}
+
+.chapter-title {
+  font-family: var(--font-primary);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.overview-heading-lead {
+  font-family: var(--font-primary);
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
@@ -462,13 +324,14 @@ button {
 .overview-content-col {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 
 .overview-text-p {
   font-size: 1.125rem;
   line-height: 1.7;
   color: var(--text-body);
+  font-weight: 500;
 }
 
 .feature-pills-list {
@@ -483,13 +346,16 @@ button {
   align-items: center;
   gap: 8px;
   padding: 10px 18px;
-  background: var(--bg-card);
+  background: #FFFFFF;
   border: 1px solid var(--border-subtle);
   border-radius: 100px;
+  font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   color: var(--text-black);
   transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 
 .feature-pill:hover {
@@ -497,6 +363,7 @@ button {
   color: #FFFFFF;
   border-color: var(--text-black);
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
 .feature-pill-dot {
@@ -507,31 +374,8 @@ button {
 }
 
 /* ==========================================================================
-   SECTION 4: VISUAL STORYTELLING (Promethee Rhythm)
+   SECTION 4: VISUAL STORYTELLING (BrandAppArt Editorial Rhythm)
    ========================================================================== */
-.story-chapter-label {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 28px;
-}
-
-.chapter-number {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--accent-orange);
-}
-
-.chapter-title {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-/* 50/50 Split Composition */
 .composition-split-50 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -545,7 +389,7 @@ button {
   border-radius: 28px;
   overflow: hidden;
   background: #EBE7DD;
-  box-shadow: 0 30px 80px -15px rgba(21, 19, 17, 0.1);
+  box-shadow: 0 30px 80px -15px rgba(21, 19, 17, 0.12);
 }
 
 .composition-media-card img {
@@ -560,18 +404,19 @@ button {
 }
 
 .composition-caption-col {
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .comp-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.875rem, 2.6vw, 2.5rem);
+  font-family: var(--font-primary);
+  font-size: clamp(1.85rem, 2.6vw, 2.5rem);
   font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
@@ -579,31 +424,31 @@ button {
   font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--text-body);
+  font-weight: 500;
 }
 
-/* Minimal Branch Tag Pill Group */
 .branch-preview-pills {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .branch-pill {
+  font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: 6px;
-  background: #E8E3D7;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #EAE6DB;
   color: var(--text-black);
 }
 
-/* Large Centered Visual (90% Width) */
+/* Centered Visual (90% Width) */
 .composition-centered-wide {
   margin-bottom: 140px;
-  text-align: center;
 }
 
 .centered-wide-card {
@@ -632,19 +477,21 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 24px 8px 0;
-  text-align: left;
 }
 
 .caption-label {
-  font-family: var(--font-display);
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
 .caption-sub {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 /* Asymmetric 2-Screen Composition */
@@ -656,11 +503,7 @@ button {
   margin-bottom: 140px;
 }
 
-.asymmetric-reverse {
-  grid-template-columns: 0.85fr 1.15fr;
-}
-
-/* Trio Screens Layout (Promethee multi-device rhythm) */
+/* Trio Screens Layout */
 .screens-trio-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -670,20 +513,21 @@ button {
 
 .trio-card {
   position: relative;
-  background: var(--bg-card);
+  background: #FFFFFF;
   border-radius: 24px;
   padding: 28px;
   border: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
   transition: all var(--transition-fast);
+  box-shadow: 0 10px 30px rgba(21, 19, 17, 0.03);
 }
 
 .trio-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 24px 60px rgba(21, 19, 17, 0.08);
-  border-color: var(--border-strong);
+  border-color: var(--border-dark);
 }
 
 .trio-card-header {
@@ -693,6 +537,7 @@ button {
 }
 
 .trio-step-num {
+  font-family: var(--font-primary);
   font-size: 0.8125rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -700,9 +545,11 @@ button {
 }
 
 .trio-screen-title {
-  font-family: var(--font-display);
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-family: var(--font-primary);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
@@ -713,33 +560,36 @@ button {
 }
 
 .trio-desc {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: var(--text-body);
-  line-height: 1.5;
+  line-height: 1.55;
+  font-weight: 500;
 }
 
 /* ==========================================================================
-   SECTION 5: THE CHALLENGE
+   SECTION 5: THE CHALLENGE (Signature Dark Studio Section)
    ========================================================================== */
 .section-dark-editorial {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-dark); /* #151311 */
   color: #FFFFFF;
   position: relative;
   border-radius: 36px;
   margin: 0 24px;
   padding: 120px 48px;
   overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.25);
 }
 
 .challenge-header-block {
   max-width: 900px;
-  margin-bottom: 80px;
+  margin-bottom: 72px;
 }
 
 .challenge-label-accent {
+  font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-orange);
   margin-bottom: 16px;
@@ -747,55 +597,53 @@ button {
 }
 
 .challenge-display-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-family: var(--font-primary);
+  font-size: clamp(2.5rem, 4vw, 4.25rem);
   font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 
 .challenge-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 36px;
+  gap: 32px;
 }
 
 .challenge-card {
-  background: var(--bg-dark-surface);
-  border: 1px solid var(--border-dark);
+  background: #1E1B18;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
-  padding: 40px 36px;
+  padding: 40px 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 32px;
+  gap: 28px;
   transition: all var(--transition-fast);
 }
 
 .challenge-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255, 107, 26, 0.4);
+  border-color: rgba(255, 107, 26, 0.5);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
 .challenge-num {
-  font-size: 1.75rem;
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
+  font-size: 2rem;
   font-weight: 800;
+  letter-spacing: -0.03em;
   color: var(--accent-orange);
 }
 
-.challenge-card-body {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .challenge-item-title {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: 1.35rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: #FFFFFF;
   line-height: 1.25;
 }
@@ -803,7 +651,8 @@ button {
 .challenge-item-desc {
   font-size: 0.9375rem;
   line-height: 1.6;
-  color: #A6A098;
+  color: #A8A29A;
+  font-weight: 500;
 }
 
 /* ==========================================================================
@@ -813,15 +662,16 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 72px;
 }
 
 .approach-title {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: clamp(2.25rem, 3.5vw, 3.5rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
@@ -829,11 +679,11 @@ button {
   font-size: 1.125rem;
   line-height: 1.7;
   color: var(--text-body);
+  font-weight: 500;
 }
 
-/* User Flow & Architecture Visual Diagram */
 .journey-diagram-wrapper {
-  background: var(--bg-card);
+  background: #FFFFFF;
   border: 1px solid var(--border-subtle);
   border-radius: 32px;
   padding: 56px 48px;
@@ -851,9 +701,11 @@ button {
 }
 
 .diagram-title {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
@@ -861,9 +713,10 @@ button {
   display: flex;
   align-items: center;
   gap: 20px;
+  font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -887,7 +740,6 @@ button {
   border-radius: 50%;
 }
 
-/* Step Flow Grid */
 .flow-steps-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -905,7 +757,7 @@ button {
 .flow-step-item:not(:last-child)::after {
   content: '→';
   position: absolute;
-  top: 18px;
+  top: 14px;
   right: -16px;
   font-size: 1.25rem;
   color: var(--text-light);
@@ -913,17 +765,17 @@ button {
 }
 
 .step-indicator {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 12px;
   background: var(--bg-cream);
   border: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-weight: 800;
-  font-size: 0.9375rem;
+  font-size: 0.95rem;
   color: var(--text-black);
 }
 
@@ -933,9 +785,11 @@ button {
 }
 
 .step-content-box h4 {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
   color: var(--text-black);
   margin-bottom: 6px;
 }
@@ -944,34 +798,36 @@ button {
   font-size: 0.8125rem;
   color: var(--text-muted);
   line-height: 1.5;
+  font-weight: 500;
 }
 
 /* ==========================================================================
-   SECTION 7: UI DESIGN SHOWCASE (Full Experience Breakdown)
+   SECTION 7: UI DESIGN SHOWCASE
    ========================================================================== */
 .ui-showcase-header {
   text-align: center;
-  max-width: 800px;
+  max-width: 860px;
   margin: 0 auto 90px;
 }
 
 .ui-showcase-title {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: clamp(2.5rem, 4vw, 4.25rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  text-transform: uppercase;
   color: var(--text-black);
   margin-bottom: 20px;
 }
 
 .ui-showcase-subtitle {
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   color: var(--text-body);
   line-height: 1.6;
+  font-weight: 500;
 }
 
-/* Feature Showcase Card Rows */
 .feature-breakdown-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -991,23 +847,25 @@ button {
 .breakdown-text-panel {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .breakdown-tag {
+  font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-orange);
 }
 
 .breakdown-title {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 2.8vw, 2.75rem);
+  font-family: var(--font-primary);
+  font-size: clamp(1.85rem, 2.7vw, 2.65rem);
   font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
@@ -1015,6 +873,7 @@ button {
   font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--text-body);
+  font-weight: 500;
 }
 
 .breakdown-specs-list {
@@ -1029,8 +888,9 @@ button {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 0.9375rem;
-  font-weight: 600;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--text-black);
 }
 
@@ -1044,7 +904,7 @@ button {
   border-radius: 28px;
   overflow: hidden;
   background: #EAE6DB;
-  box-shadow: 0 30px 80px -15px rgba(21, 19, 17, 0.1);
+  box-shadow: 0 30px 80px -15px rgba(21, 19, 17, 0.12);
 }
 
 .breakdown-visual-card img {
@@ -1058,26 +918,27 @@ button {
 }
 
 /* ==========================================================================
-   SECTION 8: RESULTS & IMPACT (Big Bold Numbers)
+   SECTION 8: RESULTS & IMPACT
    ========================================================================== */
 .results-editorial-panel {
   background: #FFFFFF;
   border-radius: 36px;
   border: 1px solid var(--border-subtle);
-  padding: 100px 60px;
+  padding: 90px 60px;
   margin-bottom: 120px;
   box-shadow: 0 30px 80px rgba(21, 19, 17, 0.05);
 }
 
 .results-header-block {
   max-width: 800px;
-  margin-bottom: 80px;
+  margin-bottom: 72px;
 }
 
 .results-eyebrow {
+  font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-orange);
   margin-bottom: 16px;
@@ -1085,11 +946,12 @@ button {
 }
 
 .results-title {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: clamp(2.5rem, 3.8vw, 3.75rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
@@ -1097,9 +959,9 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
   border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 80px;
+  margin-bottom: 72px;
 }
 
 .stat-card-editorial {
@@ -1109,8 +971,8 @@ button {
 }
 
 .stat-metric-big {
-  font-family: var(--font-display);
-  font-size: clamp(3.25rem, 5vw, 5rem);
+  font-family: var(--font-primary);
+  font-size: clamp(3.25rem, 5vw, 5.25rem);
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.04em;
@@ -1122,9 +984,11 @@ button {
 }
 
 .stat-label-editorial {
-  font-family: var(--font-display);
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-family: var(--font-primary);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
   color: var(--text-black);
 }
 
@@ -1132,6 +996,7 @@ button {
   font-size: 0.875rem;
   color: var(--text-muted);
   line-height: 1.5;
+  font-weight: 500;
 }
 
 .results-impact-quote {
@@ -1141,27 +1006,29 @@ button {
 }
 
 .quote-statement {
-  font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2vw, 1.875rem);
+  font-family: var(--font-primary);
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
   font-weight: 700;
   line-height: 1.4;
   color: var(--text-black);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
 .quote-author {
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-family: var(--font-primary);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent-orange);
 }
 
 /* ==========================================================================
-   SECTION 9: FAQ ACCORDION (Minimalist Editorial)
+   SECTION 9: FAQ ACCORDION
    ========================================================================== */
 .faq-section-block {
-  max-width: 920px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -1171,17 +1038,19 @@ button {
 }
 
 .faq-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.25rem, 3.5vw, 3.25rem);
+  font-family: var(--font-primary);
+  font-size: clamp(2.25rem, 3.5vw, 3.5rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
   color: var(--text-black);
   margin-bottom: 16px;
 }
 
 .faq-subtitle {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 .faq-accordion-list {
@@ -1207,13 +1076,14 @@ button {
   text-align: left;
   background: transparent;
   cursor: pointer;
-  outline: none;
 }
 
 .faq-question {
-  font-family: var(--font-display);
-  font-size: clamp(1.125rem, 1.6vw, 1.35rem);
-  font-weight: 700;
+  font-family: var(--font-primary);
+  font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--text-black);
   transition: color var(--transition-fast);
 }
@@ -1223,14 +1093,15 @@ button {
 }
 
 .faq-icon {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-dark);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-black);
+  font-weight: 700;
   flex-shrink: 0;
   transition: all var(--transition-fast);
 }
@@ -1258,16 +1129,17 @@ button {
   line-height: 1.7;
   color: var(--text-body);
   padding: 0 8px;
+  font-weight: 500;
 }
 
 /* ==========================================================================
-   SECTION 10: CREDITS (Clean Editorial Footer)
+   SECTION 10: CREDITS
    ========================================================================== */
 .section-credits-editorial {
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 72px 0;
-  margin: 120px 0 0;
+  padding: 64px 0;
+  margin: 100px 0 0;
 }
 
 .credits-flex-row {
@@ -1279,52 +1151,55 @@ button {
 }
 
 .credits-title-group h3 {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: 1.5rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: var(--text-black);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .credits-title-group p {
   font-size: 0.875rem;
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 .credits-list-items {
   display: flex;
-  gap: 60px;
+  gap: 56px;
   flex-wrap: wrap;
 }
 
 .credit-col {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .credit-role {
+  font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
 .credit-name {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
+  font-family: var(--font-primary);
+  font-size: 1.05rem;
+  font-weight: 800;
   color: var(--text-black);
 }
 
 /* ==========================================================================
-   SECTION 11: NEXT PROJECT (Promethee Large Visual Footer Preview)
+   SECTION 11: NEXT PROJECT
    ========================================================================== */
 .next-project-section {
   position: relative;
-  padding: 140px 0 160px;
+  padding: 120px 0 140px;
   background-color: var(--bg-cream);
   overflow: hidden;
 }
@@ -1333,19 +1208,19 @@ button {
   display: block;
   text-decoration: none;
   color: inherit;
-  group: hover;
 }
 
 .next-eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  font-family: var(--font-primary);
   font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-orange);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   transition: transform var(--transition-fast);
 }
 
@@ -1357,14 +1232,14 @@ button {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .next-project-title {
-  font-family: var(--font-display);
+  font-family: var(--font-primary);
   font-size: clamp(3.5rem, 8vw, 7.5rem);
   font-weight: 800;
-  line-height: 0.95;
+  line-height: 0.92;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -1376,9 +1251,10 @@ button {
 }
 
 .next-category-tag {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   color: var(--text-muted);
   text-transform: uppercase;
 }
@@ -1386,11 +1262,11 @@ button {
 .next-card-visual-frame {
   position: relative;
   width: 100%;
-  height: 540px;
+  height: 520px;
   border-radius: 32px;
   overflow: hidden;
-  box-shadow: 0 40px 100px -20px rgba(21, 19, 17, 0.12);
-  background: #151311;
+  box-shadow: 0 40px 100px -20px rgba(21, 19, 17, 0.14);
+  background: var(--bg-dark);
 }
 
 .next-card-img {
@@ -1407,7 +1283,7 @@ button {
 .next-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.65) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -1416,15 +1292,18 @@ button {
 }
 
 .next-overlay-meta h4 {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   margin-bottom: 6px;
 }
 
 .next-overlay-meta p {
-  font-size: 0.9375rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
 }
 
 .next-circle-arrow {
@@ -1446,76 +1325,7 @@ button {
 }
 
 /* ==========================================================================
-   MINIMAL GLOBAL FOOTER
-   ========================================================================== */
-.project-detail-footer {
-  border-top: 1px solid var(--border-subtle);
-  padding: 48px 0;
-  background: var(--bg-cream);
-}
-
-.detail-footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-}
-
-.footer-nav-links {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.footer-nav-link {
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-black);
-  transition: color var(--transition-fast);
-}
-
-.footer-nav-link:hover {
-  color: var(--accent-orange);
-}
-
-/* ==========================================================================
-   BACK TO TOP FLOATING BUTTON
-   ========================================================================== */
-.back-to-top-btn {
-  position: fixed;
-  bottom: 36px;
-  right: 36px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: var(--text-black);
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  z-index: 990;
-  opacity: 0;
-  visibility: hidden;
-  transition: all var(--transition-fast);
-}
-
-.back-to-top-btn.visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.back-to-top-btn:hover {
-  background: var(--accent-orange);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px var(--accent-orange-glow);
-}
-
-/* ==========================================================================
-   RESPONSIVE DESIGN (Tablets & Mobile)
+   RESPONSIVE DESIGN
    ========================================================================== */
 @media (max-width: 1200px) {
   .info-grid-5 {
@@ -1539,16 +1349,12 @@ button {
 }
 
 @media (max-width: 900px) {
-  .header-inner {
-    padding: 0 24px;
-  }
-
-  .brand-role-tag {
-    display: none;
+  .cortado-page-wrap {
+    padding-top: 90px;
   }
 
   .editorial-section-space {
-    padding: 100px 0;
+    padding: 90px 0;
   }
 
   .hero-statement-row {
@@ -1562,8 +1368,7 @@ button {
   }
 
   .composition-split-50,
-  .composition-asymmetric,
-  .asymmetric-reverse {
+  .composition-asymmetric {
     grid-template-columns: 1fr;
     gap: 40px;
   }
@@ -1577,7 +1382,7 @@ button {
   }
 
   .section-dark-editorial {
-    padding: 80px 24px;
+    padding: 70px 24px;
     margin: 0 12px;
     border-radius: 24px;
   }
@@ -1617,18 +1422,12 @@ button {
   }
 
   .results-editorial-panel {
-    padding: 60px 24px;
+    padding: 50px 20px;
     border-radius: 24px;
   }
 
   .next-title-row {
     flex-direction: column;
     gap: 12px;
-  }
-
-  .detail-footer-inner {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
   }
 }
