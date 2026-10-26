@@ -1244,6 +1244,298 @@ button { font-family: inherit; }
   box-shadow: 0 8px 20px var(--accent-orange-glow);
 }
 
+/* ==========================================================================
+   HOMEPAGE PROJECT-SPECIFIC COLOR IDENTITIES
+   Cortado: Warm Orange | ePrise: Premium Purple | TRIBAL: Professional Blue | Clarus: Industrial Brown
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01. CORTADO — WARM ORANGE / TERRACOTTA
+   -------------------------------------------------------------------------- */
+.project-article[data-project="Cortado"] .project-visual-wrapper,
+.project-visual-wrapper.mobile-app-wrapper {
+  background: linear-gradient(140deg, #E2723A 0%, #D4622B 50%, #BD4E1C 100%);
+  border: 1.5px solid rgba(212, 98, 43, 0.28);
+}
+
+.project-article[data-project="Cortado"]:hover .project-visual-wrapper,
+.project-article:has(.mobile-app-wrapper):hover .project-visual-wrapper {
+  border-color: #9E380D;
+  box-shadow: 0 24px 60px rgba(158, 56, 13, 0.22);
+}
+
+.project-article[data-project="Cortado"] .project-gradient-overlay,
+.mobile-app-wrapper .project-gradient-overlay {
+  background: linear-gradient(
+    180deg, 
+    rgba(255, 246, 238, 0.94) 0%, 
+    rgba(226, 114, 58, 0.22) 36%, 
+    rgba(212, 98, 43, 0.32) 64%, 
+    rgba(253, 242, 233, 0.96) 100%
+  );
+}
+
+.project-article[data-project="Cortado"] .project-card-overlay,
+.mobile-app-wrapper .project-card-overlay {
+  color: #241208;
+}
+
+.project-article[data-project="Cortado"] .project-card-overlay .project-num,
+.mobile-app-wrapper .project-card-overlay .project-num {
+  color: #9E380D; /* Deeper burnt orange accent */
+}
+
+.project-article[data-project="Cortado"] .project-card-overlay .project-category,
+.mobile-app-wrapper .project-card-overlay .project-category {
+  color: #5C2810;
+  background: rgba(255, 244, 235, 0.88); /* Supporting cream */
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(158, 56, 13, 0.2);
+}
+
+.project-article[data-project="Cortado"] .project-card-overlay .project-title,
+.mobile-app-wrapper .project-card-overlay .project-title {
+  color: #241208; /* Dark brown/charcoal */
+  text-shadow: none;
+}
+
+.project-article[data-project="Cortado"] .project-card-overlay .project-desc,
+.mobile-app-wrapper .project-card-overlay .project-desc {
+  color: #3A1E10; /* Dark brown/charcoal */
+}
+
+.project-article[data-project="Cortado"] .project-card-overlay .project-link,
+.mobile-app-wrapper .project-card-overlay .project-link {
+  color: #241208;
+  background-color: rgba(255, 244, 235, 0.92); /* Supporting cream */
+  border-color: rgba(158, 56, 13, 0.3);
+}
+
+.project-article[data-project="Cortado"] .project-card-overlay .project-link:hover,
+.mobile-app-wrapper .project-card-overlay .project-link:hover {
+  background-color: #9E380D; /* Deeper burnt orange */
+  border-color: #9E380D;
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(158, 56, 13, 0.35);
+}
+
+
+/* --------------------------------------------------------------------------
+   02. ePRISE — PREMIUM PURPLE
+   -------------------------------------------------------------------------- */
+.project-article[data-project="ePrise"] .project-visual-wrapper,
+.project-visual-wrapper.saas-dashboard-wrapper {
+  background: linear-gradient(140deg, #9F82CE 0%, #8564B9 50%, #6845A0 100%);
+  border: 1.5px solid rgba(133, 100, 185, 0.28);
+}
+
+.project-article[data-project="ePrise"]:hover .project-visual-wrapper,
+.project-article:has(.saas-dashboard-wrapper):hover .project-visual-wrapper {
+  border-color: #4A2382;
+  box-shadow: 0 24px 60px rgba(74, 35, 130, 0.22);
+}
+
+.project-article[data-project="ePrise"] .project-gradient-overlay,
+.saas-dashboard-wrapper .project-gradient-overlay {
+  background: linear-gradient(
+    180deg, 
+    rgba(246, 241, 254, 0.94) 0%, 
+    rgba(159, 130, 206, 0.20) 36%, 
+    rgba(133, 100, 185, 0.30) 64%, 
+    rgba(244, 238, 253, 0.96) 100%
+  );
+}
+
+.project-article[data-project="ePrise"] .project-card-overlay,
+.saas-dashboard-wrapper .project-card-overlay {
+  color: #1D0E32;
+}
+
+.project-article[data-project="ePrise"] .project-card-overlay .project-num,
+.saas-dashboard-wrapper .project-card-overlay .project-num {
+  color: #4A2382; /* Deeper violet accent */
+}
+
+.project-article[data-project="ePrise"] .project-card-overlay .project-category,
+.saas-dashboard-wrapper .project-card-overlay .project-category {
+  color: #3D1F68;
+  background: rgba(244, 238, 253, 0.88); /* Light lavender supporting */
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(74, 35, 130, 0.2);
+}
+
+.project-article[data-project="ePrise"] .project-card-overlay .project-title,
+.saas-dashboard-wrapper .project-card-overlay .project-title {
+  color: #1D0E32; /* Deep purple/charcoal */
+  text-shadow: none;
+}
+
+.project-article[data-project="ePrise"] .project-card-overlay .project-desc,
+.saas-dashboard-wrapper .project-card-overlay .project-desc {
+  color: #351D54; /* Deep purple/charcoal */
+}
+
+.project-article[data-project="ePrise"] .project-card-overlay .project-link,
+.saas-dashboard-wrapper .project-card-overlay .project-link {
+  color: #1D0E32;
+  background-color: rgba(244, 238, 253, 0.92); /* Light lavender supporting */
+  border-color: rgba(74, 35, 130, 0.3);
+}
+
+.project-article[data-project="ePrise"] .project-card-overlay .project-link:hover,
+.saas-dashboard-wrapper .project-card-overlay .project-link:hover {
+  background-color: #4A2382; /* Deeper violet */
+  border-color: #4A2382;
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(74, 35, 130, 0.35);
+}
+
+
+/* --------------------------------------------------------------------------
+   03. TRIBAL — PROFESSIONAL BLUE
+   -------------------------------------------------------------------------- */
+.project-article[data-project="TRIBAL"] .project-visual-wrapper,
+.project-visual-wrapper.b2b-workflow-wrapper {
+  background: linear-gradient(140deg, #74A5E8 0%, #528ADC 50%, #2E6BC5 100%);
+  border: 1.5px solid rgba(82, 138, 220, 0.28);
+}
+
+.project-article[data-project="TRIBAL"]:hover .project-visual-wrapper,
+.project-article:has(.b2b-workflow-wrapper):hover .project-visual-wrapper {
+  border-color: #1044B2;
+  box-shadow: 0 24px 60px rgba(16, 68, 178, 0.22);
+}
+
+.project-article[data-project="TRIBAL"] .project-gradient-overlay,
+.b2b-workflow-wrapper .project-gradient-overlay {
+  background: linear-gradient(
+    180deg, 
+    rgba(240, 247, 254, 0.94) 0%, 
+    rgba(116, 165, 232, 0.20) 36%, 
+    rgba(82, 138, 220, 0.30) 64%, 
+    rgba(238, 245, 253, 0.96) 100%
+  );
+}
+
+.project-article[data-project="TRIBAL"] .project-card-overlay,
+.b2b-workflow-wrapper .project-card-overlay {
+  color: #08172E;
+}
+
+.project-article[data-project="TRIBAL"] .project-card-overlay .project-num,
+.b2b-workflow-wrapper .project-card-overlay .project-num {
+  color: #1044B2; /* Vivid/royal blue accent */
+}
+
+.project-article[data-project="TRIBAL"] .project-card-overlay .project-category,
+.b2b-workflow-wrapper .project-card-overlay .project-category {
+  color: #1044B2;
+  background: rgba(238, 245, 253, 0.88); /* Very light blue supporting */
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(16, 68, 178, 0.2);
+}
+
+.project-article[data-project="TRIBAL"] .project-card-overlay .project-title,
+.b2b-workflow-wrapper .project-card-overlay .project-title {
+  color: #08172E; /* Dark navy/charcoal */
+  text-shadow: none;
+}
+
+.project-article[data-project="TRIBAL"] .project-card-overlay .project-desc,
+.b2b-workflow-wrapper .project-card-overlay .project-desc {
+  color: #152A4E; /* Dark navy/charcoal */
+}
+
+.project-article[data-project="TRIBAL"] .project-card-overlay .project-link,
+.b2b-workflow-wrapper .project-card-overlay .project-link {
+  color: #08172E;
+  background-color: rgba(238, 245, 253, 0.92); /* Very light blue supporting */
+  border-color: rgba(16, 68, 178, 0.3);
+}
+
+.project-article[data-project="TRIBAL"] .project-card-overlay .project-link:hover,
+.b2b-workflow-wrapper .project-card-overlay .project-link:hover {
+  background-color: #1044B2; /* Vivid/royal blue */
+  border-color: #1044B2;
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(16, 68, 178, 0.35);
+}
+
+
+/* --------------------------------------------------------------------------
+   04. CLARUS DIGITRONICS — INDUSTRIAL BROWN
+   -------------------------------------------------------------------------- */
+.project-article[data-project="Clarus Digitronics"] .project-visual-wrapper,
+.project-visual-wrapper.clarus-wrapper {
+  background: linear-gradient(140deg, #A8866E 0%, #8D6B53 50%, #6D4C35 100%);
+  border: 1.5px solid rgba(141, 107, 83, 0.28);
+}
+
+.project-article[data-project="Clarus Digitronics"]:hover .project-visual-wrapper,
+.project-article:has(.clarus-wrapper):hover .project-visual-wrapper {
+  border-color: #462A17;
+  box-shadow: 0 24px 60px rgba(70, 42, 23, 0.22);
+}
+
+.project-article[data-project="Clarus Digitronics"] .project-gradient-overlay,
+.clarus-wrapper .project-gradient-overlay {
+  background: linear-gradient(
+    180deg, 
+    rgba(249, 245, 240, 0.94) 0%, 
+    rgba(168, 134, 110, 0.20) 36%, 
+    rgba(141, 107, 83, 0.30) 64%, 
+    rgba(247, 242, 236, 0.96) 100%
+  );
+}
+
+.project-article[data-project="Clarus Digitronics"] .project-card-overlay,
+.clarus-wrapper .project-card-overlay {
+  color: #140B05;
+}
+
+.project-article[data-project="Clarus Digitronics"] .project-card-overlay .project-num,
+.clarus-wrapper .project-card-overlay .project-num {
+  color: #462A17; /* Deeper brown accent */
+}
+
+.project-article[data-project="Clarus Digitronics"] .project-card-overlay .project-category,
+.clarus-wrapper .project-card-overlay .project-category {
+  color: #462A17;
+  background: rgba(247, 242, 236, 0.88); /* Warm beige/cream supporting */
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(70, 42, 23, 0.2);
+}
+
+.project-article[data-project="Clarus Digitronics"] .project-card-overlay .project-title,
+.clarus-wrapper .project-card-overlay .project-title {
+  color: #140B05; /* Dark brown/near-black */
+  text-shadow: none;
+}
+
+.project-article[data-project="Clarus Digitronics"] .project-card-overlay .project-desc,
+.clarus-wrapper .project-card-overlay .project-desc {
+  color: #2E1B0F; /* Dark brown/near-black */
+}
+
+.project-article[data-project="Clarus Digitronics"] .project-card-overlay .project-link,
+.clarus-wrapper .project-card-overlay .project-link {
+  color: #140B05;
+  background-color: rgba(247, 242, 236, 0.92); /* Warm beige/cream supporting */
+  border-color: rgba(70, 42, 23, 0.3);
+}
+
+.project-article[data-project="Clarus Digitronics"] .project-card-overlay .project-link:hover,
+.clarus-wrapper .project-card-overlay .project-link:hover {
+  background-color: #462A17; /* Deeper brown */
+  border-color: #462A17;
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(70, 42, 23, 0.35);
+}
+
 .visual-bg-glow { position: absolute; inset: 0; opacity: 0.4; pointer-events: none; }
 .glow-cortado { background: radial-gradient(circle at 50% 40%, rgba(255, 107, 26, 0.15), transparent 70%); }
 .glow-eprise { background: radial-gradient(circle at 50% 40%, rgba(30, 88, 255, 0.12), transparent 70%); }

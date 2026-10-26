@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2.5">
 </head>
 <body>
 
@@ -330,7 +330,7 @@
 
             <!-- PROJECT 03: ePRISE -->
             <article class="project-article featured-grid-card" data-parallax="0.04" data-project="ePrise">
-              <div class="project-visual-wrapper saas-dashboard-wrapper">
+              <div class="project-visual-wrapper saas-dashboard-wrapper" onclick="window.location.href='eprise.html'" style="cursor: pointer;">
                 <img src="images/eprise-hero.svg" alt="ePRISE" class="project-full-bleed-img">
                 <div class="project-gradient-overlay"></div>
 
@@ -346,7 +346,7 @@
                     <h3 class="project-title">ePRISE</h3>
                     <p class="project-desc">"A business platform bringing accounting, GST, invoicing, inventory and everyday business workflows into one experience."</p>
                     <div class="project-footer">
-                      <a href="eprise.html" class="project-link" data-project="ePrise">
+                      <a href="eprise.html" class="project-link direct-case-study" onclick="event.stopPropagation(); window.location.href='eprise.html';" data-project="ePrise">
                         <span>VIEW CASE STUDY</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                       </a>
