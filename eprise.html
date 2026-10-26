@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ePrise — Business Accounting &amp; Management Platform · Case Study · Gajesh S.</title>
-  <meta name="description" content="A unified accounting and business management platform that simplifies invoicing, GST compliance, inventory, orders, and everyday business operations for SMEs and MSMEs.">
+  <title>ePrise — Business Accounting &amp; Management Platform | Gajesh UI/UX Designer</title>
+  <meta name="description" content="Case study of ePrise: A business management platform designed by Gajesh to simplify accounting, GST compliance, invoicing, inventory, orders, and everyday financial operations.">
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E">
-  
-  <!-- Fonts (Inter & System Fallbacks) -->
+  <!-- Font Preconnect & Embed (Matching Cortado & Master Portfolio) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
-  <!-- Core Portfolio Styles & Editorial Detail Stylesheet -->
+  <!-- Homepage Master Stylesheet + Cortado Case Study Extension -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="cortado.css?v=2.3">
 </head>
@@ -37,8 +34,15 @@
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
-          <span>BACK TO WORKS</span>
+          <span>ALL WORKS</span>
         </a>
+
+        <button class="cta-talk-btn" id="open-contact-btn" aria-label="Open contact form">
+          <span>LET'S TALK</span>
+          <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -49,132 +53,137 @@
   <main class="cortado-page-wrap">
 
     <!-- ==========================================================================
-         HERO SECTION (Promethee-Inspired Large Scale Editorial Presentation)
+         HERO SECTION (Matching Cortado Editorial Architecture)
          ========================================================================== -->
-    <section class="hero-editorial-section" id="hero">
+    <section class="hero-editorial" id="hero">
       <div class="container-content">
         
-        <!-- Hero Meta Eyebrow -->
-        <div class="hero-meta-row">
-          <span class="hero-category-tag">Web &amp; Mobile App · UI/UX Design</span>
-          <span class="hero-year-tag">2021–2023 · Case Study</span>
+        <!-- Top Eyebrow Tag -->
+        <div class="hero-meta-top">
+          <div class="hero-tag">
+            <span class="orange-accent-badge"><span class="badge-inner">★</span></span>
+            <span>Web &amp; Mobile App · UI/UX Design</span>
+          </div>
+          <div class="hero-year-badge">
+            <span>2021–2023 · Case Study</span>
+          </div>
         </div>
 
-        <!-- Huge Main Headline Group -->
-        <div class="hero-headline-group">
-          <h1 class="hero-title-massive">ePrise</h1>
-          <h2 class="hero-subtitle-editorial">Business Accounting &amp; Management Platform</h2>
+        <!-- Huge Display Title -->
+        <div class="hero-title-wrap">
+          <h1 class="hero-title-main">
+            ePrise<span class="hero-title-dot"></span>
+          </h1>
         </div>
 
-        <!-- Concise Designer Project Statement -->
-        <p class="hero-desc-narrative">
-          A unified accounting and business management platform that simplifies invoicing, GST compliance, inventory, orders, and everyday business operations for SMEs and MSMEs.
-        </p>
+        <!-- Subtitle & Statement Row -->
+        <div class="hero-statement-row">
+          <h2 class="hero-subtitle-primary">
+            Business Accounting &amp; Management Platform
+          </h2>
+          <p class="hero-statement-lead">
+            A unified accounting and business management platform that simplifies invoicing, GST compliance, inventory, orders, and everyday business operations for SMEs and MSMEs.
+          </p>
+        </div>
 
-        <!-- Large Hero Showcase Visual (16:9 Cinema Aspect Ratio) -->
-        <div class="hero-visual-viewport">
+        <!-- Full-Scale Hero Visual Mockup -->
+        <div class="hero-visual-frame">
           <img 
             src="images/eprise-hero.svg" 
-            alt="ePrise unified financial dashboard, analytics overview, and transaction hub" 
-            class="hero-main-visual"
+            alt="ePrise financial analytics and business accounting platform"
+            class="hero-visual-img"
             loading="eager"
           >
-          <div class="hero-visual-frame-border"></div>
         </div>
 
-        <!-- Minimal Interactive Scroll Down Indicator -->
-        <div class="hero-scroll-row">
-          <a href="#overview" class="scroll-down-pill" aria-label="Scroll to Project Information">
-            <span class="scroll-text">Scroll to Explore</span>
-            <svg class="scroll-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M12 5v14M19 12l-7 7-7-7"/>
+        <!-- Scroll Indicator (Matching Homepage Downward Arrow Box) -->
+        <div class="hero-scroll-indicator">
+          <div class="scroll-text">
+            <span>Scroll to Explore</span>
+            <div class="scroll-line"></div>
+          </div>
+          <div class="downward-arrow-box" style="margin-bottom: 0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+              <polyline points="18 14 12 20 6 14"></polyline>
             </svg>
-          </a>
+          </div>
         </div>
 
       </div>
     </section>
 
     <!-- ==========================================================================
-         PROJECT OVERVIEW (Editorial Metadata Strip)
+         PROJECT INFORMATION (Matching Cortado 5-Column Metadata)
          ========================================================================== -->
-    <section class="project-info-editorial-strip" id="overview">
+    <section class="section-project-info" id="overview">
       <div class="container-content">
-        <div class="info-grid-row">
-          
-          <div class="info-col-item">
-            <span class="info-label">ROLE</span>
-            <p class="info-value-lead">UI/UX Designer</p>
-            <p class="info-value-sub">UX Research · User Flows · Wireframes · UI Design</p>
+        <div class="info-grid-5">
+          <div class="info-item">
+            <span class="info-label">Role</span>
+            <span class="info-value">UI/UX Designer</span>
+            <span class="info-sub">UX Research · User Flows · Wireframes · UI Design</span>
           </div>
-
-          <div class="info-col-item">
-            <span class="info-label">DURATION</span>
-            <p class="info-value-lead">Product Design &amp; Iteration</p>
-            <p class="info-value-sub">2021–2023</p>
+          <div class="info-item">
+            <span class="info-label">Duration</span>
+            <span class="info-value">Product Design &amp; Iteration</span>
+            <span class="info-sub">2021–2023</span>
           </div>
-
-          <div class="info-col-item">
-            <span class="info-label">PLATFORM</span>
-            <p class="info-value-lead">Web &amp; Mobile</p>
-            <p class="info-value-sub">Business SaaS Ecosystem</p>
+          <div class="info-item">
+            <span class="info-label">Platform</span>
+            <span class="info-value">Web &amp; Mobile</span>
+            <span class="info-sub">Business SaaS Ecosystem</span>
           </div>
-
-          <div class="info-col-item">
-            <span class="info-label">PRODUCT</span>
-            <p class="info-value-lead">ePrise</p>
-            <p class="info-value-sub">Accounting &amp; Business Management</p>
+          <div class="info-item">
+            <span class="info-label">Product</span>
+            <span class="info-value">ePrise</span>
+            <span class="info-sub">Accounting &amp; Business Management</span>
           </div>
-
-          <div class="info-col-item">
-            <span class="info-label">TOOLS</span>
-            <p class="info-value-lead">Figma · Photoshop</p>
-            <p class="info-value-sub">Miro · Design Systems</p>
+          <div class="info-item">
+            <span class="info-label">Tools</span>
+            <span class="info-value">Figma · Photoshop · Miro</span>
+            <span class="info-sub">Design Systems &amp; User Flows</span>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         01 — THE VISION (Editorial Narrative)
+         01 — THE VISION (Matching Cortado Editorial Narrative)
          ========================================================================== -->
     <section class="editorial-section-space" id="vision">
       <div class="container-content">
-        <div class="overview-grid">
-          
-          <div class="overview-title-col">
+        <div class="overview-editorial-block">
+          <div class="overview-heading-col">
             <div class="story-chapter-label">
               <span class="chapter-number">01</span>
               <span class="chapter-title">The Vision</span>
             </div>
             <h2 class="overview-heading-lead">
-              Making everyday <span>business management</span> simpler.
+              Making everyday business management simpler.
             </h2>
           </div>
 
           <div class="overview-content-col">
-            <p class="editorial-lead-para">
+            <p class="overview-text-p">
               ePrise was designed to bring essential accounting and business operations into one connected platform.
             </p>
-            
-            <p class="editorial-body-para">
-              The product supports businesses with everyday tasks such as invoicing, GST compliance, inventory management, order booking, and financial operations.
+            <p class="overview-text-p">
+              The product supports businesses with everyday tasks such as <strong>invoicing, GST compliance, inventory management, order booking, and financial operations</strong>.
+            </p>
+            <p class="overview-text-p">
+              The goal was simple: <strong>reduce complexity across business workflows and make important information easier to access, understand, and act on.</strong>
             </p>
 
-            <p class="editorial-body-para">
-              The goal was to reduce complexity across business workflows and make important information easier to access, understand, and act on.
-            </p>
-
-            <div class="features-pill-cloud">
-              <span class="cap-pill">Accounting</span>
-              <span class="cap-pill">GST</span>
-              <span class="cap-pill">Invoicing</span>
-              <span class="cap-pill">Inventory</span>
-              <span class="cap-pill">Orders</span>
-              <span class="cap-pill">Payments</span>
-              <span class="cap-pill">Reporting</span>
-              <span class="cap-pill">Business Management</span>
+            <div class="feature-pills-list">
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Accounting</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>GST Compliance</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Invoicing</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Inventory</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Orders</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Payments</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Reporting</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Business Management</span>
             </div>
           </div>
 
@@ -183,7 +192,7 @@
     </section>
 
     <!-- ==========================================================================
-         02 — THE EXPERIENCE (Editorial Rhythm & Large-Scale UI Compositions)
+         02 — THE EXPERIENCE (Editorial Rhythm & Large-Scale Visuals)
          ========================================================================== -->
     <section class="editorial-section-space" style="padding-top: 0;" id="experience">
       
@@ -332,7 +341,7 @@
     </section>
 
     <!-- ==========================================================================
-         04 — THE CHALLENGE (Signature Dark Studio Container)
+         03 / 04 — THE CHALLENGE (Signature Dark Studio Section)
          ========================================================================== -->
     <section class="section-dark-editorial" id="challenge">
       <div class="challenge-header-block">
@@ -342,12 +351,11 @@
         </h2>
       </div>
 
-      <!-- 4-Card Challenge Grid -->
       <div class="challenge-cards-grid cols-4">
         
         <div class="challenge-card">
           <span class="challenge-num">01</span>
-          <div>
+          <div class="challenge-card-body">
             <h3 class="challenge-item-title">Managing Complexity</h3>
             <p class="challenge-item-desc">
               Accounting and business software often contains large amounts of information and multiple interconnected workflows. The challenge was to simplify the interface without hiding information users need to make decisions.
@@ -357,7 +365,7 @@
 
         <div class="challenge-card">
           <span class="challenge-num">02</span>
-          <div>
+          <div class="challenge-card-body">
             <h3 class="challenge-item-title">Supporting Different Business Needs</h3>
             <p class="challenge-item-desc">
               ePrise serves SMEs and MSMEs with different operational requirements. The experience needed to remain flexible while maintaining a consistent design language across the product.
@@ -367,7 +375,7 @@
 
         <div class="challenge-card">
           <span class="challenge-num">03</span>
-          <div>
+          <div class="challenge-card-body">
             <h3 class="challenge-item-title">Making Compliance Understandable</h3>
             <p class="challenge-item-desc">
               GST, invoices, and related business processes can be difficult for non-technical users. The interface needed to present these workflows in a clear and approachable way.
@@ -377,7 +385,7 @@
 
         <div class="challenge-card">
           <span class="challenge-num">04</span>
-          <div>
+          <div class="challenge-card-body">
             <h3 class="challenge-item-title">Designing for Frequent Use</h3>
             <p class="challenge-item-desc">
               Accounting and inventory tools are used repeatedly throughout the working day. The design needed to prioritize speed, clarity, consistency, and easy access to commonly used actions.
@@ -389,86 +397,101 @@
     </section>
 
     <!-- ==========================================================================
-         05 — UX & DESIGN APPROACH
+         05 — UX & DESIGN APPROACH (Journey Architecture Diagram)
          ========================================================================== -->
     <section class="editorial-section-space" id="approach">
       <div class="container-content">
-        <div class="approach-layout">
-          
-          <div class="approach-title-col">
-            <div class="story-chapter-label">
-              <span class="chapter-number">05</span>
-              <span class="chapter-title">UX &amp; Design Approach</span>
-            </div>
-            <h2 class="approach-title">Turning complex workflows into clear, repeatable journeys.</h2>
-            <p class="approach-body">
-              I worked across user flows, information architecture, wireframes, and interface design to simplify the product experience. The focus was on understanding how users move between accounting, invoicing, inventory, orders, and compliance workflows.
-            </p>
-          </div>
-
-          <div class="approach-steps-col">
-            
-            <div class="approach-step-card">
-              <div class="step-card-num">01 / CREATE</div>
-              <h3 class="step-card-title">Create Customers, Products, Invoices &amp; Orders</h3>
-              <p class="step-card-desc">
-                Designed for high-speed input with streamlined form fields, keyboard shortcuts, and intelligent autocomplete for frequent accounts and catalog items.
-              </p>
-            </div>
-
-            <div class="approach-step-card">
-              <div class="step-card-num">02 / MANAGE</div>
-              <h3 class="step-card-title">Manage Transactions, Inventory, Payments &amp; Records</h3>
-              <p class="step-card-desc">
-                Central operational layer keeping cash flow, general ledger entries, supplier balances, and warehouse stock continuously synchronized.
-              </p>
-            </div>
-
-            <div class="approach-step-card">
-              <div class="step-card-num">03 / TRACK</div>
-              <h3 class="step-card-title">Monitor Orders, Stock, Invoices &amp; Financial Activity</h3>
-              <p class="step-card-desc">
-                Real-time tracking dashboards highlighting inventory buffer levels, overdue accounts, payment receipts, and dispatch states.
-              </p>
-            </div>
-
-            <div class="approach-step-card">
-              <div class="step-card-num">04 / COMPLY</div>
-              <h3 class="step-card-title">Manage GST-Related Documents &amp; Compliance Workflows</h3>
-              <p class="step-card-desc">
-                One-click IRN generation, automated E-Way bills, and live reconciliation between purchase registers and GSTR-2B portal filings.
-              </p>
-            </div>
-
-            <div class="approach-step-card">
-              <div class="step-card-num">05 / REVIEW</div>
-              <h3 class="step-card-title">Access Reports &amp; Business Information for Decisions</h3>
-              <p class="step-card-desc">
-                Executive summaries, P&amp;L trajectories, tax liability previews, and product margin analyses structured for clarity and fast decision-making.
-              </p>
-            </div>
-
-          </div>
-
+        <div class="story-chapter-label">
+          <span class="chapter-number">05</span>
+          <span class="chapter-title">UX &amp; Design Approach</span>
         </div>
+
+        <div class="approach-lead-block">
+          <h2 class="approach-title">
+            Turning complex workflows into clear, repeatable journeys.
+          </h2>
+          <p class="approach-desc">
+            I worked across user flows, information architecture, wireframes, and interface design to simplify the product experience. The focus was on understanding how users move between accounting, invoicing, inventory, orders, and compliance workflows.
+          </p>
+        </div>
+
+        <!-- Journey Architecture Diagram (Matching Cortado Rhythm) -->
+        <div class="journey-diagram-wrapper">
+          <div class="diagram-header">
+            <h3 class="diagram-title">The ePrise End-to-End Business Journey</h3>
+            <div class="diagram-legend">
+              <div class="legend-item">
+                <span class="legend-dot-orange"></span>
+                <span>User Touchpoint</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot-black"></span>
+                <span>Platform System</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-steps-grid">
+            
+            <div class="flow-step-item active-step">
+              <div class="step-indicator">01</div>
+              <div class="step-content-box">
+                <h4>Create</h4>
+                <p>Create customers, products, invoices, and orders with automated data pre-fill.</p>
+              </div>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="step-indicator">02</div>
+              <div class="step-content-box">
+                <h4>Manage</h4>
+                <p>Manage transactions, inventory, payments, and synchronized business records.</p>
+              </div>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="step-indicator">03</div>
+              <div class="step-content-box">
+                <h4>Track</h4>
+                <p>Monitor orders, stock, invoices, and live financial activity across locations.</p>
+              </div>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="step-indicator">04</div>
+              <div class="step-content-box">
+                <h4>Comply</h4>
+                <p>Manage GST-related documents, E-Way bills, and real-time compliance workflows.</p>
+              </div>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="step-indicator">05</div>
+              <div class="step-content-box">
+                <h4>Review</h4>
+                <p>Access reports, P&amp;L trajectories, and business information to support decision-making.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- ==========================================================================
          06 — UI DESIGN SHOWCASE
          ========================================================================== -->
-    <section class="editorial-section-space" style="padding-top: 0;" id="ui-design">
+    <section class="editorial-section-space-sm" style="background-color: rgba(255, 255, 255, 0.5); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);" id="ui-design">
       <div class="container-content">
         
-        <div style="margin-bottom: 70px;">
-          <div class="story-chapter-label">
+        <div class="ui-showcase-header">
+          <div class="story-chapter-label" style="justify-content: center;">
             <span class="chapter-number">06</span>
-            <span class="chapter-title">UI Design Showcase</span>
+            <span class="chapter-title">UI Design</span>
           </div>
-          <h2 class="approach-title" style="margin-bottom: 16px;">
-            Creating a scalable interface for business operations.
-          </h2>
-          <p class="approach-body" style="max-width: 820px;">
+          <h2 class="ui-showcase-title">Creating a scalable interface for business operations.</h2>
+          <p class="ui-showcase-subtitle">
             The visual system was designed to handle information-heavy workflows while keeping the interface structured and approachable. Clear hierarchy, consistent components, data organization, and predictable navigation were important parts of the design system.
           </p>
         </div>
@@ -683,61 +706,33 @@
     </section>
 
     <!-- ==========================================================================
-         08 — DESIGN LEARNINGS
+         08 — WHAT I LEARNED / DESIGN LEARNINGS (Matching Cortado Structure)
          ========================================================================== -->
-    <section class="editorial-section-space-sm" id="learnings">
+    <section class="editorial-section-space" id="learnings">
       <div class="container-content">
-        
         <div class="learned-editorial-card">
-          <div class="learned-header-col">
+          <div class="learned-heading-col">
             <div class="story-chapter-label">
               <span class="chapter-number">08</span>
               <span class="chapter-title">Design Learnings</span>
             </div>
-            <h2 class="learned-title">
+            <h2 class="learned-display-title">
               Designing for complexity without making the product feel complex.
             </h2>
           </div>
 
-          <div class="learned-body-col">
-            <p class="learned-lead">
-              Working on ePrise highlighted the importance of balancing <strong>information density with usability</strong>.
+          <div class="learned-content-col">
+            <p>
+              Working on ePrise highlighted the importance of balancing <strong>information density with usability</strong>. Business software needs to provide users with a lot of information, but that information still needs to be structured in a way that supports quick decisions.
             </p>
-            <p class="learned-para">
-              Business software needs to provide users with a lot of information, but that information still needs to be structured in a way that supports quick decisions.
+            <p>
+              The project strengthened my approach to designing <strong>complex workflows</strong>, data-heavy interfaces, business dashboards, form-heavy experiences, and reusable design patterns that scale across multiple product modules.
             </p>
-            <div style="margin-top: 20px;">
-              <span style="font-family: var(--font-primary); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 12px;">The project strengthened my approach to designing:</span>
-              <ul class="breakdown-specs-list">
-                <li class="spec-bullet">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Complex workflows</span>
-                </li>
-                <li class="spec-bullet">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Data-heavy interfaces</span>
-                </li>
-                <li class="spec-bullet">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Business dashboards</span>
-                </li>
-                <li class="spec-bullet">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Form-heavy experiences</span>
-                </li>
-                <li class="spec-bullet">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Reusable design patterns</span>
-                </li>
-                <li class="spec-bullet">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Multi-step processes</span>
-                </li>
-              </ul>
-            </div>
+            <p>
+              By treating clarity, keyboard accessibility, and predictable layouts as first-class requirements, we turned dense financial tasks into approachable, error-free everyday routines.
+            </p>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -848,62 +843,59 @@
     </section>
 
     <!-- ==========================================================================
-         PROJECT CREDITS (Minimal 4-Column Strip)
+         PROJECT CREDITS (Matching Cortado 4-Column Layout)
          ========================================================================== -->
     <section class="section-credits-editorial" id="credits">
       <div class="container-content">
         <div class="credits-flex-row">
-          
           <div class="credits-title-group">
-            <h3>ePrise</h3>
-            <p>Accounting &amp; Business Management Platform</p>
+            <h3>ePrise Business Platform</h3>
+            <p>Accounting · GST · Inventory · 2021–2023</p>
           </div>
 
           <div class="credits-list-items">
-            
-            <div class="credit-single-entry">
-              <span class="credit-role">PRODUCT</span>
+            <div class="credit-col">
+              <span class="credit-role">Product</span>
               <span class="credit-name">ePrise</span>
             </div>
-
-            <div class="credit-single-entry">
-              <span class="credit-role">ROLE</span>
+            <div class="credit-col">
+              <span class="credit-role">Role</span>
               <span class="credit-name">Gajesh — UI/UX Designer</span>
             </div>
-
-            <div class="credit-single-entry">
-              <span class="credit-role">PLATFORM</span>
+            <div class="credit-col">
+              <span class="credit-role">Platform</span>
               <span class="credit-name">Web &amp; Mobile</span>
             </div>
-
-            <div class="credit-single-entry">
-              <span class="credit-role">CATEGORY</span>
+            <div class="credit-col">
+              <span class="credit-role">Category</span>
               <span class="credit-name">Business SaaS · ERP</span>
             </div>
-
-            <div class="credit-single-entry">
-              <span class="credit-role">TOOLS</span>
+            <div class="credit-col">
+              <span class="credit-role">Tools</span>
               <span class="credit-name">Figma · Photoshop · Miro</span>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         NEXT PROJECT PREVIEW (Visual Transition to Cortado)
+         NEXT PROJECT (Matching Cortado Style Footer Transition)
          ========================================================================== -->
     <section class="next-project-section" id="next">
       <div class="container-content">
-        
-        <a href="cortado.html" class="next-project-banner" aria-label="Explore Next Project: Cortado">
-          <div class="next-title-row">
-            <span class="next-eyebrow">NEXT PROJECT →</span>
-            <h2 class="next-project-title">Cortado</h2>
-          </div>
+        <a href="cortado.html" class="next-project-link" aria-label="Explore Next Project: Cortado">
           
+          <div class="next-eyebrow">
+            <span>NEXT PROJECT</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <div class="next-title-row">
+            <h2 class="next-project-title">01 — CORTADO</h2>
+            <span class="next-category-tag">MOBILE APP · UI/UX DESIGN · 2026</span>
+          </div>
+
           <div class="next-card-visual-frame">
             <img 
               src="images/cortado-hero.jpg" 
@@ -912,95 +904,198 @@
               loading="lazy"
             >
             <div class="next-card-overlay">
-              <div class="next-card-info-badge">
-                <span class="next-badge-cat">Mobile App · UI/UX Design</span>
-                <span class="next-badge-name">Café Ordering &amp; Loyalty App</span>
+              <div class="next-overlay-meta">
+                <h4>CORTADO — Café Ordering &amp; Loyalty App</h4>
+                <p>Mobile ordering, curbside car pickup, digital wallet, and tiered loyalty rewards.</p>
               </div>
-              <div class="next-arrow-circle">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
+              <div class="next-circle-arrow">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
               </div>
             </div>
           </div>
-        </a>
 
+        </a>
       </div>
     </section>
 
   </main>
 
   <!-- ==========================================================================
-       FOOTER (Matching Portfolio Master Footer)
+       SIGNATURE HOMEPAGE FOOTER (Matching Homepage Design Exactly)
        ========================================================================== -->
-  <footer class="site-footer">
-    <div class="footer-container">
+  <footer class="brand-appart-footer" id="contact">
+    <div class="footer-inner-container">
       
-      <div class="footer-brand-strip">
-        <h2 class="f-giant-name">GAJESH S.</h2>
-        <div class="f-avail-badge">
-          <span class="avail-pulse-dot"></span>
-          <span>AVAILABLE FOR NEW PROJECTS</span>
+      <!-- Decorative Floating Object (Upper Right) -->
+      <div class="footer-decorative-object" id="footer-decor" aria-hidden="true">
+        <svg class="decor-badge-svg" width="90" height="90" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="#8E8883" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <path d="M50 18 L50 82 M18 50 L82 50" stroke="#FF6B1A" stroke-width="2"/>
+          <circle cx="50" cy="50" r="16" fill="#F7F4EC"/>
+          <circle cx="50" cy="6" fill="#FF6B1A"/>
+        </svg>
+      </div>
+
+      <!-- Footer Hero CTA (Top Center) -->
+      <div class="footer-hero-cta">
+        <h2 class="footer-giant-headline">
+          <span class="f-headline-line">LET'S CREATE</span>
+          <span class="f-headline-line">SOMETHING</span>
+          <span class="f-headline-line">MEANINGFUL. <span class="orange-arrow-accent">→</span></span>
+        </h2>
+
+        <div class="book-a-call-wrapper">
+          <button class="cta-talk-btn book-call-btn" id="book-call-trigger" aria-label="Book a call or start a project">
+            <span>BOOK A CALL</span>
+            <span class="avatar-phone-duo">
+              <span class="hero-avatar-circle" title="Gajesh">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF6B1A'/%3E%3Cstop offset='100%25' stop-color='%23151311'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='40' r='18' fill='%23F7F4EC'/%3E%3Cpath d='M22 82c0-15.5 12.5-28 28-28s28 12.5 28 28' fill='%23F7F4EC'/%3E%3C/svg%3E" alt="Gajesh Profile" class="hero-avatar-img">
+              </span>
+              <span class="phone-icon-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+            </span>
+          </button>
         </div>
       </div>
 
+      <!-- Multi-Column Footer Navigation (5 Columns Matching Homepage) -->
       <div class="footer-nav-grid">
+        
+        <!-- COLUMN 01: Gajesh -->
         <div class="f-nav-col">
-          <h4 class="f-col-title">NAVIGATION</h4>
+          <h4 class="f-col-title">GAJESH</h4>
           <ul class="f-link-list">
-            <li><a href="index.html" class="f-link">HOME</a></li>
-            <li><a href="index.html#work" class="f-link">ALL WORKS</a></li>
-            <li><a href="index.html#experience" class="f-link">EXPERIENCE</a></li>
-            <li><a href="index.html#contact" class="f-link">CONTACT</a></li>
+            <li><a href="index.html#hero" class="f-link">HOME <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">WORK <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#about" class="f-link">ABOUT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#experience" class="f-link">EXPERIENCE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#contact" class="f-link">CONTACT <span class="f-hover-arrow">→</span></a></li>
           </ul>
         </div>
 
+        <!-- COLUMN 02: Expertise -->
         <div class="f-nav-col">
-          <h4 class="f-col-title">CONNECT</h4>
+          <h4 class="f-col-title">EXPERTISE</h4>
           <ul class="f-link-list">
-            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener" class="f-link">LINKEDIN <span class="f-hover-arrow">↗</span></a></li>
-            <li><a href="https://dribbble.com" target="_blank" rel="noopener" class="f-link">DRIBBLE <span class="f-hover-arrow">↗</span></a></li>
-            <li><a href="https://www.behance.net" target="_blank" rel="noopener" class="f-link">BEHANCE <span class="f-hover-arrow">↗</span></a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noopener" class="f-link">INSTAGRAM <span class="f-hover-arrow">↗</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">UI/UX DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">PRODUCT DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">MOBILE APP DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">WEB DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">DESIGN SYSTEMS <span class="f-hover-arrow">→</span></a></li>
           </ul>
         </div>
 
+        <!-- COLUMN 03: Selected Work -->
         <div class="f-nav-col">
           <h4 class="f-col-title">SELECTED WORK</h4>
           <ul class="f-link-list">
             <li><a href="cortado.html" class="f-link">CORTADO CAFÉ <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">TECTORI <span class="f-hover-arrow">→</span></a></li>
             <li><a href="eprise.html" class="f-link" style="color: var(--accent-orange);">ePRISE <span class="f-hover-arrow">→</span></a></li>
             <li><a href="index.html#work" class="f-link">TRIBAL <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="index.html#work" class="f-link">BARAKHA <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">MORE WORK <span class="f-hover-arrow">→</span></a></li>
           </ul>
         </div>
 
+        <!-- COLUMN 04: Connect -->
         <div class="f-nav-col">
-          <h4 class="f-col-title">LOCATION &amp; CONTACT</h4>
-          <p class="f-bio-note">
-            Bengaluru / Mumbai, India · Remote Worldwide.<br>
-            Open for Senior Product Design &amp; UI/UX Roles.
-          </p>
-          <a href="mailto:gajesh.design@gmail.com" class="f-email-link">
-            gajesh.design@gmail.com
-            <span class="f-hover-arrow">↗</span>
-          </a>
+          <h4 class="f-col-title">CONNECT</h4>
+          <ul class="f-link-list">
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="f-link">LINKEDIN <span class="f-hover-arrow">↗</span></a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener" class="f-link">X (TWITTER) <span class="f-hover-arrow">↗</span></a></li>
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener" class="f-link">DRIBBBLE <span class="f-hover-arrow">↗</span></a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener" class="f-link">GITHUB <span class="f-hover-arrow">↗</span></a></li>
+          </ul>
         </div>
+
+        <!-- COLUMN 05: Location & Availability -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">LOCATION</h4>
+          <p class="f-text-block">BASED IN BANGALORE, INDIA</p>
+          <p class="f-text-block">WORKING GLOBALLY (REMOTE)</p>
+          <div class="f-status-pill">
+            <span class="status-indicator-dot"></span>
+            <span>AVAILABLE FOR Q1/Q2 2026</span>
+          </div>
+        </div>
+
       </div>
 
-      <div class="footer-copyright-bar">
-        <p class="f-copy-text">© 2026 GAJESH S. ALL RIGHTS RESERVED.</p>
-        <div class="f-legal-links">
-          <span>PORTFOLIO v2.3</span>
-          <span class="f-dot-sep">·</span>
-          <span>CRAFTED WITH PRECISION</span>
+      <!-- Copyright Sub-Footer Bar -->
+      <div class="sub-footer-bar">
+        <div class="sub-footer-left">
+          <span>© 2026 GAJESH. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="sub-footer-right">
+          <span>PORTFOLIO EDITORIAL EDITION</span>
+          <span class="sub-footer-dot">·</span>
+          <span>DESIGNED WITH PRECISION</span>
         </div>
       </div>
 
     </div>
   </footer>
 
-  <!-- Script Includes -->
+  <!-- ==========================================================================
+       CONTACT MODAL (Identical to Homepage & Cortado)
+       ========================================================================== -->
+  <div class="contact-modal" id="contact-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">×</button>
+      
+      <div class="modal-header">
+        <span class="modal-tag">GET IN TOUCH</span>
+        <h2>LET'S TALK</h2>
+        <p>Tell me about your product, timeline, or design challenges.</p>
+      </div>
+
+      <form class="contact-form" id="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="user-name">YOUR NAME</label>
+          <input type="text" id="user-name" placeholder="e.g. Alex Morgan" required>
+        </div>
+
+        <div class="form-group">
+          <label for="user-email">EMAIL ADDRESS</label>
+          <input type="email" id="user-email" placeholder="alex@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">PROJECT TYPE</label>
+          <select id="project-type">
+            <option value="ePrise Project Inquiry" selected>ePrise Project Inquiry</option>
+            <option value="SaaS Platform UX">SaaS Platform UX</option>
+            <option value="Mobile App UI/UX">Mobile App UI/UX</option>
+            <option value="Website Redesign">Website Redesign</option>
+            <option value="Design System">Design System</option>
+            <option value="Product Strategy & UX Audit">Product Strategy & UX Audit</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="user-message">PROJECT DETAILS</label>
+          <textarea id="user-message" rows="4" placeholder="Briefly describe your goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="cta-talk-btn full-width submit-btn" id="submit-form-btn">
+          <span>SEND MESSAGE</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+
+      <div class="form-success-state" id="form-success-state">
+        <div class="success-icon">✓</div>
+        <h3>Message Sent!</h3>
+        <p>Thank you for reaching out. Gajesh will get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Homepage Script (Cursor, Modal, Magnetic Buttons) -->
   <script src="script.js?v=2.2"></script>
 
   <!-- FAQ Accordion & Page Scripts -->
@@ -1026,6 +1121,30 @@
           }
         });
       });
+
+      // Contact Modal Handlers
+      const modal = document.getElementById('contact-modal');
+      const openBtn = document.getElementById('open-contact-btn');
+      const bookCallBtn = document.getElementById('book-call-trigger');
+      const closeBtn = document.getElementById('modal-close');
+      const backdrop = document.getElementById('modal-backdrop');
+
+      function openModal() {
+        if (!modal) return;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (bookCallBtn) bookCallBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (backdrop) backdrop.addEventListener('click', closeModal);
 
       // Smooth scroll for anchor links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
