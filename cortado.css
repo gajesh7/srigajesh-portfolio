@@ -957,7 +957,7 @@
 
 .stats-editorial-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding-bottom: 72px;
   border-bottom: 1px solid var(--border-subtle);
@@ -1025,7 +1025,51 @@
 }
 
 /* ==========================================================================
-   SECTION 9: FAQ ACCORDION
+   SECTION 7: WHAT I LEARNED
+   ========================================================================== */
+.learned-editorial-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  border-radius: 32px;
+  padding: 80px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 80px;
+  align-items: start;
+  box-shadow: 0 20px 60px rgba(21, 19, 17, 0.04);
+}
+
+.learned-heading-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.learned-display-title {
+  font-family: var(--font-primary);
+  font-size: clamp(2rem, 3.4vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+
+.learned-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.learned-content-col p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--text-body);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   SECTION 8: FAQ ACCORDION
    ========================================================================== */
 .faq-section-block {
   max-width: 960px;
@@ -1483,6 +1527,14 @@
     margin-bottom: 60px;
   }
 
+  .learned-editorial-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 48px 28px;
+    border-radius: 24px;
+    margin-bottom: 60px;
+  }
+
   .results-header-block {
     margin-bottom: 40px;
   }
@@ -1917,6 +1969,22 @@
     padding: 36px 16px;
     border-radius: 20px;
     margin-bottom: 44px;
+  }
+
+  .learned-editorial-card {
+    padding: 32px 18px;
+    border-radius: 20px;
+    gap: 20px;
+    margin-bottom: 44px;
+  }
+
+  .learned-display-title {
+    font-size: clamp(1.6rem, 6.2vw, 2.2rem);
+  }
+
+  .learned-content-col p {
+    font-size: 0.92rem;
+    line-height: 1.55;
   }
 
   .results-header-block {
