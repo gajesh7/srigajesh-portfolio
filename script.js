@@ -524,6 +524,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   projectLinks.forEach(link => {
     link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href && href !== '#' && !href.startsWith('#')) {
+        // Allow normal navigation to inner case-study pages like cortado.html
+        return;
+      }
       e.preventDefault();
       const projName = link.getAttribute('data-project');
       openModal(projName);

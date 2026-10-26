@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cortado — Café Ordering & Loyalty App | Gajesh UI/UX Designer</title>
+  <meta name="description" content="Case study of Cortado: A mobile café app designed by Gajesh for delivery, dine-in, takeaway, car pickup, rewards, membership, and digital wallet.">
+  
+  <!-- Font Preconnect & Embed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="cortado.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       EDITORIAL STICKY HEADER
+       ========================================================================== -->
+  <header class="project-header" id="project-header">
+    <div class="header-inner">
+      <div class="brand-group">
+        <a href="index.html" class="brand-logo" aria-label="Gajesh Portfolio">
+          <span>GAJESH</span>
+          <span class="brand-dot"></span>
+        </a>
+        <span class="brand-role-tag">UI/UX Designer</span>
+      </div>
+
+      <div class="header-center">
+        <a href="index.html#work" class="back-to-works-btn" aria-label="Back to all projects">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>All Works</span>
+        </a>
+      </div>
+
+      <div class="header-right">
+        <a href="index.html#contact" class="btn-lets-talk">
+          <span>Let's Talk</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-project-wrap">
+
+    <!-- ==========================================================================
+         SECTION 1: HERO SECTION
+         ========================================================================== -->
+    <section class="hero-editorial">
+      <div class="container-content">
+        
+        <!-- Top Meta Info -->
+        <div class="hero-meta-top">
+          <div class="hero-tag">
+            <span class="brand-dot"></span>
+            <span>Mobile App · UI/UX Design</span>
+          </div>
+          <div class="hero-year-badge">
+            <span>2026 · Case Study</span>
+          </div>
+        </div>
+
+        <!-- Big Title -->
+        <div class="hero-title-wrap">
+          <h1 class="hero-title-main">Cortado</h1>
+        </div>
+
+        <!-- Statement Row -->
+        <div class="hero-statement-row">
+          <h2 class="hero-subtitle-primary">
+            Café Ordering &amp; Loyalty App
+          </h2>
+          <p class="hero-statement-lead">
+            A unified café ordering and rewards ecosystem connecting customers to artisan coffee through seamless delivery, dine-in, takeaway, and curbside car pickup.
+          </p>
+        </div>
+
+        <!-- Large Hero Mockup Visual -->
+        <div class="hero-visual-frame">
+          <img 
+            src="images/cortado-hero.jpg" 
+            alt="Cortado Café Ordering App mockup on sunlit coffee table with ceramic cappuccino cup"
+            class="hero-visual-img"
+            loading="eager"
+          >
+        </div>
+
+        <!-- Minimal Scroll Indicator -->
+        <div class="hero-scroll-indicator">
+          <div class="scroll-text">
+            <span>Scroll to Explore</span>
+            <div class="scroll-line"></div>
+          </div>
+          <div class="scroll-arrow-down">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: PROJECT INFORMATION
+         ========================================================================== -->
+    <section class="section-project-info">
+      <div class="container-content">
+        <div class="info-grid-5">
+          <div class="info-item">
+            <span class="info-label">Role</span>
+            <span class="info-value">UI/UX Designer</span>
+            <span class="info-sub">Product Strategy &amp; Design System</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Duration</span>
+            <span class="info-value">2 Months</span>
+            <span class="info-sub">Discovery to Final Handover</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Platform</span>
+            <span class="info-value">Mobile App</span>
+            <span class="info-sub">iOS &amp; Android Ecosystem</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Team</span>
+            <span class="info-value">4 Core Members</span>
+            <span class="info-sub">PM, Developer, QA, Founder</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Tools</span>
+            <span class="info-value">Figma · Photoshop</span>
+            <span class="info-sub">Miro for Architecture &amp; User Flows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: PROJECT OVERVIEW
+         ========================================================================== -->
+    <section class="editorial-section-space">
+      <div class="container-content">
+        <div class="overview-editorial-block">
+          <div class="overview-heading-col">
+            <div class="story-chapter-label">
+              <span class="chapter-number">01</span>
+              <span class="chapter-title">The Vision</span>
+            </div>
+            <h2 class="overview-heading-lead">
+              Transforming the morning coffee routine into a <span>flawless digital ritual</span>.
+            </h2>
+          </div>
+
+          <div class="overview-content-col">
+            <p class="overview-text-p">
+              Cortado is a café ordering experience designed to connect customers with their favorite café through four distinct fulfillment channels: <strong>delivery, dine-in, takeaway, and curbside car pickup</strong>.
+            </p>
+            <p class="overview-text-p">
+              Whether grabbing an iced Spanish latte on the way to work or settling in for an afternoon cold brew, Cortado provides a frictionless, appetizing mobile journey paired with an integrated loyalty system and digital wallet.
+            </p>
+
+            <div class="feature-pills-list">
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Café Ordering</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Delivery</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Dine-In</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Takeaway</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Car Pickup</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Membership</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Rewards</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Digital Wallet</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Order History</span>
+              <span class="feature-pill"><span class="feature-pill-dot"></span>Favorites</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: VISUAL STORYTELLING (BrandAppArt Promethee Rhythm)
+         ========================================================================== -->
+    <section class="editorial-section-space-sm">
+      <div class="container-content">
+        <div class="story-chapter-label">
+          <span class="chapter-number">02</span>
+          <span class="chapter-title">Visual Storytelling &amp; Experience Rhythm</span>
+        </div>
+      </div>
+
+      <!-- Composition A: 50/50 Split (Branch Selection & Fulfillment Routing) -->
+      <div class="container-content">
+        <div class="composition-split-50">
+          <div class="composition-media-card">
+            <img 
+              src="images/cortado-branches.jpg" 
+              alt="Cortado branch selection screen showing Askar, Seef, and Riffa café locations with car pickup badges"
+              loading="lazy"
+            >
+          </div>
+          <div class="composition-caption-col">
+            <span class="chapter-number">STEP 01</span>
+            <h3 class="comp-title">Contextual Branch Discovery &amp; Fulfillment Routing</h3>
+            <p class="comp-desc">
+              Customers choose between Cortado's flagship branches in <strong>Askar, Seef, and Riffa</strong>. Each branch showcases real-time operational status, direct contact lines, operating hours (e.g., Open 24 Hours or 05:00 AM – 01:00 AM), and dynamic fulfillment tags.
+            </p>
+            <p class="comp-desc">
+              Rather than forcing users into a generic checkout, the app tailors menu availability and preparation times directly based on the selected branch.
+            </p>
+            <div class="branch-preview-pills">
+              <span class="branch-pill">Car-Pickup</span>
+              <span class="branch-pill">Take-away</span>
+              <span class="branch-pill">Dine-in</span>
+              <span class="branch-pill">Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Composition B: Large Centered Visual (Tactile Menu Experience) -->
+      <div class="container-wide">
+        <div class="composition-centered-wide">
+          <div class="centered-wide-card">
+            <img 
+              src="images/cortado-menu.jpg" 
+              alt="Hand holding phone displaying Cortado artisanal coffee menu with cups of iced latte"
+              loading="lazy"
+            >
+          </div>
+          <div class="centered-caption-strip">
+            <div>
+              <span class="caption-label">The Sensory Menu Navigation</span>
+              <p class="caption-sub">Optimized for single-thumb browsing with high-resolution drink photography</p>
+            </div>
+            <span class="chapter-number">STEP 02</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Composition C: Asymmetric 2-Screen Layout (Order Status & The "I'm Outside" Trigger) -->
+      <div class="container-content">
+        <div class="composition-asymmetric">
+          <div class="composition-caption-col">
+            <span class="chapter-number">STEP 03</span>
+            <h3 class="comp-title">Frictionless Curbside Arrival: The "I'm Outside" Innovation</h3>
+            <p class="comp-desc">
+              Morning drive-thru queues are often congested and chaotic. We engineered an intuitive 4-stage tracking status: <strong>Preparing → Ready → Completed → I'm Outside</strong>.
+            </p>
+            <p class="comp-desc">
+              When pulling up to the café parking bay, the customer taps the prominent terracotta <strong style="color: var(--accent-orange);">"I'm Outside"</strong> button. The barista counter receives an instantaneous audio-visual ping with the vehicle and order number, ensuring the espresso is handed over at peak crema without leaving the driver's seat.
+            </p>
+            <div class="branch-preview-pills">
+              <span class="branch-pill" style="background: var(--text-black); color: #FFF;">Real-time Barista Dispatch</span>
+              <span class="branch-pill">Zero Waiting Queues</span>
+            </div>
+          </div>
+          <div class="composition-media-card">
+            <img 
+              src="images/cortado-status.jpg" 
+              alt="Cortado app order tracking showing Preparing, Ready, Completed, and I'm Outside status tracker"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Trio Screens Showcase (Home, Loyalty & Wallet) -->
+      <div class="container-content">
+        <div class="screens-trio-row">
+          
+          <div class="trio-card">
+            <div class="trio-card-header">
+              <span class="trio-step-num">01 / HOME</span>
+              <span class="chapter-number">CORE</span>
+            </div>
+            <h4 class="trio-screen-title">Personalized Morning Dashboard</h4>
+            <div class="trio-visual-container">
+              <img src="images/cortado-hero.jpg" alt="Home Dashboard" style="height: 260px; object-fit: cover;">
+            </div>
+            <p class="trio-desc">
+              Welcomes members by name (e.g., Zayn Ahmed), displaying live tier perks (Bronze Member), wallet balance, trending artisan blends, and instant 1-tap re-order.
+            </p>
+          </div>
+
+          <div class="trio-card">
+            <div class="trio-card-header">
+              <span class="trio-step-num">02 / WALLET</span>
+              <span class="chapter-number">SPEED</span>
+            </div>
+            <h4 class="trio-screen-title">Integrated Digital BHD Wallet</h4>
+            <div class="trio-visual-container">
+              <img src="images/cortado-status.jpg" alt="Wallet and Deals" style="height: 260px; object-fit: cover;">
+            </div>
+            <p class="trio-desc">
+              Eliminates bank checkout latency. Customers top up their in-app wallet balance (123.0 BHD) to make instant sub-second payments and earn 2x bonus points.
+            </p>
+          </div>
+
+          <div class="trio-card">
+            <div class="trio-card-header">
+              <span class="trio-step-num">03 / TRACKER</span>
+              <span class="chapter-number">PRECISION</span>
+            </div>
+            <h4 class="trio-screen-title">Curbside Vehicle Dispatch</h4>
+            <div class="trio-visual-container">
+              <img src="images/cortado-branches.jpg" alt="Curbside Pickup" style="height: 260px; object-fit: cover;">
+            </div>
+            <p class="trio-desc">
+              Synchronized GPS arrival alerts that notify café staff exactly when a customer pulls up outside, keeping artisan lattes fresh and temperature-perfect.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: THE CHALLENGE
+         ========================================================================== -->
+    <section class="section-dark-editorial">
+      <div class="challenge-header-block">
+        <span class="challenge-label-accent">03 / The Challenge</span>
+        <h2 class="challenge-display-title">
+          Balancing complex café logistics with an effortless guest experience.
+        </h2>
+      </div>
+
+      <div class="challenge-cards-grid">
+        
+        <div class="challenge-card">
+          <span class="challenge-num">01</span>
+          <div class="challenge-card-body">
+            <h3 class="challenge-item-title">Four Fulfillment Channels Without Clutter</h3>
+            <p class="challenge-item-desc">
+              Café patrons have drastically differing needs: some want express car pickup while commuting, others want table-side dine-in QR ordering or home delivery. The interface had to unify all four without confusing branch inventories or operating hours.
+            </p>
+          </div>
+        </div>
+
+        <div class="challenge-card">
+          <span class="challenge-num">02</span>
+          <div class="challenge-card-body">
+            <h3 class="challenge-item-title">Ending Parking Lot Queue Friction</h3>
+            <p class="challenge-item-desc">
+              Traditional café drive-thrus suffer from congestion and delays. We needed a frictionless protocol for drivers to announce their arrival without having to place phone calls or honk outside the café.
+            </p>
+          </div>
+        </div>
+
+        <div class="challenge-card">
+          <span class="challenge-num">03</span>
+          <div class="challenge-card-body">
+            <h3 class="challenge-item-title">Frictionless Loyalty &amp; Instant Wallet Payments</h3>
+            <p class="challenge-item-desc">
+              Physical punch cards get lost, and standard mobile checkout with credit card verification takes too long during morning rush hours. Cortado needed a frictionless digital wallet with automatic reward points accumulation.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: UX & DESIGN APPROACH
+         ========================================================================== -->
+    <section class="editorial-section-space">
+      <div class="container-content">
+        <div class="story-chapter-label">
+          <span class="chapter-number">04</span>
+          <span class="chapter-title">UX &amp; Design Architecture</span>
+        </div>
+
+        <div class="approach-lead-block">
+          <h2 class="approach-title">
+            Engineering a seamless journey from discovery to the first sip.
+          </h2>
+          <p class="approach-desc">
+            We mapped out every micro-touchpoint in the customer journey across Miro and Figma. From fast branch selection to custom drink modifications (oat milk, sweetness levels, single-origin roasts), every interaction was stripped of superfluous steps.
+          </p>
+        </div>
+
+        <!-- Interactive Journey Architecture Diagram -->
+        <div class="journey-diagram-wrapper">
+          <div class="diagram-header">
+            <h3 class="diagram-title">The Cortado End-to-End User Journey</h3>
+            <div class="diagram-legend">
+              <div class="legend-item">
+                <span class="legend-dot-orange"></span>
+                <span>Customer Touchpoint</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot-black"></span>
+                <span>Barista Sync</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-steps-grid">
+            
+            <div class="flow-step-item active-step">
+              <div class="step-indicator">01</div>
+              <div class="step-content-box">
+                <h4>Branch &amp; Mode</h4>
+                <p>Location detection suggests nearest café (Askar / Seef / Riffa) with fulfillment mode picker.</p>
+              </div>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="step-indicator">02</div>
+              <div class="step-content-box">
+                <h4>Customized Order</h4>
+                <p>Visual sensory menu with custom roast, milk alternatives, syrup, and temperature settings.</p>
+              </div>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="step-indicator">03</div>
+              <div class="step-content-box">
+                <h4>1-Tap Checkout</h4>
+                <p>Pre-loaded Cortado digital wallet or Apple Pay with instant reward point multipliers.</p>
+              </div>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="step-indicator">04</div>
+              <div class="step-content-box">
+                <h4>Live Barista Prep</h4>
+                <p>Real-time progress ticker tracking grinding, brewing, and packaging steps.</p>
+              </div>
+            </div>
+
+            <div class="flow-step-item">
+              <div class="step-indicator">05</div>
+              <div class="step-content-box">
+                <h4>Arrival Dispatch</h4>
+                <p>Driver taps "I'm Outside" to alert counter staff for instant curbside handover.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: UI DESIGN SHOWCASE
+         ========================================================================== -->
+    <section class="editorial-section-space-sm" style="background-color: rgba(255, 255, 255, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container-content">
+        
+        <div class="ui-showcase-header">
+          <div class="story-chapter-label" style="justify-content: center;">
+            <span class="chapter-number">05</span>
+            <span class="chapter-title">UI Design Showcase</span>
+          </div>
+          <h2 class="ui-showcase-title">A Crafted Visual System Tailored for Specialty Coffee</h2>
+          <p class="ui-showcase-subtitle">
+            Warm espresso tones, clean cream surfaces, crisp typography, and high-impact drink photography harmonize to create an editorial digital atmosphere.
+          </p>
+        </div>
+
+        <!-- Breakdown Row 1: Branch Selection & Fulfillment -->
+        <div class="feature-breakdown-row">
+          <div class="breakdown-text-panel">
+            <span class="breakdown-tag">01 / FULFILLMENT</span>
+            <h3 class="breakdown-title">Multi-Branch Fulfillment Control</h3>
+            <p class="breakdown-body">
+              Branch cards are engineered with high information density made effortlessly digestible. Users immediately view contact numbers, direct phone triggers, operational opening hours, and clear indicators for Car-pickup, Take-away, Dine-in, and Delivery.
+            </p>
+            <ul class="breakdown-specs-list">
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dynamic Branch Hours &amp; Live Status</span>
+              </li>
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Interactive Fulfillment Filter Chips</span>
+              </li>
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Favoriting Feature for Quick Route Selection</span>
+              </li>
+            </ul>
+          </div>
+          <div class="breakdown-visual-card">
+            <img src="images/cortado-branches.jpg" alt="Branch selection interface in Cortado app" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Breakdown Row 2: Menu Browsing & Customization (Reversed) -->
+        <div class="feature-breakdown-row reverse">
+          <div class="breakdown-text-panel">
+            <span class="breakdown-tag">02 / CATALOG</span>
+            <h3 class="breakdown-title">Artisanal Menu &amp; Drink Customizer</h3>
+            <p class="breakdown-body">
+              Every coffee enthusiast takes their drink differently. The Cortado menu celebrates craftsmanship with clean categorization (Hot Drinks, Cold Drinks, Bakery, Ice Cream) and clear pricing in Bahraini Dinars (BHD).
+            </p>
+            <ul class="breakdown-specs-list">
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>One-tap roast &amp; dairy customization</span>
+              </li>
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Voice search and predictive drink query</span>
+              </li>
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Trending community favorites curation</span>
+              </li>
+            </ul>
+          </div>
+          <div class="breakdown-visual-card">
+            <img src="images/cortado-menu.jpg" alt="Cortado drink menu browsing screen" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Breakdown Row 3: Live Order Status & Membership -->
+        <div class="feature-breakdown-row">
+          <div class="breakdown-text-panel">
+            <span class="breakdown-tag">03 / TRACKING &amp; LOYALTY</span>
+            <h3 class="breakdown-title">Curbside Handover &amp; Tiered Rewards</h3>
+            <p class="breakdown-body">
+              The live order tracker keeps customers in the loop with zero guesswork. Integrated points badges (e.g. 30,123 Points) and transparent Bronze / Silver / Gold tier thresholds make loyalty progression rewarding and addictive.
+            </p>
+            <ul class="breakdown-specs-list">
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>High-contrast "I'm Outside" driver alert button</span>
+              </li>
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Automated loyalty points accumulation on all purchases</span>
+              </li>
+              <li class="spec-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Instant digital wallet top-up and balance audit</span>
+              </li>
+            </ul>
+          </div>
+          <div class="breakdown-visual-card">
+            <img src="images/cortado-status.jpg" alt="Cortado app order tracker and loyalty screen" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: RESULTS & IMPACT
+         ========================================================================== -->
+    <section class="editorial-section-space">
+      <div class="container-content">
+        
+        <div class="results-editorial-panel">
+          <div class="results-header-block">
+            <span class="results-eyebrow">06 / Measurable Impact</span>
+            <h2 class="results-title">
+              Empowering café baristas while delighting thousands of coffee lovers daily.
+            </h2>
+          </div>
+
+          <!-- Bold Stats Grid -->
+          <div class="stats-editorial-grid">
+            <div class="stat-card-editorial">
+              <div class="stat-metric-big">70<span>%</span></div>
+              <div class="stat-label-editorial">Improvement in Orders</div>
+              <p class="stat-sub-desc">Substantial growth in direct mobile orders within the first 60 days of launch.</p>
+            </div>
+
+            <div class="stat-card-editorial">
+              <div class="stat-metric-big">5K<span>+</span></div>
+              <div class="stat-label-editorial">First-Day Downloads</div>
+              <p class="stat-sub-desc">Record adoption across iOS and Android on launch day with viral local community shares.</p>
+            </div>
+
+            <div class="stat-card-editorial">
+              <div class="stat-metric-big">35<span>%</span></div>
+              <div class="stat-label-editorial">Car-Pickup Share</div>
+              <p class="stat-sub-desc">Over a third of daily orders utilize the revolutionary "I'm Outside" curbside feature.</p>
+            </div>
+
+            <div class="stat-card-editorial">
+              <div class="stat-metric-big">4.9<span>★</span></div>
+              <div class="stat-label-editorial">App Store Rating</div>
+              <p class="stat-sub-desc">Consistently praised for interface speed, photography, and checkout clarity.</p>
+            </div>
+          </div>
+
+          <!-- Editorial Testimonial Quote -->
+          <div class="results-impact-quote">
+            <p class="quote-statement">
+              "Gajesh transformed our café ordering concept into a luxury product experience. The curbside 'I'm Outside' feature alone completely eliminated our morning parking congestion."
+            </p>
+            <span class="quote-author">Founder &amp; Managing Director — Cortado Café</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: FAQ ACCORDION
+         ========================================================================== -->
+    <section class="editorial-section-space-sm">
+      <div class="container-content">
+        <div class="faq-section-block">
+          
+          <div class="faq-header">
+            <div class="story-chapter-label" style="justify-content: center;">
+              <span class="chapter-number">07</span>
+              <span class="chapter-title">Common Questions</span>
+            </div>
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-subtitle">Key insights into the Cortado design process and execution.</p>
+          </div>
+
+          <div class="faq-accordion-list">
+            
+            <!-- FAQ 1 -->
+            <div class="faq-item active">
+              <button class="faq-trigger" aria-expanded="true">
+                <span class="faq-question">What is Cortado?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  Cortado is a bespoke mobile café app designed to make ordering, pickup, delivery, rewards, membership, wallet, and customer interactions effortless. It caters to multi-branch operations across Bahrain, connecting specialty coffee connoisseurs directly with barista stations.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">What was my role on the project?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  I served as the Lead UI/UX Designer, overseeing the entire digital product lifecycle from initial product discovery and stakeholder interviews to information architecture, wireframing, high-fidelity UI design, component systems, and engineering handover.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">What core problem did I solve?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  I eliminated morning peak-hour bottlenecks by unifying four fulfillment methods (Delivery, Dine-in, Takeaway, and Curbside Car-Pickup) into a cohesive flow, creating the "I'm Outside" arrival trigger to remove drive-thru congestion, and introducing an integrated digital wallet that speeds up checkout to under 3 seconds.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">How long did the project take?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  The complete design and iteration phase spanned 2 months from conceptual kickoff to developer design tokens and high-fidelity prototype verification.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">
+                <span class="faq-question">What did I design?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-panel">
+                <p>
+                  I designed the full end-to-end mobile experience: Onboarding, Branch Selection &amp; Filters, Home Dashboard, Menu Catalog, Drink Customizer Modal, Cart &amp; Express Checkout, Curbside Tracking &amp; Arrival Dispatch, Membership Tiers, Rewards Voucher Redemption, Digital Wallet, and User Profile.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 10: CREDITS
+         ========================================================================== -->
+    <section class="section-credits-editorial">
+      <div class="container-content">
+        <div class="credits-flex-row">
+          <div class="credits-title-group">
+            <h3>Project Credits</h3>
+            <p>Cortado Café Mobile Experience · Bahrain · 2026</p>
+          </div>
+
+          <div class="credits-list-items">
+            <div class="credit-col">
+              <span class="credit-role">Design &amp; Strategy</span>
+              <span class="credit-name">Gajesh (UI/UX Designer)</span>
+            </div>
+            <div class="credit-col">
+              <span class="credit-role">Timeline</span>
+              <span class="credit-name">2 Months Duration</span>
+            </div>
+            <div class="credit-col">
+              <span class="credit-role">Platform</span>
+              <span class="credit-name">iOS &amp; Android App</span>
+            </div>
+            <div class="credit-col">
+              <span class="credit-role">Tools &amp; Stack</span>
+              <span class="credit-name">Figma · Photoshop · Miro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 11: NEXT PROJECT (Promethee Style Footer Transition)
+         ========================================================================== -->
+    <section class="next-project-section">
+      <div class="container-content">
+        <a href="index.html#work" class="next-project-link">
+          
+          <div class="next-eyebrow">
+            <span>Next Project</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <div class="next-title-row">
+            <h2 class="next-project-title">02 — TECTORI</h2>
+            <span class="next-category-tag">Fitness App · Product Design · 2026</span>
+          </div>
+
+          <div class="next-card-visual-frame">
+            <img src="images/work-2.webp" alt="Tectori Fitness Telemetry App preview" class="next-card-img" loading="lazy">
+            <div class="next-card-overlay">
+              <div class="next-overlay-meta">
+                <h4>TECTORI — Performance Telemetry &amp; Workout Coach</h4>
+                <p>Next-generation biometric telemetry tracking and adaptive workout planner.</p>
+              </div>
+              <div class="next-circle-arrow">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </div>
+            </div>
+          </div>
+
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       MINIMAL GLOBAL FOOTER
+       ========================================================================== -->
+  <footer class="project-detail-footer">
+    <div class="container-content">
+      <div class="detail-footer-inner">
+        <div>
+          <span>© 2026 Gajesh. All rights reserved.</span>
+        </div>
+        <div class="footer-nav-links">
+          <a href="index.html" class="footer-nav-link">Home</a>
+          <a href="index.html#work" class="footer-nav-link">Works</a>
+          <a href="index.html#about" class="footer-nav-link">About</a>
+          <a href="index.html#contact" class="footer-nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==========================================================================
+       INTERACTIVE SCRIPTS (Accordion & Scroll Transitions)
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // FAQ Accordion Interaction
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        trigger.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+          
+          // Close other items
+          faqItems.forEach(other => {
+            other.classList.remove('active');
+            other.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+          });
+
+          // Toggle current
+          if (!isActive) {
+            item.classList.add('active');
+            trigger.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Back to top button visibility
+      const backToTopBtn = document.getElementById('back-to-top');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      });
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
