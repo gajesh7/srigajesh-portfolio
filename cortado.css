@@ -3244,3 +3244,108 @@ button.faq-trigger:focus-visible {
     gap: 10px;
   }
 }
+
+/* ==========================================================================
+   Patient Journey / Sequential Flow Component (Simple & Editorial)
+   ========================================================================== */
+.patient-journey-simple {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(21, 128, 61, 0.14);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px -10px rgba(8, 30, 23, 0.05);
+  margin-top: 36px;
+}
+
+.journey-step-col {
+  padding: 30px 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-right: 1px solid rgba(21, 128, 61, 0.09);
+  transition: background var(--transition-fast);
+}
+
+.journey-step-col:last-child {
+  border-right: none;
+}
+
+.journey-step-col:hover {
+  background: #F7FAF8;
+}
+
+.journey-step-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.journey-step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(21, 128, 61, 0.08);
+  color: var(--project-primary, #15803D);
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.journey-step-arrow {
+  color: rgba(21, 128, 61, 0.35);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.journey-step-title {
+  font-family: var(--font-primary);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-dark, #081E17);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.journey-step-desc {
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--text-muted, #5A6A64);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .patient-journey-simple {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .journey-step-col:nth-child(3) {
+    border-right: none;
+  }
+  .journey-step-col:nth-child(-n+3) {
+    border-bottom: 1px solid rgba(21, 128, 61, 0.09);
+  }
+}
+
+@media (max-width: 640px) {
+  .patient-journey-simple {
+    grid-template-columns: 1fr;
+  }
+  .journey-step-col {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(21, 128, 61, 0.09);
+    padding: 22px 20px;
+  }
+  .journey-step-col:last-child {
+    border-bottom: none;
+  }
+}
