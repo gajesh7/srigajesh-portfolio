@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E17"/>
+      <stop offset="60%" stop-color="#101726"/>
+      <stop offset="100%" stop-color="#080C14"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1440" height="900" fill="url(#heroBg)"/>
+  
+  <!-- Subtle Background Grid -->
+  <g stroke="rgba(255,255,255,0.025)" stroke-width="1">
+    <path d="M0 100H1440 M0 200H1440 M0 300H1440 M0 400H1440 M0 500H1440 M0 600H1440 M0 700H1440 M0 800H1440"/>
+    <path d="M120 0V900 M240 0V900 M360 0V900 M480 0V900 M600 0V900 M720 0V900 M840 0V900 M960 0V900 M1080 0V900 M1200 0V900 M1320 0V900"/>
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="1100" cy="200" r="320" fill="#3B82F6" opacity="0.12" filter="blur(90px)"/>
+  <circle cx="350" cy="700" r="280" fill="#6366F1" opacity="0.08" filter="blur(80px)"/>
+
+  <!-- Main Web App Mockup Window -->
+  <g transform="translate(60, 50)" filter="url(#cardShadow)">
+    <!-- App Container Frame -->
+    <rect width="1320" height="800" rx="20" fill="#111827" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+    <!-- Mac-style Window Title Bar -->
+    <rect width="1320" height="52" rx="20" fill="#1E293B"/>
+    <rect y="40" width="1320" height="12" fill="#1E293B"/>
+    <!-- Window Control Dots -->
+    <circle cx="32" cy="26" r="6" fill="#EF4444"/>
+    <circle cx="52" cy="26" r="6" fill="#F59E0B"/>
+    <circle cx="72" cy="26" r="6" fill="#10B981"/>
+    <!-- Browser URL Bar Pill -->
+    <rect x="420" y="12" width="480" height="28" rx="8" fill="#0F172A" stroke="rgba(255,255,255,0.06)"/>
+    <text x="660" y="30" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" text-anchor="middle">app.eprise.com/dashboard/overview · FY 2023-24</text>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <g transform="translate(0, 52)">
+      <rect width="240" height="748" fill="#0B0F19" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+      
+      <!-- Logo & Organization Switcher -->
+      <g transform="translate(24, 24)">
+        <rect width="36" height="36" rx="10" fill="#3B82F6"/>
+        <text x="18" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="900" text-anchor="middle">e</text>
+        <text x="48" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="800" letter-spacing="1">ePRISE</text>
+        <text x="48" y="34" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">Enterprise Cloud</text>
+      </g>
+
+      <!-- Active Organization Pill -->
+      <rect x="18" y="80" width="204" height="42" rx="10" fill="#1E293B" stroke="rgba(255,255,255,0.04)"/>
+      <circle cx="36" cy="101" r="10" fill="#10B981" opacity="0.2"/>
+      <circle cx="36" cy="101" r="4" fill="#10B981"/>
+      <text x="54" y="98" fill="#F1F5F9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Apex Retailers Ltd</text>
+      <text x="54" y="112" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="500">GSTIN: 27AABCA1234F1Z5</text>
+
+      <!-- Nav Items -->
+      <g transform="translate(14, 146)">
+        <!-- Nav 1: Active Dashboard -->
+        <rect width="212" height="40" rx="8" fill="#3B82F6" opacity="0.15"/>
+        <rect width="3" height="24" y="8" rx="2" fill="#3B82F6"/>
+        <text x="20" y="25" fill="#60A5FA" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">📊 Overview</text>
+
+        <!-- Nav 2: Invoicing -->
+        <text x="20" y="72" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">🧾 Invoices &amp; Billing</text>
+
+        <!-- Nav 3: GST Compliance -->
+        <text x="20" y="116" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">🏛️ GST Filing &amp; ITC</text>
+
+        <!-- Nav 4: Inventory -->
+        <text x="20" y="160" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">📦 Inventory &amp; Stock</text>
+
+        <!-- Nav 5: Orders -->
+        <text x="20" y="204" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">🛒 Order Booking</text>
+
+        <!-- Nav 6: Accounting -->
+        <text x="20" y="248" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">📒 Smart Ledger</text>
+
+        <!-- Nav 7: Reports -->
+        <text x="20" y="292" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600">📈 Reports &amp; P&amp;L</text>
+      </g>
+
+      <!-- Bottom User Profile Pill -->
+      <g transform="translate(18, 676)">
+        <rect width="204" height="48" rx="10" fill="#151D2A"/>
+        <circle cx="34" cy="24" r="14" fill="#3B82F6"/>
+        <text x="34" y="29" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="800" text-anchor="middle">GS</text>
+        <text x="58" y="21" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Gajesh S.</text>
+        <text x="58" y="35" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="500">Finance Admin</text>
+      </g>
+    </g>
+
+    <!-- MAIN DASHBOARD CONTENT AREA -->
+    <g transform="translate(240, 52)">
+      <!-- Top Action Bar -->
+      <g transform="translate(36, 28)">
+        <text x="0" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.02em">Business Financial Hub</text>
+        <text x="0" y="44" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="500">Unified view of invoicing, GST liability, real-time stock and collections.</text>
+
+        <!-- Quick Action Buttons -->
+        <g transform="translate(730, 6)">
+          <rect width="130" height="36" rx="8" fill="#1E293B" stroke="rgba(255,255,255,0.06)"/>
+          <text x="65" y="23" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">+ New Order</text>
+
+          <rect x="142" y="0" width="140" height="36" rx="8" fill="#3B82F6"/>
+          <text x="212" y="23" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" text-anchor="middle">+ Create Invoice</text>
+        </g>
+      </g>
+
+      <!-- KPI METRIC CARDS ROW -->
+      <g transform="translate(36, 94)">
+        <!-- Metric Card 1: Revenue -->
+        <g transform="translate(0, 0)">
+          <rect width="230" height="110" rx="14" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+          <text x="20" y="32" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="1">NET REVENUE (YTD)</text>
+          <text x="20" y="68" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800">₹1,48,52,000</text>
+          <text x="20" y="92" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">↑ +24.8% vs last fiscal</text>
+        </g>
+
+        <!-- Metric Card 2: GST Matched -->
+        <g transform="translate(254, 0)">
+          <rect width="230" height="110" rx="14" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+          <text x="20" y="32" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="1">GST RECONCILIATION</text>
+          <text x="20" y="68" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800">99.8%</text>
+          <text x="20" y="92" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">GSTR-2B vs Books Matched</text>
+        </g>
+
+        <!-- Metric Card 3: Pending Invoices -->
+        <g transform="translate(508, 0)">
+          <rect width="230" height="110" rx="14" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+          <text x="20" y="32" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="1">PENDING RECEIVABLES</text>
+          <text x="20" y="68" fill="#F59E0B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800">₹8,42,100</text>
+          <text x="20" y="92" fill="#F59E0B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">12 Invoices past due</text>
+        </g>
+
+        <!-- Metric Card 4: Inventory Alerts -->
+        <g transform="translate(762, 0)">
+          <rect width="248" height="110" rx="14" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+          <text x="20" y="32" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" letter-spacing="1">ACTIVE INVENTORY</text>
+          <text x="20" y="68" fill="#A855F7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800">2,480 SKUs</text>
+          <text x="20" y="92" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700">4 Warehouses connected</text>
+        </g>
+      </g>
+
+      <!-- MAIN DATA VISUALIZATION & TABLE ROW -->
+      <g transform="translate(36, 226)">
+        <!-- Chart Panel (Cash Flow & Tax Reconciliation) -->
+        <g transform="translate(0, 0)">
+          <rect width="640" height="474" rx="16" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+          <text x="24" y="38" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700">Cash Flow &amp; Tax Trajectory</text>
+          <text x="24" y="56" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">Monthly billing collections compared with input tax credits (ITC).</text>
+
+          <!-- Chart Visual Area -->
+          <g transform="translate(24, 80)">
+            <!-- Grid Lines -->
+            <path d="M0 60H590 M0 120H590 M0 180H590 M0 240H590 M0 300H590" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+            
+            <!-- Area Fill -->
+            <path d="M10 260 C 90 220, 160 240, 240 140 C 320 50, 420 180, 500 80 C 540 40, 580 60, 580 60 L 580 300 L 10 300 Z" fill="url(#chartFill)"/>
+            <!-- Line Stroke -->
+            <path d="M10 260 C 90 220, 160 240, 240 140 C 320 50, 420 180, 500 80 C 540 40, 580 60, 580 60" fill="none" stroke="url(#accentLine)" stroke-width="3.5" stroke-linecap="round"/>
+
+            <!-- Secondary Trajectory (ITC) -->
+            <path d="M10 280 C 100 270, 180 250, 260 220 C 340 190, 420 160, 500 130 C 540 120, 580 110, 580 110" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="4 4"/>
+
+            <!-- Highlighting Nodes -->
+            <circle cx="240" cy="140" r="6" fill="#38BDF8" stroke="#111827" stroke-width="2"/>
+            <circle cx="500" cy="80" r="6" fill="#A855F7" stroke="#111827" stroke-width="2"/>
+
+            <!-- Month Labels -->
+            <text x="10" y="325" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">APR</text>
+            <text x="120" y="325" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">JUN</text>
+            <text x="240" y="325" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">AUG</text>
+            <text x="360" y="325" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">OCT</text>
+            <text x="470" y="325" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">DEC</text>
+            <text x="560" y="325" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">FEB</text>
+          </g>
+        </g>
+
+        <!-- Right Side: Recent Transactions & Compliance Matrix -->
+        <g transform="translate(664, 0)">
+          <rect width="346" height="474" rx="16" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+          <text x="24" y="38" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700">Live Invoices &amp; Orders</text>
+          <text x="24" y="56" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="500">Real-time status of business transactions</text>
+
+          <!-- List Items -->
+          <g transform="translate(20, 80)">
+            <!-- Item 1 -->
+            <g transform="translate(0, 0)">
+              <rect width="306" height="64" rx="10" fill="#1E293B" stroke="rgba(255,255,255,0.03)"/>
+              <text x="16" y="26" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">INV-2023-8941</text>
+              <text x="16" y="46" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Om Logistics Corp · E-Way Bill</text>
+              <text x="290" y="26" fill="#10B981" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" text-anchor="end">₹1,84,200</text>
+              <rect x="238" y="34" width="52" height="18" rx="4" fill="#10B981" opacity="0.15"/>
+              <text x="264" y="47" fill="#10B981" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">PAID</text>
+            </g>
+
+            <!-- Item 2 -->
+            <g transform="translate(0, 76)">
+              <rect width="306" height="64" rx="10" fill="#1E293B" stroke="rgba(255,255,255,0.03)"/>
+              <text x="16" y="26" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">INV-2023-8942</text>
+              <text x="16" y="46" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Zenith Industrial Supply</text>
+              <text x="290" y="26" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" text-anchor="end">₹64,500</text>
+              <rect x="228" y="34" width="62" height="18" rx="4" fill="#3B82F6" opacity="0.15"/>
+              <text x="259" y="47" fill="#60A5FA" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">GST FILED</text>
+            </g>
+
+            <!-- Item 3 -->
+            <g transform="translate(0, 152)">
+              <rect width="306" height="64" rx="10" fill="#1E293B" stroke="rgba(255,255,255,0.03)"/>
+              <text x="16" y="26" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">ORD-2023-108</text>
+              <text x="16" y="46" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Kavya Exports · 480 Units</text>
+              <text x="290" y="26" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" text-anchor="end">₹3,20,000</text>
+              <rect x="226" y="34" width="64" height="18" rx="4" fill="#F59E0B" opacity="0.15"/>
+              <text x="258" y="47" fill="#F59E0B" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">DISPATCH</text>
+            </g>
+
+            <!-- Item 4 -->
+            <g transform="translate(0, 228)">
+              <rect width="306" height="64" rx="10" fill="#1E293B" stroke="rgba(255,255,255,0.03)"/>
+              <text x="16" y="26" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">INV-2023-8940</text>
+              <text x="16" y="46" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Shree Trading Co · WhatsApp</text>
+              <text x="290" y="26" fill="#10B981" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" text-anchor="end">₹48,900</text>
+              <rect x="238" y="34" width="52" height="18" rx="4" fill="#10B981" opacity="0.15"/>
+              <text x="264" y="47" fill="#10B981" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">PAID</text>
+            </g>
+
+            <!-- Item 5 -->
+            <g transform="translate(0, 304)">
+              <rect width="306" height="64" rx="10" fill="#1E293B" stroke="rgba(255,255,255,0.03)"/>
+              <text x="16" y="26" fill="#F8FAFC" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">STK-WARN-09</text>
+              <text x="16" y="46" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="500">Raw Copper Coils · 12 kg left</text>
+              <text x="290" y="26" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" text-anchor="end">REORDER</text>
+              <rect x="232" y="34" width="58" height="18" rx="4" fill="#EF4444" opacity="0.15"/>
+              <text x="261" y="47" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">LOW STK</text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

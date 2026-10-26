@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="invBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="60%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#070A10"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#invBg)"/>
+
+  <!-- Background Lines -->
+  <g stroke="rgba(255,255,255,0.02)" stroke-width="1">
+    <path d="M0 100H1200 M0 200H1200 M0 300H1200 M0 400H1200 M0 500H1200 M0 600H1200 M0 700H1200"/>
+    <path d="M150 0V800 M300 0V800 M450 0V800 M600 0V800 M750 0V800 M900 0V800 M1050 0V800"/>
+  </g>
+
+  <!-- Window Container -->
+  <g transform="translate(60, 40)">
+    <rect width="1080" height="720" rx="16" fill="#111827" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+    <!-- Window top -->
+    <rect width="1080" height="48" rx="16" fill="#1E293B"/>
+    <rect y="36" width="1080" height="12" fill="#1E293B"/>
+    <circle cx="28" cy="24" r="5" fill="#EF4444"/>
+    <circle cx="44" cy="24" r="5" fill="#F59E0B"/>
+    <circle cx="60" cy="24" r="5" fill="#10B981"/>
+    <text x="540" y="28" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">eprise.app/inventory/stock-and-orders-matrix</text>
+
+    <!-- Header & Action Row -->
+    <g transform="translate(40, 76)">
+      <text x="0" y="24" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">Inventory &amp; Multi-Warehouse Order Booking</text>
+      <text x="0" y="46" fill="#64748B" font-family="-apple-system, sans-serif" font-size="13">Real-time stock reservation, batch tracking, threshold triggers, and dispatch management.</text>
+
+      <g transform="translate(740, 6)">
+        <rect width="130" height="34" rx="6" fill="#1E293B" stroke="rgba(255,255,255,0.08)"/>
+        <text x="65" y="21" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Export Stock CSV</text>
+
+        <rect x="140" y="0" width="120" height="34" rx="6" fill="#3B82F6"/>
+        <text x="200" y="21" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">+ Add Product</text>
+      </g>
+    </g>
+
+    <!-- 4 Warehouse Stock Hubs -->
+    <g transform="translate(40, 148)">
+      <!-- Hub 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="235" height="100" rx="12" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+        <text x="16" y="28" fill="#38BDF8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">WAREHOUSE 1 · PUNE</text>
+        <text x="16" y="60" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">14,280 Units</text>
+        <text x="16" y="82" fill="#10B981" font-family="-apple-system, sans-serif" font-size="11">● 94% Capacity Utilized</text>
+      </g>
+
+      <!-- Hub 2 -->
+      <g transform="translate(255, 0)">
+        <rect width="235" height="100" rx="12" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+        <text x="16" y="28" fill="#A855F7" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">WAREHOUSE 2 · BHIWANDI</text>
+        <text x="16" y="60" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">8,940 Units</text>
+        <text x="16" y="82" fill="#10B981" font-family="-apple-system, sans-serif" font-size="11">● 68% Capacity Utilized</text>
+      </g>
+
+      <!-- Hub 3 -->
+      <g transform="translate(510, 0)">
+        <rect width="235" height="100" rx="12" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+        <text x="16" y="28" fill="#F59E0B" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">WAREHOUSE 3 · AHMEDABAD</text>
+        <text x="16" y="60" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">6,120 Units</text>
+        <text x="16" y="82" fill="#F59E0B" font-family="-apple-system, sans-serif" font-size="11">● 82% Capacity Utilized</text>
+      </g>
+
+      <!-- Hub 4: Reorder Triggers -->
+      <g transform="translate(765, 0)">
+        <rect width="235" height="100" rx="12" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+        <text x="16" y="28" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">LOW STOCK ALERTS</text>
+        <text x="16" y="60" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="22" font-weight="800">14 Items</text>
+        <text x="16" y="82" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="11">Requires immediate PO</text>
+      </g>
+    </g>
+
+    <!-- Product Inventory Table -->
+    <g transform="translate(40, 274)">
+      <rect width="1000" height="400" rx="14" fill="#151D2A" stroke="rgba(255,255,255,0.06)"/>
+
+      <!-- Table Header -->
+      <rect width="1000" height="42" rx="14" fill="#1E293B"/>
+      <text x="24" y="26" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">SKU &amp; PRODUCT DETAILS</text>
+      <text x="420" y="26" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">CATEGORY</text>
+      <text x="560" y="26" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">IN STOCK</text>
+      <text x="700" y="26" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">RESERVED</text>
+      <text x="830" y="26" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">UNIT PRICE</text>
+      <text x="960" y="26" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="end">STATUS</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 56)">
+        <text x="24" y="24" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">SKU-BRG-4091 · Precision Steel Bearings</text>
+        <text x="24" y="44" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">Batch: B23-09 · HSN: 8482 · Location: Pune Whse Bay 4</text>
+        <text x="420" y="28" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">Machinery</text>
+        <text x="560" y="28" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">1,450 Pcs</text>
+        <text x="700" y="28" fill="#38BDF8" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">240 Pcs</text>
+        <text x="830" y="28" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">₹1,800</text>
+        <rect x="896" y="14" width="76" height="22" rx="4" fill="#10B981" opacity="0.15"/>
+        <text x="934" y="29" fill="#10B981" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">OPTIMAL</text>
+        <line x1="24" y1="58" x2="976" y2="58" stroke="rgba(255,255,255,0.03)"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 126)">
+        <text x="24" y="24" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">SKU-GRW-120 · Cast Alloy Drive Gear Wheels</text>
+        <text x="24" y="44" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">Batch: B23-11 · HSN: 8483 · Location: Bhiwandi Whse</text>
+        <text x="420" y="28" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">Transmission</text>
+        <text x="560" y="28" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">820 Pcs</text>
+        <text x="700" y="28" fill="#38BDF8" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">180 Pcs</text>
+        <text x="830" y="28" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">₹825</text>
+        <rect x="896" y="14" width="76" height="22" rx="4" fill="#10B981" opacity="0.15"/>
+        <text x="934" y="29" fill="#10B981" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">OPTIMAL</text>
+        <line x1="24" y1="58" x2="976" y2="58" stroke="rgba(255,255,255,0.03)"/>
+      </g>
+
+      <!-- Row 3: Low stock warning -->
+      <g transform="translate(0, 196)">
+        <text x="24" y="24" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">SKU-COP-09 · High Conductivity Copper Coils 2.5mm</text>
+        <text x="24" y="44" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="11">⚠️ Threshold is 50 kg · Current stock below buffer</text>
+        <text x="420" y="28" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">Raw Materials</text>
+        <text x="560" y="28" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">12 kg</text>
+        <text x="700" y="28" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">8 kg</text>
+        <text x="830" y="28" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">₹740/kg</text>
+        <rect x="896" y="14" width="76" height="22" rx="4" fill="#EF4444" opacity="0.15"/>
+        <text x="934" y="29" fill="#EF4444" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">REORDER</text>
+        <line x1="24" y1="58" x2="976" y2="58" stroke="rgba(255,255,255,0.03)"/>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(0, 266)">
+        <text x="24" y="24" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">SKU-PMP-104 · Industrial Hydraulic Submersible Pump</text>
+        <text x="24" y="44" fill="#64748B" font-family="-apple-system, sans-serif" font-size="11">Batch: B23-08 · HSN: 8413 · Location: Ahmedabad Whse</text>
+        <text x="420" y="28" fill="#94A3B8" font-family="-apple-system, sans-serif" font-size="12">Equipment</text>
+        <text x="560" y="28" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">42 Units</text>
+        <text x="700" y="28" fill="#38BDF8" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">6 Units</text>
+        <text x="830" y="28" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">₹14,500</text>
+        <rect x="896" y="14" width="76" height="22" rx="4" fill="#10B981" opacity="0.15"/>
+        <text x="934" y="29" fill="#10B981" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">OPTIMAL</text>
+      </g>
+    </g>
+  </g>
+</svg>
