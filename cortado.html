@@ -13,7 +13,7 @@
   
   <!-- Homepage Master Stylesheet + Cortado Case Study Extension -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="cortado.css">
+  <link rel="stylesheet" href="cortado.css?v=2.3">
 </head>
 <body>
 
@@ -678,26 +678,31 @@
     <!-- ==========================================================================
          08 — COMMON QUESTIONS (FAQ ACCORDION)
          ========================================================================== -->
-    <section class="editorial-section-space-sm">
+    <section class="editorial-section-space-sm" id="faq">
       <div class="container-content">
-        <div class="faq-section-block">
+        <div class="faq-editorial-grid">
           
-          <div class="faq-header">
-            <div class="story-chapter-label" style="justify-content: center;">
+          <div class="faq-editorial-col-info">
+            <div class="story-chapter-label">
               <span class="chapter-number">08</span>
               <span class="chapter-title">Common Questions</span>
             </div>
-            <h2 class="faq-title">Frequently Asked Questions</h2>
-            <p class="faq-subtitle">Key insights into the Cortado design process and execution.</p>
+            <h2 class="faq-editorial-title">Frequently Asked Questions</h2>
+            <p class="faq-editorial-subtitle">
+              Key insights into the Cortado design process, constraints, and execution.
+            </p>
           </div>
 
           <div class="faq-accordion-list">
             
             <!-- FAQ 1 -->
             <div class="faq-item active">
-              <button class="faq-trigger" aria-expanded="true">
-                <span class="faq-question">What is Cortado?</span>
-                <span class="faq-icon">+</span>
+              <button type="button" class="faq-trigger" aria-expanded="true">
+                <div class="faq-trigger-content">
+                  <span class="faq-item-num">01</span>
+                  <span class="faq-question">What is Cortado?</span>
+                </div>
+                <span class="faq-icon" aria-hidden="true">+</span>
               </button>
               <div class="faq-answer-panel">
                 <p>
@@ -708,9 +713,12 @@
 
             <!-- FAQ 2 -->
             <div class="faq-item">
-              <button class="faq-trigger" aria-expanded="false">
-                <span class="faq-question">What was your role?</span>
-                <span class="faq-icon">+</span>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <div class="faq-trigger-content">
+                  <span class="faq-item-num">02</span>
+                  <span class="faq-question">What was your role?</span>
+                </div>
+                <span class="faq-icon" aria-hidden="true">+</span>
               </button>
               <div class="faq-answer-panel">
                 <p>
@@ -721,9 +729,12 @@
 
             <!-- FAQ 3 -->
             <div class="faq-item">
-              <button class="faq-trigger" aria-expanded="false">
-                <span class="faq-question">What was the main design challenge?</span>
-                <span class="faq-icon">+</span>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <div class="faq-trigger-content">
+                  <span class="faq-item-num">03</span>
+                  <span class="faq-question">What was the main design challenge?</span>
+                </div>
+                <span class="faq-icon" aria-hidden="true">+</span>
               </button>
               <div class="faq-answer-panel">
                 <p>
@@ -734,9 +745,12 @@
 
             <!-- FAQ 4 -->
             <div class="faq-item">
-              <button class="faq-trigger" aria-expanded="false">
-                <span class="faq-question">How long did the project take?</span>
-                <span class="faq-icon">+</span>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <div class="faq-trigger-content">
+                  <span class="faq-item-num">04</span>
+                  <span class="faq-question">How long did the project take?</span>
+                </div>
+                <span class="faq-icon" aria-hidden="true">+</span>
               </button>
               <div class="faq-answer-panel">
                 <p>
@@ -747,9 +761,12 @@
 
             <!-- FAQ 5 -->
             <div class="faq-item">
-              <button class="faq-trigger" aria-expanded="false">
-                <span class="faq-question">What did you design?</span>
-                <span class="faq-icon">+</span>
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <div class="faq-trigger-content">
+                  <span class="faq-item-num">05</span>
+                  <span class="faq-question">What did you design?</span>
+                </div>
+                <span class="faq-icon" aria-hidden="true">+</span>
               </button>
               <div class="faq-answer-panel">
                 <p>
