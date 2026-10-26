@@ -2376,6 +2376,33 @@ button { font-family: inherit; }
   .resume-content-grid { grid-template-columns: 1fr; }
   .mobile-mockup-duo { flex-direction: column; gap: 24px; }
 
+  /* Works Grid Mobile / Tablet rules */
+  .projects-list {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .project-article.featured-hero-card {
+    grid-column: 1 / -1;
+  }
+  .project-visual-wrapper {
+    min-height: 440px;
+  }
+  .project-article.featured-grid-card .project-visual-wrapper {
+    min-height: 440px;
+  }
+  .project-card-overlay {
+    padding: 28px 24px;
+  }
+  .project-article.featured-grid-card .project-card-overlay {
+    padding: 28px 24px;
+  }
+  .project-card-overlay .project-title {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+  .project-article.featured-grid-card .project-card-overlay .project-title {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+
   /* Case Studies Mobile/Tablet rules */
   .case-studies-section { padding: 80px 24px; height: auto !important; }
   .case-studies-section { padding: 120px 24px 100px; height: auto !important; }
@@ -2405,9 +2432,44 @@ button { font-family: inherit; }
   .hero-intro-wrapper { max-width: 320px; margin-bottom: 24px; }
   .hero-intro-text { font-size: 0.95rem; }
 
-  .work-section { padding: 70px 0; }
-  .featured-work-title { font-size: 2.8rem; }
-  .featured-work-intro { font-size: 0.95rem; }
+  .work-section { padding: 60px 0; }
+  .featured-work-header { margin-bottom: 36px; }
+  .featured-work-title { font-size: 2.4rem; }
+  .featured-work-intro { font-size: 0.9rem; }
+
+  /* Works Grid 390px Mobile Viewport */
+  .projects-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .project-visual-wrapper {
+    min-height: 380px;
+    border-radius: 20px;
+  }
+  .project-article.featured-grid-card .project-visual-wrapper {
+    min-height: 380px;
+    border-radius: 20px;
+  }
+  .project-card-overlay {
+    padding: 22px 18px;
+  }
+  .project-article.featured-grid-card .project-card-overlay {
+    padding: 22px 18px;
+  }
+  .project-card-overlay .project-title {
+    font-size: clamp(1.7rem, 6.8vw, 2.2rem);
+  }
+  .project-article.featured-grid-card .project-card-overlay .project-title {
+    font-size: clamp(1.7rem, 6.8vw, 2.2rem);
+  }
+  .project-card-overlay .project-desc {
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+  .project-card-overlay .project-link {
+    padding: 8px 16px;
+    font-size: 0.72rem;
+  }
 
   .see-more-title { font-size: 2.8rem; }
   .see-all-projects-btn { padding: 14px 24px; font-size: 0.78rem; }
