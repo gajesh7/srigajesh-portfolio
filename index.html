@@ -412,25 +412,25 @@
               </div>
             </article>
 
-            <!-- PROJECT 06: LONGIVIA -->
-            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="Longivia">
-              <div class="project-visual-wrapper longivia-wrapper">
-                <img src="images/work-6.svg" alt="LONGIVIA" class="project-full-bleed-img">
+            <!-- PROJECT 06: LONGEVIA -->
+            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="Longevia">
+              <div class="project-visual-wrapper longivia-wrapper" onclick="window.location.href='longevia.html'" style="cursor: pointer;">
+                <img src="images/longevia-doctors.png" alt="Longevia Doctor &amp; Healthcare Website" class="project-full-bleed-img" style="object-position: top center;">
                 <div class="project-gradient-overlay"></div>
 
                 <div class="project-card-overlay">
                   <div class="overlay-top">
                     <div class="project-meta-top">
                       <span class="project-num">06</span>
-                      <span class="project-category">Website · UI UX · 2025</span>
+                      <span class="project-category">Healthcare Website · UI/UX · 2026</span>
                     </div>
                   </div>
 
                   <div class="overlay-bottom">
-                    <h3 class="project-title">LONGIVIA</h3>
-                    <p class="project-desc">"Editorial science &amp; longevity platform site with minimal typography and interactive health markers."</p>
+                    <h3 class="project-title">LONGEVIA</h3>
+                    <p class="project-desc">"A patient-focused healthcare website designed to make medical information easier to explore while building trust between patients, doctors, and healthcare services."</p>
                     <div class="project-footer">
-                      <a href="#contact" class="project-link" data-project="Longivia">
+                      <a href="longevia.html" class="project-link direct-case-study" onclick="event.stopPropagation(); window.location.href='longevia.html';" data-project="Longevia">
                         <span>VIEW CASE STUDY</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                       </a>
@@ -1141,7 +1141,7 @@
             <li><a href="eprise.html" class="f-link" data-project="ePRISE SaaS">ePRISE <span class="f-hover-arrow">→</span></a></li>
             <li><a href="clarus.html" class="f-link" data-project="Clarus Digitronics">CLARUS DIGITRONICS <span class="f-hover-arrow">→</span></a></li>
             <li><a href="tribal.html" class="f-link" data-project="Tribal Operations">TRIBAL <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="#see-more-work" class="f-link">MORE WORK <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="longevia.html" class="f-link" data-project="Longevia">LONGEVIA <span class="f-hover-arrow">→</span></a></li>
           </ul>
         </div>
 
@@ -1261,7 +1261,7 @@
   <!-- Case study direct navigation interceptor -->
   <script>
     document.addEventListener('click', function(e) {
-      const link = e.target.closest('a[href*="cortado.html"], a[href*="eprise.html"], a[href*="clarus.html"], a[href*="tribal.html"]');
+      const link = e.target.closest('a[href*="cortado.html"], a[href*="eprise.html"], a[href*="clarus.html"], a[href*="tribal.html"], a[href*="longevia.html"]');
       if (link) {
         e.stopImmediatePropagation();
         window.location.href = link.getAttribute('href');

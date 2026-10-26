@@ -145,6 +145,35 @@ body.theme-clarus {
   --border-dark: rgba(140, 85, 40, 0.2);
 }
 
+/* --------------------------------------------------------------------------
+   05 — LONGEVIA: Deep Healthcare Green / Sage Mint
+   Mood: Calm · Natural · Trustworthy · Premium · Human
+   -------------------------------------------------------------------------- */
+body.theme-longevia {
+  --project-primary: #15803D;       /* fresh medium healthcare green */
+  --project-secondary: #0F5A2A;     /* deep forest green */
+  --project-glow: rgba(21, 128, 61, 0.22);
+  --accent-orange: var(--project-primary);
+  --accent-orange-glow: var(--project-glow);
+
+  --bg-cream: #F4F8F5;             /* soft warm white with gentle sage tint */
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #EAF2EC;
+  --bg-header: rgba(244, 248, 245, 0.94);
+
+  --bg-dark: #081E17;              /* deep forest green / charcoal */
+  --bg-card-dark: #103328;
+  --border-dark-section: rgba(34, 197, 94, 0.16);
+
+  --text-black: #0D1E18;           /* deep pine charcoal */
+  --text-body: #233D34;            /* botanical dark green-gray */
+  --text-muted: #5D7970;           /* calming sage gray */
+  --text-light: #9BB8AE;
+
+  --border-subtle: rgba(21, 128, 61, 0.12);
+  --border-dark: rgba(21, 128, 61, 0.22);
+}
+
 /* Scoped Theme Rules across all inner pages */
 body[class*="theme-"] {
   background-color: var(--bg-cream);
