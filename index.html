@@ -386,23 +386,23 @@
 
             <!-- PROJECT 05: TRIBAL -->
             <article class="project-article featured-grid-card" data-parallax="0.04" data-project="TRIBAL">
-              <div class="project-visual-wrapper b2b-workflow-wrapper">
-                <img src="images/work-5.svg" alt="TRIBAL" class="project-full-bleed-img">
+              <div class="project-visual-wrapper b2b-workflow-wrapper" onclick="window.location.href='tribal.html'" style="cursor: pointer;">
+                <img src="images/tribal-mockup-01.jpg" alt="TRIBAL Clothing Manufacturing & Production Management Platform" class="project-full-bleed-img">
                 <div class="project-gradient-overlay"></div>
 
                 <div class="project-card-overlay">
                   <div class="overlay-top">
                     <div class="project-meta-top">
                       <span class="project-num">05</span>
-                      <span class="project-category">B2B Platform · Product Design · 2025</span>
+                      <span class="project-category">Enterprise Platform · UI/UX Design · 2025</span>
                     </div>
                   </div>
 
                   <div class="overlay-bottom">
                     <h3 class="project-title">TRIBAL</h3>
-                    <p class="project-desc">"A connected workflow experience for managing complex clothing production and operations."</p>
+                    <p class="project-desc">"A centralized production management platform designed to help apparel businesses track orders, monitor production stages, and manage dispatches."</p>
                     <div class="project-footer">
-                      <a href="#contact" class="project-link" data-project="TRIBAL">
+                      <a href="tribal.html" class="project-link direct-case-study" onclick="event.stopPropagation(); window.location.href='tribal.html';" data-project="TRIBAL">
                         <span>VIEW CASE STUDY</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                       </a>
@@ -728,7 +728,7 @@
             </p>
 
             <div class="cs-card-bottom">
-              <a href="#contact" class="cs-cta-btn" data-project="Tribal Operations">
+              <a href="tribal.html" class="cs-cta-btn" data-project="Tribal Operations">
                 <span>VIEW CASE STUDY</span>
                 <span class="cs-btn-arrow">→</span>
               </a>
@@ -1140,7 +1140,7 @@
             <li><a href="cortado.html" class="f-link" data-project="Cortado Cafe">CORTADO CAFÉ <span class="f-hover-arrow">→</span></a></li>
             <li><a href="eprise.html" class="f-link" data-project="ePRISE SaaS">ePRISE <span class="f-hover-arrow">→</span></a></li>
             <li><a href="clarus.html" class="f-link" data-project="Clarus Digitronics">CLARUS DIGITRONICS <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="#work" class="f-link" data-project="Barakha Luxury Store">BARAKHA <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="tribal.html" class="f-link" data-project="Tribal Operations">TRIBAL <span class="f-hover-arrow">→</span></a></li>
             <li><a href="#see-more-work" class="f-link">MORE WORK <span class="f-hover-arrow">→</span></a></li>
           </ul>
         </div>
@@ -1261,7 +1261,7 @@
   <!-- Case study direct navigation interceptor -->
   <script>
     document.addEventListener('click', function(e) {
-      const link = e.target.closest('a[href*="cortado.html"], a[href*="eprise.html"], a[href*="clarus.html"]');
+      const link = e.target.closest('a[href*="cortado.html"], a[href*="eprise.html"], a[href*="clarus.html"], a[href*="tribal.html"]');
       if (link) {
         e.stopImmediatePropagation();
         window.location.href = link.getAttribute('href');
