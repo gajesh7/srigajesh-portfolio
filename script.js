@@ -507,6 +507,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
+  // Expose globally for interactive footer/modal links
+  window.openModal = openModal;
+  window.closeModal = closeModal;
+
   if (openContactBtn) openContactBtn.addEventListener('click', () => openModal());
   if (heroBookCallBtn) heroBookCallBtn.addEventListener('click', () => openModal('Book an Intro Call'));
   if (bookCallBtn) bookCallBtn.addEventListener('click', () => openModal('Book a Call / Project Inquiry'));

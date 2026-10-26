@@ -13,7 +13,7 @@
   
   <!-- Homepage Master Stylesheet + Case Study Extension -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="cortado.css?v=3.0">
+  <link rel="stylesheet" href="cortado.css?v=3.5">
 </head>
 <body class="theme-clarus">
 
@@ -752,51 +752,71 @@
   </main>
 
   <!-- ==========================================================================
-       SITE FOOTER (BrandAppArt Architecture)
+       SIGNATURE HOMEPAGE FOOTER (BrandAppArt Architecture)
        ========================================================================== -->
-  <footer class="brand-appart-footer" id="site-footer">
-    <div class="container-content">
+  <footer class="brand-appart-footer" id="contact">
+    <div class="footer-inner-container">
       
-      <!-- Top Huge CTA Heading -->
-      <div class="footer-cta-band">
-        <span class="footer-eyebrow">LET'S COLLABORATE</span>
-        <h2 class="footer-huge-title">
-          HAVE A PROJECT<br>
-          <span class="title-highlight">IN MIND?</span>
+      <!-- Decorative Floating Object (Upper Right) -->
+      <div class="footer-decorative-object" id="footer-decor" aria-hidden="true">
+        <svg class="decor-badge-svg" width="90" height="90" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="#8E8883" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <path d="M50 18 L50 82 M18 50 L82 50" stroke="var(--project-primary, #8C5528)" stroke-width="2"/>
+          <circle cx="50" cy="50" r="16" fill="var(--bg-dark, #181310)"/>
+          <circle cx="50" cy="50" r="6" fill="var(--project-primary, #8C5528)"/>
+        </svg>
+      </div>
+
+      <!-- Footer Hero CTA (Top Center) -->
+      <div class="footer-hero-cta">
+        <h2 class="footer-giant-headline">
+          <span class="f-headline-line">LET'S CREATE</span>
+          <span class="f-headline-line">SOMETHING</span>
+          <span class="f-headline-line">MEANINGFUL. <span class="orange-arrow-accent">→</span></span>
         </h2>
-        <div class="footer-cta-row">
-          <button class="cta-talk-btn footer-cta-action" id="footer-talk-btn">
-            <span>GET IN TOUCH</span>
-            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M7 17L17 7M17 7H7M17 7V17"/>
-            </svg>
+
+        <div class="book-a-call-wrapper">
+          <button class="cta-talk-btn book-call-btn" id="book-call-trigger" aria-label="Book a call or start a project">
+            <span>BOOK A CALL</span>
+            <span class="avatar-phone-duo">
+              <span class="hero-avatar-circle" title="Gajesh">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%238C5528'/%3E%3Cstop offset='100%25' stop-color='%23181310'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='40' r='18' fill='%23F7F4EE'/%3E%3Cpath d='M22 82c0-15.5 12.5-28 28-28s28 12.5 28 28' fill='%23F7F4EE'/%3E%3C/svg%3E" alt="Gajesh Profile" class="hero-avatar-img">
+              </span>
+              <span class="phone-icon-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+            </span>
           </button>
-          <a href="mailto:gajesh@example.com" class="footer-email-link">
-            <span>gajesh@example.com</span>
-          </a>
         </div>
       </div>
 
-      <!-- 5-Column Navigation Grid -->
+      <!-- Multi-Column Footer Navigation (5 Columns Matching Homepage) -->
       <div class="footer-nav-grid">
         
-        <!-- COLUMN 01: Brand Statement -->
-        <div class="f-brand-col">
-          <a href="index.html" class="brand-logo footer-logo">GAJESH</a>
-          <p class="f-brand-desc">
-            Product Designer &amp; UI/UX specialist focused on crafting high-clarity SaaS interfaces, mobile applications, and digital brand experiences.
-          </p>
+        <!-- COLUMN 01: Gajesh -->
+        <div class="f-nav-col">
+          <h4 class="f-col-title">GAJESH</h4>
+          <ul class="f-link-list">
+            <li><a href="index.html#hero" class="f-link">HOME <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#work" class="f-link">WORK <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#about" class="f-link">ABOUT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#experience" class="f-link">EXPERIENCE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#contact" class="f-link">CONTACT <span class="f-hover-arrow">→</span></a></li>
+          </ul>
         </div>
 
-        <!-- COLUMN 02: Quick Navigation -->
+        <!-- COLUMN 02: Expertise -->
         <div class="f-nav-col">
-          <h4 class="f-col-title">NAVIGATION</h4>
+          <h4 class="f-col-title">EXPERTISE</h4>
           <ul class="f-link-list">
-            <li><a href="index.html#home" class="f-link">HOME <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="index.html#work" class="f-link">SELECTED WORK <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="index.html#about" class="f-link">ABOUT ME <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="index.html#services" class="f-link">SERVICES <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="index.html#contact" class="f-link">CONTACT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">UI/UX DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">PRODUCT DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">MOBILE APP DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">WEB DESIGN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">DESIGN SYSTEMS <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#expertise" class="f-link">PROTOTYPING <span class="f-hover-arrow">→</span></a></li>
           </ul>
         </div>
 
@@ -804,11 +824,11 @@
         <div class="f-nav-col">
           <h4 class="f-col-title">SELECTED WORK</h4>
           <ul class="f-link-list">
-            <li><a href="cortado.html" class="f-link">CORTADO CAFÉ <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="eprise.html" class="f-link">ePRISE <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="clarus.html" class="f-link" style="color: var(--accent-orange); font-weight: 700;">CLARUS DIGITRONICS <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="index.html#work" class="f-link">BARAKHA <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="index.html#work" class="f-link">MORE WORK <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="cortado.html" class="f-link" data-project="Cortado Cafe">CORTADO CAFÉ <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="eprise.html" class="f-link" data-project="ePRISE SaaS">ePRISE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="clarus.html" class="f-link active-project" data-project="Clarus Digitronics">CLARUS DIGITRONICS <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="tribal.html" class="f-link" data-project="Tribal Operations">TRIBAL <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#see-more-work" class="f-link">MORE WORK <span class="f-hover-arrow">→</span></a></li>
           </ul>
         </div>
 
@@ -816,36 +836,57 @@
         <div class="f-nav-col">
           <h4 class="f-col-title">CONNECT</h4>
           <ul class="f-link-list">
-            <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="f-link">LINKEDIN <span class="f-hover-arrow">↗</span></a></li>
-            <li><a href="https://twitter.com" target="_blank" rel="noopener" class="f-link">X (TWITTER) <span class="f-hover-arrow">↗</span></a></li>
-            <li><a href="https://dribbble.com" target="_blank" rel="noopener" class="f-link">DRIBBBLE <span class="f-hover-arrow">↗</span></a></li>
-            <li><a href="https://github.com" target="_blank" rel="noopener" class="f-link">GITHUB <span class="f-hover-arrow">↗</span></a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="f-link">LINKEDIN <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="https://behance.net" target="_blank" rel="noopener" class="f-link">BEHANCE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="https://dribbble.com" target="_blank" rel="noopener" class="f-link">DRIBBBLE <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener" class="f-link">INSTAGRAM <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="mailto:gajesh.uiux@gmail.com" class="f-link">EMAIL <span class="f-hover-arrow">→</span></a></li>
           </ul>
         </div>
 
-        <!-- COLUMN 05: Location & Availability -->
+        <!-- COLUMN 05: Information -->
         <div class="f-nav-col">
-          <h4 class="f-col-title">LOCATION</h4>
-          <p class="f-text-block">BASED IN BANGALORE, INDIA</p>
-          <p class="f-text-block">WORKING GLOBALLY (REMOTE)</p>
-          <div class="f-status-pill">
-            <span class="status-indicator-dot"></span>
-            <span>AVAILABLE FOR Q1/Q2 2026</span>
-          </div>
+          <h4 class="f-col-title">INFORMATION</h4>
+          <ul class="f-link-list">
+            <li><a href="index.html#resume" class="f-link">RESUME <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="index.html#about" class="f-link">ABOUT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="javascript:void(0)" onclick="openModal('Clarus Digitronics Inquiry')" class="f-link">CONTACT <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="#" class="f-link">PRIVACY POLICY <span class="f-hover-arrow">→</span></a></li>
+            <li><span class="f-info-text">© 2026 GAJESH</span></li>
+          </ul>
         </div>
 
       </div>
 
-      <!-- Copyright Sub-Footer Bar -->
-      <div class="sub-footer-bar">
-        <div class="sub-footer-left">
-          <span>© 2026 GAJESH. ALL RIGHTS RESERVED.</span>
+      <!-- Outlined Square Social Icons & Copyright -->
+      <div class="footer-bottom-meta">
+        <div class="footer-social-row">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-sq-btn" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://behance.net" target="_blank" rel="noopener" class="social-sq-btn" aria-label="Behance">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h6a3 3 0 0 1 0 6H3V8zm0 6h7a3.5 3.5 0 0 1 0 7H3v-7zm13-5h5M16 16a3 3 0 1 1 5 0"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-sq-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-sq-btn" aria-label="Dribbble">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"/><path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"/><path d="M8.56 2.75c4.37 6 6 9.42 8 18.5"/></svg>
+          </a>
+          <a href="mailto:gajesh.uiux@gmail.com" class="social-sq-btn" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
         </div>
-        <div class="sub-footer-right">
-          <span>PORTFOLIO EDITORIAL EDITION</span>
-          <span class="sub-footer-dot">·</span>
-          <span>DESIGNED WITH PRECISION</span>
+
+        <div class="footer-copyright-block">
+          <p>© 2026 Gajesh · UI/UX Designer</p>
+          <span class="f-location-tag">BENGALURU, INDIA</span>
         </div>
+      </div>
+
+      <!-- Oversized Background Wordmark (GAJESH) -->
+      <div class="footer-giant-wordmark-container" aria-hidden="true">
+        <h1 class="giant-wordmark-text" id="giant-wordmark">GAJESH</h1>
       </div>
 
     </div>
@@ -908,7 +949,7 @@
   </div>
 
   <!-- Shared Homepage Script (Cursor, Modal, Magnetic Buttons) -->
-  <script src="script.js?v=2.2"></script>
+  <script src="script.js?v=2.5"></script>
 
   <!-- Interactive Modal & Scroll Scripts -->
   <script>
