@@ -290,7 +290,7 @@
                     <h3 class="project-title">CORTADO</h3>
                     <p class="project-desc">"A complete café ordering experience designed across delivery, dine-in, takeaway, branch selection, rewards and membership."</p>
                     <div class="project-footer">
-                      <a href="cortado.html" class="project-link" data-project="Cortado">
+                      <a href="cortado.html" class="project-link direct-case-study" onclick="event.stopPropagation(); window.location.href='cortado.html';" data-project="Cortado">
                         <span>VIEW CASE STUDY</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                       </a>
@@ -630,7 +630,7 @@
             </p>
 
             <div class="cs-card-bottom">
-              <a href="cortado.html" class="cs-cta-btn" data-project="Cortado Cafe">
+              <a href="cortado.html" class="cs-cta-btn direct-case-study" onclick="event.stopPropagation(); window.location.href='cortado.html';" data-project="Cortado Cafe">
                 <span>VIEW CASE STUDY</span>
                 <span class="cs-btn-arrow">→</span>
               </a>
@@ -1258,6 +1258,16 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Case study direct navigation interceptor -->
+  <script>
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a[href*="cortado.html"]');
+      if (link) {
+        e.stopImmediatePropagation();
+        window.location.href = link.getAttribute('href');
+      }
+    }, true);
+  </script>
+  <script src="script.js?v=2.0"></script>
 </body>
 </html>

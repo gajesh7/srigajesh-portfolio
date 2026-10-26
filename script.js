@@ -478,7 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const finalTalkTrigger = document.getElementById('final-talk-trigger');
   const mobileTalkBtn = document.getElementById('mobile-talk-btn');
   const seeAllProjectsTrigger = document.getElementById('see-all-projects-trigger');
-  const projectLinks = document.querySelectorAll('.project-link, .cs-cta-link, .cs-cta-btn');
+  const projectLinks = document.querySelectorAll('.project-link:not([href*=".html"]), .cs-cta-link:not([href*=".html"]), .cs-cta-btn:not([href*=".html"])');
   const downloadCvBtn = document.getElementById('download-cv-btn');
   const contactForm = document.getElementById('contact-form');
   const formSuccessState = document.getElementById('form-success-state');
@@ -525,8 +525,9 @@ document.addEventListener('DOMContentLoaded', () => {
   projectLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
-      if (href && href !== '#' && !href.startsWith('#')) {
-        // Allow normal navigation to inner case-study pages like cortado.html
+      if (href && (href.includes('.html') || (!href.startsWith('#') && href !== '#'))) {
+        e.stopImmediatePropagation();
+        window.location.href = href;
         return;
       }
       e.preventDefault();
