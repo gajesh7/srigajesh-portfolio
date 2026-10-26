@@ -20,6 +20,301 @@
   --transition-fast: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* ==========================================================================
+   INDIVIDUAL PROJECT INNER-PAGE COLOR SYSTEMS
+   Scoped to <body class="theme-..."> on each project case-study page:
+     1. Cortado:            body.theme-cortado (Terracotta / Orange)
+     2. ePrise:             body.theme-eprise (Purple / Violet)
+     3. TRIBAL:             body.theme-tribal (Royal / Navy Blue)
+     4. Clarus Digitronics: body.theme-clarus (Earth / Warm Brown)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01 — CORTADO: Orange / Terracotta
+   Mood: Warm · Premium · Café · Editorial
+   -------------------------------------------------------------------------- */
+body.theme-cortado {
+  --project-primary: #D95328;       /* warm terracotta orange */
+  --project-secondary: #BA4017;     /* burnt orange */
+  --project-glow: rgba(217, 83, 40, 0.22);
+  --accent-orange: var(--project-primary);
+  --accent-orange-glow: var(--project-glow);
+
+  --bg-cream: #FAF6EE;             /* warm cream / soft beige */
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #F5EFE4;
+  --bg-header: rgba(250, 246, 238, 0.94);
+
+  --bg-dark: #1C1613;              /* deep coffee brown / charcoal */
+  --bg-card-dark: #261F1A;
+  --border-dark-section: rgba(255, 255, 255, 0.08);
+
+  --text-black: #1E1714;           /* dark espresso */
+  --text-body: #3D332D;            /* roasted coffee */
+  --text-muted: #8C7D73;           /* warm taupe */
+  --text-light: #C2B6AC;
+
+  --border-subtle: rgba(30, 23, 20, 0.09);
+  --border-dark: rgba(30, 23, 20, 0.18);
+}
+
+/* --------------------------------------------------------------------------
+   02 — ePRISE: Purple / Violet
+   Mood: Professional · Intelligent · Financial · Modern
+   -------------------------------------------------------------------------- */
+body.theme-eprise {
+  --project-primary: #7C3AED;       /* rich purple */
+  --project-secondary: #5B21B6;     /* deep violet */
+  --project-glow: rgba(124, 58, 237, 0.22);
+  --accent-orange: var(--project-primary);
+  --accent-orange-glow: var(--project-glow);
+
+  --bg-cream: #F8F7FC;             /* very light lavender / soft neutral */
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #F0EEF8;
+  --bg-header: rgba(248, 247, 252, 0.94);
+
+  --bg-dark: #161224;              /* deep purple / charcoal */
+  --bg-card-dark: #221C35;
+  --border-dark-section: rgba(124, 58, 237, 0.18);
+
+  --text-black: #171322;           /* dark charcoal / deep purple */
+  --text-body: #322A42;
+  --text-muted: #7E7591;
+  --text-light: #B7B0C7;
+
+  --border-subtle: rgba(124, 58, 237, 0.1);
+  --border-dark: rgba(124, 58, 237, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   03 — TRIBAL: Blue / Navy
+   Mood: Enterprise · Precise · Operational · Reliable
+   -------------------------------------------------------------------------- */
+body.theme-tribal {
+  --project-primary: #2563EB;       /* strong royal / interface blue */
+  --project-secondary: #1D4ED8;     /* deeper navy blue */
+  --project-glow: rgba(37, 99, 235, 0.22);
+  --accent-orange: var(--project-primary);
+  --accent-orange-glow: var(--project-glow);
+
+  --bg-cream: #F5F8FA;             /* very light blue-gray */
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #EBF1F7;
+  --bg-header: rgba(245, 248, 250, 0.94);
+
+  --bg-dark: #0C1322;              /* deep navy / charcoal */
+  --bg-card-dark: #152035;
+  --border-dark-section: rgba(37, 99, 235, 0.18);
+
+  --text-black: #0F172A;           /* dark navy / charcoal */
+  --text-body: #1E293B;
+  --text-muted: #64748B;
+  --text-light: #94A3B8;
+
+  --border-subtle: rgba(37, 99, 235, 0.1);
+  --border-dark: rgba(37, 99, 235, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   04 — CLARUS DIGITRONICS: Brown / Earth tones
+   Mood: Industrial · Technical · Precise · Reliable
+   -------------------------------------------------------------------------- */
+body.theme-clarus {
+  --project-primary: #8C5528;       /* warm medium brown / bronze earth */
+  --project-secondary: #5C3617;     /* deep chocolate brown */
+  --project-glow: rgba(140, 85, 40, 0.22);
+  --accent-orange: var(--project-primary);
+  --accent-orange-glow: var(--project-glow);
+
+  --bg-cream: #F7F4EE;             /* warm off-white / beige */
+  --bg-card: #FFFFFF;
+  --bg-card-subtle: #EFE9DF;
+  --bg-header: rgba(247, 244, 238, 0.94);
+
+  --bg-dark: #181310;              /* dark brown / near-black */
+  --bg-card-dark: #251E19;
+  --border-dark-section: rgba(140, 85, 40, 0.18);
+
+  --text-black: #211A15;           /* dark brown / charcoal */
+  --text-body: #382E27;
+  --text-muted: #85766B;
+  --text-light: #B8ABA0;
+
+  --border-subtle: rgba(140, 85, 40, 0.1);
+  --border-dark: rgba(140, 85, 40, 0.2);
+}
+
+/* Scoped Theme Rules across all inner pages */
+body[class*="theme-"] {
+  background-color: var(--bg-cream);
+  color: var(--text-black);
+}
+
+body[class*="theme-"] ::selection {
+  background-color: var(--project-primary);
+  color: #FFFFFF;
+}
+
+body[class*="theme-"] .cursor-dot {
+  background-color: var(--project-primary);
+}
+
+body[class*="theme-"] .cursor-ring {
+  border-color: var(--project-primary);
+}
+
+body[class*="theme-"] .site-header.scrolled {
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+body[class*="theme-"] .back-to-works-btn {
+  border-color: var(--border-subtle);
+  color: var(--text-black);
+}
+
+body[class*="theme-"] .back-to-works-btn:hover {
+  background: var(--text-black);
+  color: var(--bg-cream);
+  border-color: var(--text-black);
+}
+
+body[class*="theme-"] .orange-accent-badge {
+  background-color: var(--project-primary);
+  box-shadow: 0 4px 12px var(--project-glow);
+}
+
+body[class*="theme-"] .hero-title-dot {
+  background-color: var(--project-primary);
+}
+
+body[class*="theme-"] .scroll-line {
+  background-color: var(--project-primary);
+}
+
+body[class*="theme-"] .downward-arrow-box:hover {
+  border-color: var(--project-primary);
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .chapter-number,
+body[class*="theme-"] .story-chapter-label .chapter-number,
+body[class*="theme-"] .challenge-label-accent,
+body[class*="theme-"] .results-eyebrow,
+body[class*="theme-"] .next-eyebrow,
+body[class*="theme-"] .trio-step-num,
+body[class*="theme-"] .breakdown-tag,
+body[class*="theme-"] .outcome-badge {
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .challenge-num {
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .stat-metric-big span {
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .feature-pill-dot {
+  background-color: var(--project-primary);
+}
+
+body[class*="theme-"] .feature-pill:hover,
+body[class*="theme-"] .branch-pill:hover {
+  border-color: var(--project-primary);
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .section-dark-editorial {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-dark-section);
+}
+
+body[class*="theme-"] .challenge-card {
+  background: var(--bg-card-dark);
+  border: 1px solid var(--border-dark-section);
+}
+
+body[class*="theme-"] .challenge-card:hover {
+  border-color: var(--project-primary);
+  box-shadow: 0 12px 30px var(--project-glow);
+}
+
+body[class*="theme-"] .trio-card:hover,
+body[class*="theme-"] .outcome-card:hover {
+  border-color: var(--project-primary);
+  box-shadow: 0 16px 36px var(--project-glow);
+}
+
+body[class*="theme-"] .cta-talk-btn:hover {
+  background-color: var(--project-primary);
+  box-shadow: 0 8px 25px var(--project-glow);
+}
+
+body[class*="theme-"] #case-study-talk-btn {
+  background-color: var(--project-primary) !important;
+  color: #FFFFFF !important;
+}
+
+body[class*="theme-"] #case-study-talk-btn:hover {
+  background-color: var(--project-secondary) !important;
+}
+
+body[class*="theme-"] .submit-btn:hover {
+  background-color: var(--project-primary);
+  box-shadow: 0 8px 25px var(--project-glow);
+}
+
+body[class*="theme-"] .modal-tag {
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .contact-form input:focus,
+body[class*="theme-"] .contact-form select:focus,
+body[class*="theme-"] .contact-form textarea:focus {
+  border-color: var(--project-primary);
+  box-shadow: 0 0 0 3px var(--project-glow);
+}
+
+body[class*="theme-"] .brand-appart-footer {
+  background-color: var(--bg-cream);
+  border-top: 1px solid var(--border-subtle);
+}
+
+body[class*="theme-"] .title-highlight {
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .f-link:hover {
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .next-project-link:hover .next-project-title {
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .next-project-link:hover .next-circle-arrow {
+  background: var(--project-primary);
+  color: #FFFFFF;
+}
+
+body[class*="theme-"] .faq-trigger:hover .faq-q-text {
+  color: var(--project-primary);
+}
+
+body[class*="theme-"] .faq-item.active .faq-icon-circle {
+  background: var(--project-primary);
+  border-color: var(--project-primary);
+  color: #FFFFFF;
+}
+
+body[class*="theme-"] .step-indicator {
+  border-color: var(--project-primary);
+  color: var(--project-primary);
+}
+
 /* Base Resets for Interactive Elements */
 button {
   background: none;
