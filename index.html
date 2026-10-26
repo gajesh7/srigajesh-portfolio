@@ -9,9 +9,9 @@
   <!-- Font Preconnect & Embed -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css?v=3.0">
+  <link rel="stylesheet" href="styles.css?v=6.1">
 </head>
 <body>
 
@@ -199,7 +199,7 @@
 
         <div class="hero-intro-wrapper">
           <p class="hero-intro-text">
-            UI/UX Designer with 4.5+ years of experience creating thoughtful digital experiences across mobile apps, websites and SaaS products.
+            UX/UI Designer with 4.8 years of experience creating thoughtful digital experiences across mobile apps, websites and SaaS products.
           </p>
         </div>
 
@@ -232,6 +232,21 @@
 
       </div>
     </section>
+
+  <!-- Showreel: grows to the full screen while scrolling, then Featured Works follows -->
+  <section class="showreel-section" id="showreel" aria-label="Showreel">
+    <div class="showreel-sticky">
+      <div class="showreel-frame">
+        <video class="showreel-video" autoplay muted loop playsinline preload="metadata">
+          <source src="videos/showreel.mp4" type="video/mp4">
+        </video>
+        <div class="showreel-fallback" aria-hidden="true">
+          <span>SHOWREEL</span>
+        </div>
+      </div>
+      <p class="showreel-caption">Scroll</p>
+    </div>
+  </section>
 
     <!-- SECTION 01 — EDITORIAL WORKS SECTION (Cream Background #F7F4EC) -->
     <section class="work-section" id="work">
@@ -504,90 +519,39 @@
 
   </main>
 
-  <!-- SECTION 02 — SEE MORE WORK (Full Dark Cinematic Section #151311) -->
+  <!-- SECTION 02 — SEE MORE WORK -->
   <section class="see-more-work-section" id="see-more-work">
-    <div class="see-more-container">
-      
-      <h2 class="see-more-title">
-        <span>See more</span>
-        <span class="title-accent-light">work</span>
-      </h2>
+    <div class="see-more-stage">
+      <header class="see-more-copy">
+        <span class="section-tag">SELECTED WORK</span>
+        <h2 class="see-more-title">
+          <span class="title-main">See more</span>
+          <span class="title-muted">works</span>
+        </h2>
+        <p class="see-more-lead">A few more product and brand designs from recent projects.</p>
+      </header>
 
-      <div class="floating-cards-container" id="floating-cards-container">
-        <div class="floating-card card-1" data-speed="0.04">
-          <div class="fc-badge">MOBILE UI</div>
-          <div class="fc-content">
-            <span class="fc-icon">☕</span>
-            <div class="fc-text"><strong>Cortado App</strong><small>Checkout Flow</small></div>
-          </div>
-        </div>
-
-        <div class="floating-card card-2" data-speed="-0.05">
-          <div class="fc-badge">SAAS DASHBOARD</div>
-          <div class="fc-content">
-            <span class="fc-icon">📊</span>
-            <div class="fc-text"><strong>ePRISE Engine</strong><small>GST Reconciliation</small></div>
-          </div>
-        </div>
-
-        <div class="floating-card card-3" data-speed="0.06">
-          <div class="fc-badge">E-COMMERCE</div>
-          <div class="fc-content">
-            <span class="fc-icon">🧥</span>
-            <div class="fc-text"><strong>Barakha Silk</strong><small>Editorial Store</small></div>
-          </div>
-        </div>
-
-        <div class="floating-card card-4" data-speed="-0.04">
-          <div class="fc-badge">B2B OPERATIONS</div>
-          <div class="fc-content">
-            <span class="fc-icon">⚡</span>
-            <div class="fc-text"><strong>Tribal Batch</strong><small>Kanban Workflow</small></div>
-          </div>
-        </div>
-
-        <div class="floating-card card-5" data-speed="0.05">
-          <div class="fc-badge">DESIGN SYSTEM</div>
-          <div class="fc-content">
-            <span class="fc-icon">❖</span>
-            <div class="fc-text"><strong>Figma Tokens</strong><small>Component Specs</small></div>
-          </div>
-        </div>
-
-        <div class="floating-card card-6" data-speed="-0.03">
-          <div class="fc-badge">UX AUDIT</div>
-          <div class="fc-content">
-            <span class="fc-icon">🎯</span>
-            <div class="fc-text"><strong>User Journeys</strong><small>Friction Analysis</small></div>
-          </div>
+      <div class="work-gallery" id="work-gallery">
+        <div class="work-gallery-track" id="work-gallery-track">
+          <a class="work-card" href="cortado.html"><span class="work-card-face"><img src="images/work-4.svg" alt="Cortado"><span>Cortado</span></span></a>
+          <a class="work-card" href="eprise.html"><span class="work-card-face"><img src="images/eprise-hero.svg" alt="ePRISE"><span>ePRISE</span></span></a>
+          <a class="work-card" href="tribal.html"><span class="work-card-face"><img src="images/tribal-mockup-hero.svg" alt="Tribal"><span>Tribal</span></span></a>
+          <a class="work-card" href="longevia.html"><span class="work-card-face"><img src="images/longevia-mockup-hero.svg" alt="Longevia"><span>Longevia</span></span></a>
+          <a class="work-card" href="clarus.html"><span class="work-card-face"><img src="images/clarus-mockup-hero.svg" alt="Clarus"><span>Clarus</span></span></a>
+          <a class="work-card" href="#work"><span class="work-card-face"><img src="images/work-6.svg" alt="Nad Rewards"><span>Nad Rewards</span></span></a>
+          <a class="work-card" href="#work"><span class="work-card-face"><img src="images/work-8.svg" alt="Barakha"><span>Barakha</span></span></a>
+          <a class="work-card" href="#work"><span class="work-card-face"><img src="images/work-5.svg" alt="Tectori"><span>Tectori</span></span></a>
+          <a class="work-card" href="#work"><span class="work-card-face"><img src="images/work-3.svg" alt="Dashboard study"><span>Dashboard</span></span></a>
+          <a class="work-card" href="eprise.html"><span class="work-card-face"><img src="images/eprise-accounting.svg" alt="ePRISE accounting"><span>Accounting</span></span></a>
+          <a class="work-card" href="longevia.html"><span class="work-card-face"><img src="images/longevia-doctors-mockup.svg" alt="Longevia doctors"><span>Doctors</span></span></a>
+          <a class="work-card" href="tribal.html"><span class="work-card-face"><img src="images/tribal-dispatch-mockup.svg" alt="Tribal dispatch"><span>Dispatch</span></span></a>
         </div>
       </div>
 
-      <div class="circular-badge-container">
-        <div class="rotating-badge-disk">
-          <svg class="badge-text-svg" viewBox="0 0 160 160" width="160" height="160">
-            <path id="badgeCirclePath" d="M 80, 80 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" fill="none"/>
-            <text fill="#F7F4EC" font-size="10.5" font-weight="800" letter-spacing="2.8">
-              <textPath href="#badgeCirclePath">
-                VIEW ALL WORK · VIEW ALL WORK · VIEW ALL WORK · 
-              </textPath>
-            </text>
-          </svg>
-          <div class="badge-center-arrow">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF6B1A" stroke-width="2.5">
-              <path d="M7 17L17 7M17 7H7M17 7V17"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <div class="see-more-cta-box">
-        <a href="#contact" class="cta-talk-btn see-all-projects-btn" id="see-all-projects-trigger">
-          <span>SEE ALL PROJECTS</span>
-          <span class="btn-arrow">↗</span>
-        </a>
-      </div>
-
+      <button type="button" class="cta-talk-btn see-more-works-btn" id="see-more-works-btn">
+        <span>SEE MORE WORKS</span>
+        <span class="btn-arrow">↗</span>
+      </button>
     </div>
   </section>
 
@@ -860,47 +824,97 @@
           </h2>
         </header>
 
-        <div class="testimonials-staggered-grid">
-          <div class="testimonial-card card-rotate-left">
-            <div class="star-rating">★★★★★</div>
-            <blockquote class="testimonial-quote">
-              "Working with Gajesh made the entire design process much easier. He understood the requirements quickly and turned complex ideas into a clean and intuitive experience."
-            </blockquote>
-            <div class="client-info-row">
-              <div class="client-avatar avatar-vm">VM</div>
-              <div class="client-meta">
-                <strong>VIKRAM MEHTA</strong>
-                <span>VP of Product · FinTech Labs</span>
-              </div>
-            </div>
-          </div>
+        <div class="testimonials-nav" aria-label="Testimonial pages">
+          <button type="button" class="t-nav-btn" id="t-prev" aria-label="Previous testimonials">←</button>
+          <div class="t-nav-dots" id="t-dots"></div>
+          <button type="button" class="t-nav-btn" id="t-next" aria-label="Next testimonials">→</button>
+        </div>
 
-          <div class="testimonial-card card-rotate-right">
-            <div class="star-rating">★★★★★</div>
-            <blockquote class="testimonial-quote">
-              "Great attention to detail and very easy to work with. The final designs were clear, modern and exactly what we needed for our product launch."
-            </blockquote>
-            <div class="client-info-row">
-              <div class="client-avatar avatar-as">AS</div>
-              <div class="client-meta">
-                <strong>ANANYA SHARMA</strong>
-                <span>Founder · Cortado Retail</span>
+        <div class="testimonials-scroller" id="testimonials-scroller">
+          <div class="testimonials-track" id="testimonials-track">
+            <article class="testimonial-card">
+              <div class="star-rating">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                "Gajesh turned a busy production workflow into something our team can follow at a glance."
+              </blockquote>
+              <div class="client-info-row">
+                <div class="client-avatar avatar-pr">PR</div>
+                <div class="client-meta">
+                  <strong>PRADEEP</strong>
+                  <span>Tribal Arts</span>
+                </div>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="testimonial-card card-rotate-subtle">
-            <div class="star-rating">★★★★★</div>
-            <blockquote class="testimonial-quote">
-              "Gajesh was able to take our rough requirements and turn them into a polished product experience that our enterprise users loved immediately."
-            </blockquote>
-            <div class="client-info-row">
-              <div class="client-avatar avatar-rk">RK</div>
-              <div class="client-meta">
-                <strong>RITESH KULKARNI</strong>
-                <span>Design Lead · Enterprise B2B</span>
+            <article class="testimonial-card">
+              <div class="star-rating">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                "The site explains what we build without the usual clutter. Clear, sharp, and easy to trust."
+              </blockquote>
+              <div class="client-info-row">
+                <div class="client-avatar avatar-sd">SD</div>
+                <div class="client-meta">
+                  <strong>SAHITH DANDAMUDI</strong>
+                  <span>Clarus</span>
+                </div>
               </div>
-            </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="star-rating">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                "He understood the product quickly and shaped an interface our users can move through without help."
+              </blockquote>
+              <div class="client-info-row">
+                <div class="client-avatar avatar-an">AN</div>
+                <div class="client-meta">
+                  <strong>ANANTH</strong>
+                  <span>Viomni</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="star-rating">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                "Ordering, rewards, and pickup finally feel like one experience instead of separate screens."
+              </blockquote>
+              <div class="client-info-row">
+                <div class="client-avatar avatar-as">CR</div>
+                <div class="client-meta">
+                  <strong>MEERA RAO</strong>
+                  <span>Cortado</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="star-rating">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                "Complex accounting tasks became easier to scan. The dashboard feels calm even on a busy day."
+              </blockquote>
+              <div class="client-info-row">
+                <div class="client-avatar avatar-rk">EP</div>
+                <div class="client-meta">
+                  <strong>KARTHIK IYER</strong>
+                  <span>ePRISE</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="star-rating">★★★★★</div>
+              <blockquote class="testimonial-quote">
+                "Patients can find a doctor and a service without feeling lost. The tone stays warm and clear."
+              </blockquote>
+              <div class="client-info-row">
+                <div class="client-avatar avatar-vm">LV</div>
+                <div class="client-meta">
+                  <strong>DIVYA NAIR</strong>
+                  <span>Longevia</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -918,23 +932,23 @@
 
         <div class="experience-metrics-grid">
           <div class="metric-block">
-            <div class="metric-number">4.5+</div>
+            <div class="metric-number">4.8</div>
             <div class="metric-title">YEARS EXPERIENCE</div>
             <p class="metric-desc">Designing digital products across mobile apps, responsive web, and enterprise SaaS.</p>
           </div>
           <div class="metric-block">
-            <div class="metric-number">30+</div>
+            <div class="metric-number">15+</div>
             <div class="metric-title">WEB PRODUCTS</div>
             <p class="metric-desc">High-converting landing pages, editorial platforms, and responsive web applications.</p>
           </div>
           <div class="metric-block">
-            <div class="metric-number">15+</div>
+            <div class="metric-number">6+</div>
             <div class="metric-title">MOBILE APPS</div>
             <p class="metric-desc">iOS & Android native design systems, checkout flows, and consumer applications.</p>
           </div>
           <div class="metric-block">
-            <div class="metric-number">10+</div>
-            <div class="metric-title">SAAS EXPERIENCES</div>
+            <div class="metric-number">2+</div>
+            <div class="metric-title">SAAS PRODUCTS</div>
             <p class="metric-desc">Complex B2B dashboards, financial workflows, and operational management systems.</p>
           </div>
         </div>
@@ -1019,10 +1033,10 @@
             <div class="resume-header">
               <span class="r-badge">AVAILABLE FOR CONTRACT / FULL-TIME</span>
               <h3>GAJESH</h3>
-              <p class="r-title">Senior UI/UX Designer & Product Strategist</p>
+              <p class="r-title">UX/UI Designer</p>
             </div>
             <div class="resume-highlights">
-              <div class="rh-item"><strong>4.5+ Years</strong><span>Product Design Experience</span></div>
+              <div class="rh-item"><strong>4.8 Years</strong><span>UX/UI Design Experience</span></div>
               <div class="rh-item"><strong>Bengaluru, IN</strong><span>Open to Remote & Onsite</span></div>
             </div>
             <div class="resume-actions">
@@ -1036,27 +1050,19 @@
           <div class="resume-timeline-wrapper">
             <h3 class="timeline-title">WORK HISTORY</h3>
             <div class="timeline-item">
-              <span class="t-date">2023 — PRESENT</span>
+              <span class="t-date">FEB 2024 — PRESENT</span>
               <div class="t-info">
-                <h4>Senior UI/UX Designer</h4>
-                <span class="t-company">Product Studio & SaaS Labs</span>
-                <p>Leading end-to-end design for complex B2B platforms, enterprise design systems, and mobile checkout experiences.</p>
+                <h4>UX/UI Designer</h4>
+                <span class="t-company">Webtree Software Solutions</span>
+                <p>Designing user interfaces and experiences for software products.</p>
               </div>
             </div>
             <div class="timeline-item">
-              <span class="t-date">2022 — 2023</span>
+              <span class="t-date">SEPT 2021 — DEC 2023</span>
               <div class="t-info">
-                <h4>Product Designer</h4>
-                <span class="t-company">Cortado Tech & Retail</span>
-                <p>Architected branch-based ordering flow, mobile loyalty club, and real-time pickup tracking dashboard.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="t-date">2021 — 2022</span>
-              <div class="t-info">
-                <h4>UI/UX Designer</h4>
-                <span class="t-company">Digital Experience Agency</span>
-                <p>Designed responsive e-commerce storefronts, SaaS landing pages, and interactive wireframes.</p>
+                <h4>UX/UI Designer</h4>
+                <span class="t-company">Qliclabs Technologies Pvt Ltd</span>
+                <p>Designed user interfaces and experiences across digital products.</p>
               </div>
             </div>
           </div>
@@ -1268,6 +1274,6 @@
       }
     }, true);
   </script>
-  <script src="script.js?v=2.5"></script>
+  <script src="script.js?v=3.5"></script>
 </body>
 </html>

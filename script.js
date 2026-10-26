@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const orangeBadge = document.querySelector('.orange-accent-badge');
   const projectArticles = document.querySelectorAll('.project-article');
   const seeMoreSection = document.getElementById('see-more-work');
-  const seeMoreTitle = document.querySelector('.see-more-title');
   const floatingCards = document.querySelectorAll('.floating-card');
   const cursorDot = document.getElementById('cursor-dot');
   const cursorRing = document.getElementById('cursor-ring');
@@ -116,10 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const normalizedOffset = (elementCenter - viewportCenter) / (viewportHeight / 2);
 
       if (visualWrapper && rect.top < viewportHeight && rect.bottom > 0) {
-        // Parallax translation and subtle scaling
-        const translateY = normalizedOffset * -25;
-        const scale = 1 + (1 - Math.abs(normalizedOffset)) * 0.025;
-        visualWrapper.style.transform = `translate3d(0, ${translateY}px, 0) scale(${scale})`;
+        // Keep featured cards locked to the grid so images stay aligned and uncropped.
 
         // Dynamic Phone Mockup Rotations (Cortado)
         const leftPhone = article.querySelector('.screen-left');
@@ -146,29 +142,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // C. "See More Work" Dark Section Scroll & Parallax
-    if (seeMoreSection) {
+        if (seeMoreSection) {
       const rect = seeMoreSection.getBoundingClientRect();
-      if (rect.top < viewportHeight && rect.bottom > 0) {
+      if (rect.top < viewportHeight && rect.bottom > 0 && floatingCards.length > 0 && matchMedia('(pointer: fine)').matches) {
         const normOffset = (rect.top + rect.height / 2 - viewportHeight / 2) / (viewportHeight / 2);
+        const mouseNormX = (currentMouseX - window.innerWidth / 2) / (window.innerWidth / 2);
+        const mouseNormY = (currentMouseY - window.innerHeight / 2) / (window.innerHeight / 2);
 
-        if (seeMoreTitle) {
-          const letterSpacing = -0.04 + (1 - Math.abs(normOffset)) * 0.01;
-          seeMoreTitle.style.letterSpacing = `${letterSpacing}em`;
-          seeMoreTitle.style.transform = `scale(${1 + (1 - Math.abs(normOffset)) * 0.04})`;
-        }
-
-        // Mouse + Scroll Parallax on 6 Floating Cards
-        if (floatingCards.length > 0 && matchMedia('(pointer: fine)').matches) {
-          const mouseNormX = (currentMouseX - window.innerWidth / 2) / (window.innerWidth / 2);
-          const mouseNormY = (currentMouseY - window.innerHeight / 2) / (window.innerHeight / 2);
-
-          floatingCards.forEach((card, idx) => {
-            const speed = (idx % 2 === 0 ? 1 : -1) * (0.04 + idx * 0.01);
-            const moveX = mouseNormX * 24 * speed;
-            const moveY = (mouseNormY * 24 + normOffset * 30) * speed;
-            card.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
-          });
-        }
+        floatingCards.forEach((card, idx) => {
+          const speed = (idx % 2 === 0 ? 1 : -1) * (0.04 + idx * 0.01);
+          const moveX = mouseNormX * 24 * speed;
+          const moveY = (mouseNormY * 24 + normOffset * 30) * speed;
+          card.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+        });
       }
     }
 
@@ -354,13 +340,206 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // F. Custom Cursor Position
+    // F. Showreel grows to the viewport, then the next section takes over
+    const showreel = document.getElementById('showreel');
+    const showreelFrame = document.querySelector('.showreel-frame');
+    const showreelCaption = document.querySelector('.showreel-caption');
+    if (showreel && showreelFrame && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const travel = showreel.offsetHeight - window.innerHeight;
+      const passed = -showreel.getBoundingClientRect().top;
+      const progress = travel > 0 ? Math.min(1, Math.max(0, passed / travel)) : 0;
+      const expand = Math.min(1, progress / 0.7);
+      const baseW = showreelFrame.offsetWidth;
+      const baseH = showreelFrame.offsetHeight;
+      if (baseW > 0 && baseH > 0) {
+        const cover = Math.max(window.innerWidth / baseW, window.innerHeight / baseH);
+        const scale = 1 + (cover - 1) * expand;
+        showreelFrame.style.transform = `scale(${scale})`;
+        showreelFrame.style.borderRadius = `${(window.innerWidth < 769 ? 18 : 28) * (1 - expand)}px`;
+      }
+      if (showreelCaption) showreelCaption.style.opacity = String(1 - expand);
+    }
+
+    // G. Custom Cursor Position
     if (cursorDot && cursorRing && matchMedia('(pointer: fine)').matches) {
       cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
       cursorRing.style.transform = `translate3d(${currentMouseX}px, ${currentMouseY}px, 0) translate(-50%, -50%)`;
     }
 
     requestAnimationFrame(motionLoop);
+  }
+
+  const tTrack = document.getElementById('testimonials-track');
+  const tPrev = document.getElementById('t-prev');
+  const tNext = document.getElementById('t-next');
+  const tDots = document.getElementById('t-dots');
+  if (tTrack && tPrev && tNext && tDots) {
+    const tCards = [...tTrack.children];
+    let tIndex = 0;
+
+    const tPageSize = () => {
+      if (window.innerWidth <= 768) return 1;
+      if (window.innerWidth <= 1024) return 2;
+      return 3;
+    };
+
+    const tMax = () => Math.max(0, tCards.length - tPageSize());
+
+    const tStep = () => {
+      if (!tCards[0]) return 0;
+      const gap = parseFloat(getComputedStyle(tTrack).columnGap) || parseFloat(getComputedStyle(tTrack).gap) || 0;
+      return tCards[0].offsetWidth + gap;
+    };
+
+    const renderTestimonials = () => {
+      tIndex = Math.min(tIndex, tMax());
+      tTrack.style.transform = `translate3d(${-tIndex * tStep()}px, 0, 0)`;
+      tPrev.disabled = tIndex === 0;
+      tNext.disabled = tIndex >= tMax();
+      tDots.innerHTML = '';
+      const pages = tMax() + 1;
+      for (let i = 0; i < pages; i += 1) {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 't-nav-dot' + (i === tIndex ? ' is-active' : '');
+        dot.setAttribute('aria-label', `Testimonial page ${i + 1}`);
+        dot.addEventListener('click', () => {
+          tIndex = i;
+          renderTestimonials();
+        });
+        tDots.appendChild(dot);
+      }
+    };
+
+    tPrev.addEventListener('click', () => {
+      tIndex = Math.max(0, tIndex - 1);
+      renderTestimonials();
+    });
+    tNext.addEventListener('click', () => {
+      tIndex = Math.min(tMax(), tIndex + 1);
+      renderTestimonials();
+    });
+    window.addEventListener('resize', () => {
+      tTrack.style.transition = 'none';
+      renderTestimonials();
+      requestAnimationFrame(() => { tTrack.style.transition = ''; });
+    });
+
+    let touchStartX = 0;
+    tTrack.addEventListener('touchstart', (event) => {
+      touchStartX = event.changedTouches[0].clientX;
+    }, { passive: true });
+    tTrack.addEventListener('touchend', (event) => {
+      const delta = event.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(delta) < 40) return;
+      if (delta < 0) tIndex = Math.min(tMax(), tIndex + 1);
+      else tIndex = Math.max(0, tIndex - 1);
+      renderTestimonials();
+    }, { passive: true });
+
+    renderTestimonials();
+  }
+
+  const workGallery = document.getElementById('work-gallery');
+  const workTrack = document.getElementById('work-gallery-track');
+  const seeMoreWorksBtn = document.getElementById('see-more-works-btn');
+  if (workGallery && workTrack && seeMoreWorksBtn) {
+    const cards = [...workTrack.children];
+    const count = cards.length;
+    let rotation = 0;
+    let nudge = 0;
+    let dragStartX = 0;
+    let dragStartRotation = 0;
+    let dragging = false;
+    let dragged = false;
+    let lastTick = 0;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const placeCards = () => {
+      const narrow = workGallery.clientWidth < 720;
+      cards.forEach((card, index) => {
+        let delta = index - rotation;
+        delta = ((delta % count) + count) % count;
+        if (delta > count / 2) delta -= count;
+        const x = delta * (narrow ? 150 : Math.min(240, workGallery.clientWidth / 5.4));
+        const reach = workGallery.clientWidth / 2;
+        const y = Math.pow(x / reach, 2) * (narrow ? 56 : 120);
+        const shown = Math.abs(x) <= reach + 40;
+        card.style.transition = 'none';
+        card.style.opacity = shown ? '1' : '0';
+        card.style.pointerEvents = shown ? 'auto' : 'none';
+        card.style.zIndex = String(80 - Math.round(Math.abs(delta)));
+        card.style.transform = `translate3d(calc(-50% + ${x}px), ${y}px, 0)`;
+      });
+    };
+
+    const tickGallery = (now) => {
+      if (!lastTick) lastTick = now;
+      const dt = Math.min(48, now - lastTick);
+      lastTick = now;
+      if (!reduceMotion && !dragging) {
+        rotation += dt / 5600;
+        if (nudge) {
+          const step = Math.min(Math.abs(nudge), dt / 700);
+          const dir = Math.sign(nudge);
+          rotation += dir * step;
+          nudge -= dir * step;
+        }
+      }
+      placeCards();
+      requestAnimationFrame(tickGallery);
+    };
+
+    seeMoreWorksBtn.addEventListener('click', () => {
+      nudge += 1;
+    });
+
+    workGallery.addEventListener('pointerdown', (event) => {
+      if (event.button !== 0) return;
+      dragging = true;
+      dragged = false;
+      dragStartX = event.clientX;
+      dragStartRotation = rotation;
+      workGallery.classList.add('is-dragging');
+      try { workGallery.setPointerCapture(event.pointerId); } catch (error) { /* pointer may already be released */ }
+    });
+
+    workGallery.addEventListener('pointermove', (event) => {
+      if (!dragging) return;
+      const dx = event.clientX - dragStartX;
+      if (Math.abs(dx) > 8) dragged = true;
+      const px = workGallery.clientWidth < 720 ? 64 : 100;
+      rotation = dragStartRotation - dx / px;
+      placeCards();
+    });
+
+    const endDrag = () => {
+      if (!dragging) return;
+      dragging = false;
+      workGallery.classList.remove('is-dragging');
+      placeCards();
+    };
+    workGallery.addEventListener('pointerup', endDrag);
+    workGallery.addEventListener('pointercancel', endDrag);
+
+    workGallery.addEventListener('click', (event) => {
+      if (!dragged) return;
+      event.preventDefault();
+      event.stopPropagation();
+      dragged = false;
+    }, true);
+
+    window.addEventListener('resize', () => placeCards());
+    requestAnimationFrame(tickGallery);
+  }
+
+  const showreelVideo = document.querySelector('.showreel-video');
+  const showreelFrameEl = document.querySelector('.showreel-frame');
+  if (showreelVideo && showreelFrameEl) {
+    const markShowreel = () => showreelFrameEl.classList.toggle('is-empty', showreelVideo.readyState < 2);
+    showreelVideo.addEventListener('loadeddata', markShowreel);
+    showreelVideo.addEventListener('error', () => showreelFrameEl.classList.add('is-empty'));
+    markShowreel();
   }
 
   requestAnimationFrame(motionLoop);
@@ -586,6 +765,64 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!mobileOverlay) return;
     mobileOverlay.classList.remove('open');
     document.body.style.overflow = '';
+  }
+
+  // --------------------------------------------------------------------------
+  // Page scroll reveal
+  // --------------------------------------------------------------------------
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealSelectors = [
+    '.hero-container',
+    '.featured-work-header',
+    '.project-article',
+    '.see-more-container',
+    '.cs-intro-header',
+    '.pillar-card',
+    '.about-giant-headline',
+    '.metric-block',
+    '.expertise-item',
+    '.resume-summary-card',
+    '.timeline-item',
+    '.footer-hero-cta',
+    '.giant-section-title',
+    '.hero-editorial',
+    '.info-item',
+    '.overview-editorial-block',
+    '.composition-split-50',
+    '.composition-asymmetric',
+    '.composition-centered-wide',
+    '.trio-card',
+    '.challenge-card',
+    '.feature-breakdown-row',
+    '.results-editorial-panel',
+    '.learned-editorial-card',
+    '.faq-item',
+    '.next-project-link'
+  ];
+  if (window.matchMedia('(max-width: 1024px)').matches) {
+    revealSelectors.push('.cs-panel');
+  }
+  const revealNodes = document.querySelectorAll(revealSelectors.join(','));
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    revealNodes.forEach((el, index) => {
+      el.classList.add('reveal-on-scroll');
+      el.style.transitionDelay = `${(index % 3) * 80}ms`;
+    });
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -4% 0px' });
+    revealNodes.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.92 && rect.bottom > 0) {
+        el.classList.add('is-visible');
+      } else {
+        revealObserver.observe(el);
+      }
+    });
   }
 
   if (mobileToggle) mobileToggle.addEventListener('click', toggleMobileNav);

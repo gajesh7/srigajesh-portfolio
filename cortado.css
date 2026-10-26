@@ -350,7 +350,7 @@ body[class*="theme-"] .footer-hero-cta {
 body[class*="theme-"] .footer-giant-headline {
   font-family: var(--font-primary);
   font-size: clamp(3.5rem, 8.5vw, 7.8rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.92;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -407,7 +407,7 @@ body[class*="theme-"] .f-nav-col {
 
 body[class*="theme-"] .f-col-title {
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
   color: #8E8883;
   text-transform: uppercase;
@@ -424,7 +424,7 @@ body[class*="theme-"] .f-link-list {
 
 body[class*="theme-"] .f-link {
   font-size: 0.88rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: #F7F4EC;
   text-transform: uppercase;
@@ -455,7 +455,7 @@ body[class*="theme-"] .f-link:hover .f-hover-arrow {
 
 body[class*="theme-"] .f-link.active-project {
   color: var(--project-primary);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 body[class*="theme-"] .f-info-text {
@@ -530,8 +530,8 @@ body[class*="theme-"] .footer-giant-wordmark-container {
 
 body[class*="theme-"] .giant-wordmark-text {
   font-family: var(--font-primary);
-  font-size: clamp(12rem, 30vw, 36rem);
-  font-weight: 800;
+  font-size: clamp(4.75rem, 18vw, 16rem);
+  font-weight: 700;
   line-height: 0.75;
   letter-spacing: -0.06em;
   color: rgba(255, 255, 255, 0.045);
@@ -563,7 +563,7 @@ body[class*="theme-"] .giant-wordmark-text {
 /* Mobile footer */
 @media (max-width: 480px) {
   body[class*="theme-"] .brand-appart-footer {
-    padding: 70px 18px 0 !important;
+    padding: 56px 16px 0 !important;
   }
   body[class*="theme-"] .footer-giant-headline {
     font-size: clamp(2.2rem, 8.5vw, 3.2rem);
@@ -587,7 +587,7 @@ body[class*="theme-"] .giant-wordmark-text {
     font-size: 0.8rem;
   }
   body[class*="theme-"] .giant-wordmark-text {
-    font-size: clamp(6rem, 24vw, 12rem);
+    font-size: clamp(3.4rem, 22vw, 5.5rem);
   }
 }
 
@@ -723,7 +723,7 @@ button {
 .hero-tag {
   font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-orange);
@@ -747,15 +747,17 @@ button {
 
 .hero-title-main {
   font-family: var(--font-primary);
-  font-size: clamp(4.5rem, 12vw, 11rem);
-  font-weight: 800;
-  line-height: 0.88;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.6rem, 10vw, 9.5rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.045em;
   text-transform: uppercase;
   color: var(--text-black);
-  margin-left: -4px;
-  display: flex;
-  align-items: baseline;
+  margin-left: 0;
+  display: block;
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .hero-title-dot {
@@ -778,7 +780,7 @@ button {
 .hero-subtitle-primary {
   font-family: var(--font-primary);
   font-size: clamp(1.6rem, 3vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -830,7 +832,7 @@ button {
 .scroll-text {
   font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -870,7 +872,7 @@ button {
 .info-label {
   font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -879,7 +881,7 @@ button {
 .info-value {
   font-family: var(--font-primary);
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-black);
   line-height: 1.3;
 }
@@ -910,7 +912,7 @@ button {
 .chapter-number {
   font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--accent-orange);
 }
@@ -918,7 +920,7 @@ button {
 .chapter-title {
   font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -927,7 +929,7 @@ button {
 .overview-heading-lead {
   font-family: var(--font-primary);
   font-size: clamp(2rem, 3.4vw, 3.35rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.035em;
   text-transform: uppercase;
@@ -1030,7 +1032,7 @@ button {
 .comp-title {
   font-family: var(--font-primary);
   font-size: clamp(1.85rem, 2.6vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.12;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -1054,7 +1056,7 @@ button {
 .branch-pill {
   font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 8px 16px;
@@ -1099,7 +1101,7 @@ button {
 .caption-label {
   font-family: var(--font-primary);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -1156,7 +1158,7 @@ button {
 .trio-step-num {
   font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--accent-orange);
 }
@@ -1164,7 +1166,7 @@ button {
 .trio-screen-title {
   font-family: var(--font-primary);
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -1205,7 +1207,7 @@ button {
 .challenge-label-accent {
   font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-orange);
@@ -1216,7 +1218,7 @@ button {
 .challenge-display-title {
   font-family: var(--font-primary);
   font-size: clamp(2.5rem, 4vw, 4.25rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -1269,7 +1271,7 @@ button {
 .challenge-num {
   font-family: var(--font-primary);
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--accent-orange);
 }
@@ -1277,7 +1279,7 @@ button {
 .challenge-item-title {
   font-family: var(--font-primary);
   font-size: 1.35rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1304,7 +1306,7 @@ button {
 .approach-title {
   font-family: var(--font-primary);
   font-size: clamp(2.25rem, 3.5vw, 3.5rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.1;
   text-transform: uppercase;
@@ -1339,7 +1341,7 @@ button {
 .diagram-title {
   font-family: var(--font-primary);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -1351,7 +1353,7 @@ button {
   gap: 20px;
   font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -1410,7 +1412,7 @@ button {
   align-items: center;
   justify-content: center;
   font-family: var(--font-primary);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 0.95rem;
   color: var(--text-black);
 }
@@ -1423,7 +1425,7 @@ button {
 .step-content-box h4 {
   font-family: var(--font-primary);
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -1449,7 +1451,7 @@ button {
 .ui-showcase-title {
   font-family: var(--font-primary);
   font-size: clamp(2.5rem, 4vw, 4.25rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.05;
   text-transform: uppercase;
@@ -1489,7 +1491,7 @@ button {
 .breakdown-tag {
   font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-orange);
@@ -1498,7 +1500,7 @@ button {
 .breakdown-title {
   font-family: var(--font-primary);
   font-size: clamp(1.85rem, 2.7vw, 2.65rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.12;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -1573,7 +1575,7 @@ button {
 .results-eyebrow {
   font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-orange);
@@ -1584,7 +1586,7 @@ button {
 .results-title {
   font-family: var(--font-primary);
   font-size: clamp(2.5rem, 3.8vw, 3.75rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.1;
   text-transform: uppercase;
@@ -1688,7 +1690,7 @@ button {
 .team-member-name {
   font-family: var(--font-primary);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-black);
   margin-bottom: 4px;
 }
@@ -1783,7 +1785,7 @@ button {
 .outcome-badge {
   font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent-orange);
@@ -1792,7 +1794,7 @@ button {
 .outcome-title {
   font-family: var(--font-primary);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -1815,7 +1817,7 @@ button {
 .stat-metric-big {
   font-family: var(--font-primary);
   font-size: clamp(3.25rem, 5vw, 5.25rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.95;
   letter-spacing: -0.04em;
   color: var(--text-black);
@@ -1828,7 +1830,7 @@ button {
 .stat-label-editorial {
   font-family: var(--font-primary);
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -1860,7 +1862,7 @@ button {
 .quote-author {
   font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent-orange);
@@ -1890,7 +1892,7 @@ button {
 .learned-display-title {
   font-family: var(--font-primary);
   font-size: clamp(2rem, 3.4vw, 3.25rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.035em;
   text-transform: uppercase;
@@ -1928,7 +1930,7 @@ button {
 .faq-editorial-title {
   font-family: var(--font-primary);
   font-size: clamp(2.25rem, 3.4vw, 3.25rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.035em;
   text-transform: uppercase;
@@ -1996,7 +1998,7 @@ button.faq-trigger:focus-visible {
 .faq-item-num {
   font-family: var(--font-primary);
   font-size: 0.8125rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--accent-orange);
   opacity: 0.9;
@@ -2006,7 +2008,7 @@ button.faq-trigger:focus-visible {
 .faq-question {
   font-family: var(--font-primary);
   font-size: clamp(1.05rem, 1.4vw, 1.25rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -2087,7 +2089,7 @@ button.faq-trigger:focus-visible {
 .credits-title-group h3 {
   font-family: var(--font-primary);
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--text-black);
@@ -2115,7 +2117,7 @@ button.faq-trigger:focus-visible {
 .credit-role {
   font-family: var(--font-primary);
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -2124,7 +2126,7 @@ button.faq-trigger:focus-visible {
 .credit-name {
   font-family: var(--font-primary);
   font-size: 1.05rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-black);
 }
 
@@ -2150,7 +2152,7 @@ button.faq-trigger:focus-visible {
   gap: 12px;
   font-family: var(--font-primary);
   font-size: 0.875rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent-orange);
@@ -2172,7 +2174,7 @@ button.faq-trigger:focus-visible {
 .next-project-title {
   font-family: var(--font-primary);
   font-size: clamp(3.5rem, 8vw, 7.5rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.92;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -2232,7 +2234,7 @@ button.faq-trigger:focus-visible {
 .next-overlay-meta h4 {
   font-family: var(--font-primary);
   font-size: 1.6rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   margin-bottom: 6px;
@@ -2316,8 +2318,17 @@ button.faq-trigger:focus-visible {
   }
 
   .hero-title-main {
-    font-size: clamp(3.4rem, 10vw, 5.5rem);
+    font-size: clamp(2.5rem, 8.6vw, 5.2rem);
     margin-bottom: 24px;
+  }
+
+  .site-header .header-right {
+    gap: 8px;
+  }
+
+  .back-to-works-btn {
+    padding: 8px 12px;
+    font-size: 0.72rem;
   }
 
   .hero-statement-row {
@@ -2548,10 +2559,22 @@ button.faq-trigger:focus-visible {
   }
 
   .hero-title-main {
-    font-size: clamp(2.5rem, 11.5vw, 3.6rem);
-    letter-spacing: -0.04em;
-    line-height: 0.92;
+    font-size: clamp(1.7rem, 8vw, 2.05rem);
+    letter-spacing: -0.045em;
+    line-height: 0.9;
     margin-left: 0;
+  }
+
+  body[class*="theme-"] .header-right .cta-talk-btn > span {
+    display: none;
+  }
+
+  body[class*="theme-"] .header-right .cta-talk-btn {
+    padding: 10px 12px;
+  }
+
+  body[class*="theme-"] .back-to-works-btn span {
+    display: none;
   }
 
   .hero-title-dot {
@@ -3143,7 +3166,7 @@ button.faq-trigger:focus-visible {
 .stage-arrow {
   color: #94A3B8;
   font-size: 0.875rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .enterprise-ui-frame {
@@ -3218,7 +3241,7 @@ button.faq-trigger:focus-visible {
 .apparel-cat-val {
   font-family: var(--font-primary);
   font-size: 1.6rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #0F172A;
   margin-bottom: 2px;
 }
@@ -3242,6 +3265,59 @@ button.faq-trigger:focus-visible {
   .apparel-summary-strip {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+}
+
+/* Longevia challenge: simple list, not the dark card panel */
+.longevia-challenge .approach-title {
+  max-width: 16ch;
+  margin-bottom: 16px;
+  text-transform: none;
+}
+
+.longevia-challenge .approach-desc {
+  max-width: 640px;
+  margin: 0;
+}
+
+.longevia-challenge-list {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+}
+
+.longevia-challenge-list li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.longevia-challenge-list li:last-child {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.longevia-challenge-list strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-black);
+}
+
+.longevia-challenge-list span {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-body);
+}
+
+@media (max-width: 600px) {
+  .longevia-challenge-list li {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }
 
@@ -3296,7 +3372,7 @@ button.faq-trigger:focus-visible {
   color: var(--project-primary, #15803D);
   font-family: var(--font-primary);
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.04em;
 }
 
@@ -3310,7 +3386,7 @@ button.faq-trigger:focus-visible {
 .journey-step-title {
   font-family: var(--font-primary);
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-dark, #081E17);
   letter-spacing: -0.01em;
   margin: 0;
@@ -3348,4 +3424,55 @@ button.faq-trigger:focus-visible {
   .journey-step-col:last-child {
     border-bottom: none;
   }
+}
+
+/* Case-study black headings: bold */
+h1, h2, h3, h4,
+.hero-title-main,
+.hero-subtitle-primary,
+.overview-heading-lead,
+.comp-title,
+.challenge-display-title,
+.challenge-item-title,
+.approach-title,
+.ui-showcase-title,
+.breakdown-title,
+.results-title,
+.learned-display-title,
+.faq-editorial-title,
+.faq-question,
+.next-project-title,
+.stat-metric-big,
+.store-headline {
+  font-weight: 700;
+}
+
+body[class*="theme-"] .badge-inner,
+body[class*="theme-"] .modal-header h2 {
+  font-weight: 700;
+}
+
+/* Case-study buttons: semi-bold. Labels stay regular. */
+.back-to-works-btn,
+.cta-talk-btn,
+.book-call-btn,
+.submit-btn,
+button {
+  font-weight: 600;
+}
+
+.hero-tag,
+.info-label,
+.chapter-number,
+.chapter-title,
+.caption-label,
+.challenge-label-accent,
+.breakdown-tag,
+.results-eyebrow,
+.next-eyebrow,
+.next-category-tag,
+.stat-label-editorial,
+.form-group label,
+.modal-tag {
+  font-weight: 400;
 }
