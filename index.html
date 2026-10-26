@@ -440,25 +440,25 @@
               </div>
             </article>
 
-            <!-- PROJECT 07: VCODE -->
-            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="Vcode">
-              <div class="project-visual-wrapper vcode-wrapper">
-                <img src="images/work-7.svg" alt="VCODE" class="project-full-bleed-img">
+            <!-- PROJECT 07: CLARUS DIGITRONICS -->
+            <article class="project-article featured-grid-card" data-parallax="0.04" data-project="Clarus Digitronics">
+              <div class="project-visual-wrapper clarus-wrapper" onclick="window.location.href='clarus.html'" style="cursor: pointer;">
+                <img src="images/clarus-mockup-01.jpg" alt="Clarus Digitronics" class="project-full-bleed-img">
                 <div class="project-gradient-overlay"></div>
 
                 <div class="project-card-overlay">
                   <div class="overlay-top">
                     <div class="project-meta-top">
                       <span class="project-num">07</span>
-                      <span class="project-category">Agency Website · Web Design · 2025</span>
+                      <span class="project-category">Web Design · UI/UX Design · 2026</span>
                     </div>
                   </div>
 
                   <div class="overlay-bottom">
-                    <h3 class="project-title">VCODE</h3>
-                    <p class="project-desc">"Digital engineering agency website featuring dark mode aesthetics, interactive shader canvas and code highlights."</p>
+                    <h3 class="project-title">CLARUS DIGITRONICS</h3>
+                    <p class="project-desc">"Precision-engineered electronics manufacturing website communicating PCB assembly, testing, and production from prototype to scale."</p>
                     <div class="project-footer">
-                      <a href="#contact" class="project-link" data-project="Vcode">
+                      <a href="clarus.html" class="project-link direct-case-study" onclick="event.stopPropagation(); window.location.href='clarus.html';" data-project="Clarus Digitronics">
                         <span>VIEW CASE STUDY</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                       </a>
@@ -1139,7 +1139,7 @@
           <ul class="f-link-list">
             <li><a href="cortado.html" class="f-link" data-project="Cortado Cafe">CORTADO CAFÉ <span class="f-hover-arrow">→</span></a></li>
             <li><a href="eprise.html" class="f-link" data-project="ePRISE SaaS">ePRISE <span class="f-hover-arrow">→</span></a></li>
-            <li><a href="#work" class="f-link" data-project="Tribal Operations">TRIBAL <span class="f-hover-arrow">→</span></a></li>
+            <li><a href="clarus.html" class="f-link" data-project="Clarus Digitronics">CLARUS DIGITRONICS <span class="f-hover-arrow">→</span></a></li>
             <li><a href="#work" class="f-link" data-project="Barakha Luxury Store">BARAKHA <span class="f-hover-arrow">→</span></a></li>
             <li><a href="#see-more-work" class="f-link">MORE WORK <span class="f-hover-arrow">→</span></a></li>
           </ul>
@@ -1261,7 +1261,7 @@
   <!-- Case study direct navigation interceptor -->
   <script>
     document.addEventListener('click', function(e) {
-      const link = e.target.closest('a[href*="cortado.html"], a[href*="eprise.html"]');
+      const link = e.target.closest('a[href*="cortado.html"], a[href*="eprise.html"], a[href*="clarus.html"]');
       if (link) {
         e.stopImmediatePropagation();
         window.location.href = link.getAttribute('href');
