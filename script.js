@@ -699,7 +699,6 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     openModal('Full Portfolio Overview');
   });
-  if (downloadCvBtn) downloadCvBtn.addEventListener('click', () => openModal('Resume Download'));
   if (mobileTalkBtn) mobileTalkBtn.addEventListener('click', () => {
     closeMobileNav();
     openModal();
