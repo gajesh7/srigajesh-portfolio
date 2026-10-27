@@ -1,5 +1,5 @@
 /**
- * GAJESH — UI/UX DESIGNER PORTFOLIO
+ * SRIGAJESH — UI/UX DESIGNER PORTFOLIO
  * Motion Design & Parallax Engine:
  * - Smooth Lerped Scroll Render Loop (rAF)
  * - Headline Line Tracking & Parallax
@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // E. Giant Background Wordmark (GAJESH) Scroll Parallax & Nav Rail Dissolve
+    // E. Giant Background Wordmark (SRIGAJESH) Scroll Parallax & Nav Rail Dissolve
     const giantWordmark = document.getElementById('giant-wordmark');
     const footerSec = document.getElementById('contact');
     const navRail = document.getElementById('nav-rail');
