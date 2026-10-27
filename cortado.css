@@ -1125,14 +1125,17 @@ button {
 /* Trio Screens Layout */
 .screens-trio-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 36px;
   margin-bottom: 140px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .trio-card {
   position: relative;
-  background: #FFFFFF;
+  background: var(--bg-card, #FFFFFF);
   border-radius: 24px;
   padding: 28px;
   border: 1px solid var(--border-subtle);
@@ -1141,6 +1144,11 @@ button {
   gap: 18px;
   transition: all var(--transition-fast);
   box-shadow: 0 10px 30px rgba(21, 19, 17, 0.03);
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .trio-card:hover {
@@ -1153,6 +1161,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  width: 100%;
 }
 
 .trio-step-num {
@@ -1160,7 +1170,15 @@ button {
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: var(--accent-orange);
+  color: var(--project-primary, var(--accent-orange));
+  white-space: nowrap;
+}
+
+.trio-card-header .chapter-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 .trio-screen-title {
@@ -1170,12 +1188,27 @@ button {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--text-black);
+  margin: 0;
+  line-height: 1.35;
 }
 
 .trio-visual-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
   border-radius: 18px;
   overflow: hidden;
   background: #F2EFE8;
+  box-sizing: border-box;
+}
+
+.trio-visual-container img,
+.trio-visual-img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 250px;
+  object-fit: cover;
+  display: block;
 }
 
 .trio-desc {
@@ -1183,6 +1216,7 @@ button {
   color: var(--text-body);
   line-height: 1.55;
   font-weight: 500;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -1912,6 +1946,13 @@ button {
   font-weight: 500;
 }
 
+.learned-principles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
 /* ==========================================================================
    SECTION 8: COMMON QUESTIONS (FAQ ACCORDION) - REFINED EDITORIAL
    ========================================================================== */
@@ -2371,9 +2412,26 @@ button.faq-trigger:focus-visible {
   }
 
   .screens-trio-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
     margin-bottom: 60px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .trio-card {
+    padding: 24px 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .trio-visual-container img,
+  .trio-visual-img {
+    height: 220px !important;
   }
 
   .challenge-cards-grid {
@@ -2726,22 +2784,102 @@ button.faq-trigger:focus-visible {
   }
 
   .screens-trio-row {
-    gap: 18px;
-    margin-bottom: 44px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .trio-card {
-    padding: 20px 16px;
-    border-radius: 18px;
+    padding: 22px 18px;
+    border-radius: 20px;
     gap: 14px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  }
+
+  .trio-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .trio-step-num {
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  .trio-card-header .chapter-number {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
   }
 
   .trio-screen-title {
-    font-size: 1rem;
+    font-size: 1.02rem;
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+
+  .trio-visual-container {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 2px 0;
+  }
+
+  .trio-visual-container img,
+  .trio-visual-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 185px !important;
+    object-fit: cover;
+    display: block;
   }
 
   .trio-desc {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .qualitative-outcomes-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .outcome-card {
+    padding: 20px 18px;
+    border-radius: 18px;
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .outcome-title {
+    font-size: 1.02rem;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  .outcome-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0;
   }
 
   /* The Challenge Section (Dark) */
@@ -2919,6 +3057,12 @@ button.faq-trigger:focus-visible {
   .learned-content-col p {
     font-size: 0.92rem;
     line-height: 1.55;
+  }
+
+  .learned-principles-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 18px;
   }
 
   .results-header-block {
